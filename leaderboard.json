@@ -1,0 +1,593 @@
+[
+  {
+    "rank": 1,
+    "name": "Matt Latour",
+    "tier": "Godly",
+    "elo": 2580,
+    "games": 65,
+    "wins": 46,
+    "losses": 19,
+    "team": "",
+    "clan": "Great Personality"
+  },
+  {
+    "rank": 2,
+    "name": "Charlie Steel",
+    "tier": "Godly",
+    "elo": 2409,
+    "games": 18,
+    "wins": 14,
+    "losses": 4,
+    "team": "",
+    "clan": "Beer Pressure"
+  },
+  {
+    "rank": 3,
+    "name": "Deshaun W",
+    "tier": "Godly",
+    "elo": 2251,
+    "games": 29,
+    "wins": 22,
+    "losses": 7,
+    "team": "",
+    "clan": "Great Personality"
+  },
+  {
+    "rank": 4,
+    "name": "Dylan Benefield",
+    "tier": "Godly",
+    "elo": 2224,
+    "games": 21,
+    "wins": 14,
+    "losses": 7,
+    "team": "",
+    "clan": "Beer Pressure"
+  },
+  {
+    "rank": 5,
+    "name": "Gurp Singh",
+    "tier": "Godly",
+    "elo": 2136,
+    "games": 53,
+    "wins": 29,
+    "losses": 24,
+    "team": "",
+    "clan": "Six Eyes"
+  },
+  {
+    "rank": 6,
+    "name": "Preston Hart",
+    "tier": "Master",
+    "elo": 2115,
+    "games": 21,
+    "wins": 12,
+    "losses": 9,
+    "team": [],
+    "clan": "Six Eyes"
+  },
+  {
+    "rank": 7,
+    "name": "Dillan Pope",
+    "tier": "Master",
+    "elo": 2012,
+    "games": 28,
+    "wins": 18,
+    "losses": 10,
+    "team": "",
+    "clan": "Six Eyes"
+  },
+  {
+    "rank": 8,
+    "name": "Jordan Lusk",
+    "tier": "Diamond I",
+    "elo": 1958,
+    "games": 54,
+    "wins": 27,
+    "losses": 27,
+    "team": "",
+    "clan": "Great Personality"
+  },
+  {
+    "rank": 9,
+    "name": "Sam Purintun",
+    "tier": "Diamond I",
+    "elo": 1904,
+    "games": 20,
+    "wins": 11,
+    "losses": 9,
+    "team": "",
+    "clan": "WANGHAF"
+  },
+  {
+    "rank": 10,
+    "name": "Jackson Banks",
+    "tier": "Diamond II",
+    "elo": 1818,
+    "games": 13,
+    "wins": 5,
+    "losses": 8,
+    "team": [],
+    "clan": "WANGHAF"
+  },
+  {
+    "rank": 11,
+    "name": "Jackson Martin",
+    "tier": "Diamond II",
+    "elo": 1816,
+    "games": 23,
+    "wins": 10,
+    "losses": 13,
+    "team": [],
+    "clan": "Great Personality"
+  },
+  {
+    "rank": 12,
+    "name": "Brant J",
+    "tier": "Diamond II",
+    "elo": 1808,
+    "games": 15,
+    "wins": 8,
+    "losses": 7,
+    "team": "",
+    "clan": "WANGHAF"
+  },
+  {
+    "rank": 13,
+    "name": "Matt Wolf",
+    "tier": "Diamond III",
+    "elo": 1752,
+    "games": 35,
+    "wins": 21,
+    "losses": 14,
+    "team": [],
+    "clan": "WANGHAF"
+  },
+  {
+    "rank": 14,
+    "name": "Ed",
+    "tier": "Platinum I",
+    "elo": 1679,
+    "games": 1,
+    "wins": 0,
+    "losses": 1,
+    "team": [],
+    "clan": "Beer Pressure"
+  },
+  {
+    "rank": 15,
+    "name": [
+      "TA"
+    ],
+    "tier": "Platinum I",
+    "elo": 1673,
+    "games": 4,
+    "wins": 1,
+    "losses": 3,
+    "team": "",
+    "clan": "Beer Pressure"
+  },
+  {
+    "rank": 16,
+    "name": "Drake Jackson",
+    "tier": "Platinum I",
+    "elo": 1660,
+    "games": 2,
+    "wins": 0,
+    "losses": 2,
+    "team": [],
+    "clan": "Six Eyes"
+  },
+  {
+    "rank": 17,
+    "name": "Trey R",
+    "tier": "Platinum I",
+    "elo": 1640,
+    "games": 2,
+    "wins": 0,
+    "losses": 2,
+    "team": [],
+    "clan": "Beer Pressure"
+  },
+  {
+    "rank": 18,
+    "name": "Zeke Shipman",
+    "tier": "Platinum I",
+    "elo": 1625,
+    "games": 0,
+    "wins": 0,
+    "losses": 0,
+    "team": "",
+    "clan": "Great Personality"
+  },
+  {
+    "rank": 19,
+    "name": "Aaron Lane",
+    "tier": "Platinum I",
+    "elo": 1615,
+    "games": 17,
+    "wins": 7,
+    "losses": 10,
+    "team": "",
+    "clan": "WANGHAF"
+  },
+  {
+    "rank": 20,
+    "name": "Davis Bjornstad",
+    "tier": "Platinum II",
+    "elo": 1599,
+    "games": 18,
+    "wins": 6,
+    "losses": 12,
+    "team": "",
+    "clan": "WANGHAF"
+  },
+  {
+    "rank": 21,
+    "name": "Ryan Shurtz",
+    "tier": "Platinum II",
+    "elo": 1547,
+    "games": 9,
+    "wins": 5,
+    "losses": 4,
+    "team": [],
+    "clan": "WANGHAF"
+  },
+  {
+    "rank": 22,
+    "name": "Brandon Beatty",
+    "tier": "Platinum III",
+    "elo": 1435,
+    "games": 11,
+    "wins": 8,
+    "losses": 3,
+    "team": [],
+    "clan": "Great Personality"
+  },
+  {
+    "rank": 23,
+    "name": "Andrew Hickman",
+    "tier": "Gold II",
+    "elo": 1292,
+    "games": 10,
+    "wins": 6,
+    "losses": 4,
+    "team": [],
+    "clan": "WANGHAF"
+  },
+  {
+    "rank": 24,
+    "name": "Jackson Reiber",
+    "tier": "Gold II",
+    "elo": 1279,
+    "games": 1,
+    "wins": 0,
+    "losses": 1,
+    "team": [],
+    "clan": "Beer Pressure"
+  },
+  {
+    "rank": 25,
+    "name": [
+      "Bradley Blankenship"
+    ],
+    "tier": "Gold II",
+    "elo": 1255,
+    "games": 8,
+    "wins": 6,
+    "losses": 2,
+    "team": [],
+    "clan": "Great Personality"
+  },
+  {
+    "rank": 26,
+    "name": "Lane Elkins",
+    "tier": "Gold II",
+    "elo": 1200,
+    "games": 0,
+    "wins": 0,
+    "losses": 0,
+    "team": "",
+    "clan": "Beer Pressure"
+  },
+  {
+    "rank": 27,
+    "name": "Bronson Gregg",
+    "tier": "Gold II",
+    "elo": 1200,
+    "games": 0,
+    "wins": 0,
+    "losses": 0,
+    "team": "",
+    "clan": "Six Eyes"
+  },
+  {
+    "rank": 28,
+    "name": [
+      "Landon Sarrett"
+    ],
+    "tier": "Gold III",
+    "elo": 1185,
+    "games": 1,
+    "wins": 1,
+    "losses": 0,
+    "team": [],
+    "clan": "Beer Pressure"
+  },
+  {
+    "rank": 29,
+    "name": [
+      "Jackson Reece"
+    ],
+    "tier": "Gold III",
+    "elo": 1162,
+    "games": 2,
+    "wins": 1,
+    "losses": 1,
+    "team": [],
+    "clan": "Beer Pressure"
+  },
+  {
+    "rank": 30,
+    "name": [
+      "Alex Lang"
+    ],
+    "tier": "Gold III",
+    "elo": 1162,
+    "games": 2,
+    "wins": 1,
+    "losses": 1,
+    "team": [],
+    "clan": "Beer Pressure"
+  },
+  {
+    "rank": 31,
+    "name": "Brody Sheppard",
+    "tier": "Gold III",
+    "elo": 1114,
+    "games": 23,
+    "wins": 6,
+    "losses": 17,
+    "team": "",
+    "clan": "Six Eyes"
+  },
+  {
+    "rank": 32,
+    "name": [
+      "Phoebe"
+    ],
+    "tier": "Silver I",
+    "elo": 1096,
+    "games": 2,
+    "wins": 0,
+    "losses": 2,
+    "team": [],
+    "clan": "WANGHAF"
+  },
+  {
+    "rank": 33,
+    "name": "Ava Gus",
+    "tier": "Silver I",
+    "elo": 1094,
+    "games": 1,
+    "wins": 0,
+    "losses": 1,
+    "team": [],
+    "clan": "WANGHAF"
+  },
+  {
+    "rank": 34,
+    "name": "Dalen Wagga",
+    "tier": "Silver I",
+    "elo": 1093,
+    "games": 1,
+    "wins": 0,
+    "losses": 1,
+    "team": [],
+    "clan": "Great Personality"
+  },
+  {
+    "rank": 35,
+    "name": [
+      "Nick Perkins"
+    ],
+    "tier": "Silver I",
+    "elo": 1084,
+    "games": 1,
+    "wins": 0,
+    "losses": 1,
+    "team": [],
+    "clan": "Six Eyes"
+  },
+  {
+    "rank": 36,
+    "name": "Hunter Maness",
+    "tier": "Silver I",
+    "elo": 1074,
+    "games": 4,
+    "wins": 0,
+    "losses": 4,
+    "team": [],
+    "clan": "WANGHAF"
+  },
+  {
+    "rank": 37,
+    "name": "Lance Roberts",
+    "tier": "Silver I",
+    "elo": 1073,
+    "games": 11,
+    "wins": 2,
+    "losses": 9,
+    "team": [],
+    "clan": "Six Eyes"
+  },
+  {
+    "rank": 38,
+    "name": "Jacob Green",
+    "tier": "Silver I",
+    "elo": 1069,
+    "games": 2,
+    "wins": 0,
+    "losses": 2,
+    "team": [],
+    "clan": "WANGHAF"
+  },
+  {
+    "rank": 39,
+    "name": [
+      "Ian Henderson"
+    ],
+    "tier": "Silver I",
+    "elo": 1053,
+    "games": 6,
+    "wins": 1,
+    "losses": 5,
+    "team": [],
+    "clan": "Six Eyes"
+  },
+  {
+    "rank": 40,
+    "name": [
+      "Raina D"
+    ],
+    "tier": "Silver I",
+    "elo": 1052,
+    "games": 1,
+    "wins": 0,
+    "losses": 1,
+    "team": [],
+    "clan": "Six Eyes"
+  },
+  {
+    "rank": 41,
+    "name": "Drew A",
+    "tier": "Silver I",
+    "elo": 1036,
+    "games": 3,
+    "wins": 0,
+    "losses": 3,
+    "team": [],
+    "clan": "Great Personality"
+  },
+  {
+    "rank": 42,
+    "name": "Brady Lawson",
+    "tier": "Silver I",
+    "elo": 1020,
+    "games": 5,
+    "wins": 0,
+    "losses": 5,
+    "team": [],
+    "clan": "Beer Pressure"
+  },
+  {
+    "rank": 43,
+    "name": "Jake Neiber",
+    "tier": "Silver I",
+    "elo": 1019,
+    "games": 3,
+    "wins": 0,
+    "losses": 3,
+    "team": [],
+    "clan": "Six Eyes"
+  },
+  {
+    "rank": 44,
+    "name": [
+      "Will Sowell"
+    ],
+    "tier": "Silver I",
+    "elo": 1004,
+    "games": 3,
+    "wins": 1,
+    "losses": 2,
+    "team": "",
+    "clan": "Beer Pressure"
+  },
+  {
+    "rank": 45,
+    "name": "EJ",
+    "tier": "Silver II",
+    "elo": 990,
+    "games": 9,
+    "wins": 1,
+    "losses": 8,
+    "team": [],
+    "clan": "Great Personality"
+  },
+  {
+    "rank": 46,
+    "name": [
+      "Labubu"
+    ],
+    "tier": "Silver II",
+    "elo": 979,
+    "games": 4,
+    "wins": 0,
+    "losses": 4,
+    "team": [],
+    "clan": "Great Personality"
+  },
+  {
+    "rank": 47,
+    "name": "Michael Hill",
+    "tier": "Silver II",
+    "elo": 976,
+    "games": 10,
+    "wins": 1,
+    "losses": 9,
+    "team": [],
+    "clan": "Six Eyes"
+  },
+  {
+    "rank": 48,
+    "name": [
+      "Landen Simpson"
+    ],
+    "tier": "Silver II",
+    "elo": 965,
+    "games": 1,
+    "wins": 0,
+    "losses": 1,
+    "team": "",
+    "clan": ""
+  },
+  {
+    "rank": 49,
+    "name": [
+      "Doster C"
+    ],
+    "tier": "Silver II",
+    "elo": 927,
+    "games": 6,
+    "wins": 1,
+    "losses": 5,
+    "team": [],
+    "clan": "Beer Pressure"
+  },
+  {
+    "rank": 50,
+    "name": [
+      "Cole Baldwin"
+    ],
+    "tier": "Silver II",
+    "elo": 927,
+    "games": 6,
+    "wins": 1,
+    "losses": 5,
+    "team": [],
+    "clan": "Beer Pressure"
+  },
+  {
+    "rank": 51,
+    "name": [
+      "Aiden Brooks"
+    ],
+    "tier": "Silver II",
+    "elo": 912,
+    "games": 2,
+    "wins": 0,
+    "losses": 2,
+    "team": "",
+    "clan": ""
+  }
+]
