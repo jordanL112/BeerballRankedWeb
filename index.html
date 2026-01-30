@@ -1,54 +1,55 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <title>Beerball Leaderboard</title>
-
 <style>
-body {
-  background:#0f0f0f;
-  color:white;
-  font-family:Arial, sans-serif;
-  margin:20px;
-}
+  body {
+    background:#0f0f0f;
+    color:white;
+    font-family:Arial, sans-serif;
+    margin:20px;
+  }
+  /* Style for the navigation buttons */
+  nav {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 20px;
+  }
+  .nav-button {
+    padding: 10px 20px;
+    background-color: #444;
+    border: none;
+    color: white;
+    cursor: pointer;
+  }
+  .nav-button:hover {
+    background-color: #666;
+  }
 
-.rank-cell {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  justify-content: center;
-}
-
-.rank-icon {
-  width: 34px;
-  height: 34px;
-}
-
-h1 {
-  text-align:center;
-}
-
-table {
-  width:100%;
-  border-collapse:collapse;
-}
-
-th, td {
-  padding:10px;
-  border-bottom:1px solid #333;
-  text-align:center;
-}
-
-th {
-  position:sticky;
-  top:0;
-  background:#000;
-}
-
-tr:hover {
-  background:#222;
-}
+  .section {
+    display: none;
+  }
+  
+  /* Table styles */
+  table {
+    width:100%;
+    border-collapse:collapse;
+  }
+  th, td {
+    padding:10px;
+    border-bottom:1px solid #333;
+    text-align:center;
+  }
+  th {
+    position:sticky;
+    top:0;
+    background:#000;
+  }
+  tr:hover {
+    background:#222;
+  }
 </style>
 </head>
 
@@ -56,26 +57,69 @@ tr:hover {
 
 <h1>🍺 Beerball Leaderboard</h1>
 
-<table>
-<thead>
-<tr>
-  <th>Rank</th>
-  <th>Name</th>
-  <th>Tier</th>
-  <th>ELO</th>
-  <th>Games</th>
-  <th>W</th>
-  <th>L</th>
-  <th>Win %</th>
-  <th>Team</th>
-  <th>Clan</th>
-</tr>
-</thead>
-<tbody id="board"></tbody>
-</table>
+<!-- Navigation Bar -->
+<nav>
+  <button class="nav-button" onclick="showSection('leaderboard')">Leaderboard</button>
+  <button class="nav-button" onclick="showSection('clans')">Clans</button>
+  <button class="nav-button" onclick="showSection('playerCards')">Player Cards</button>
+  <button class="nav-button" onclick="showSection('shop')">Points Shop</button>
+</nav>
+
+<!-- Leaderboard Section -->
+<div id="leaderboard" class="section">
+  <h2>Leaderboard</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>Rank</th>
+        <th>Name</th>
+        <th>Tier</th>
+        <th>ELO</th>
+        <th>Games</th>
+        <th>W</th>
+        <th>L</th>
+        <th>Win %</th>
+        <th>Team</th>
+        <th>Clan</th>
+      </tr>
+    </thead>
+    <tbody id="board"></tbody>
+  </table>
+</div>
+
+<!-- Clans Section -->
+<div id="clans" class="section">
+  <h2>Clans</h2>
+  <p>Here, you can display clan statistics and details.</p>
+</div>
+
+<!-- Player Cards Section -->
+<div id="playerCards" class="section">
+  <h2>Player Cards</h2>
+  <p>Here, you can show each player's detailed stats in a card style.</p>
+</div>
+
+<!-- Points Shop Section -->
+<div id="shop" class="section">
+  <h2>Points Shop</h2>
+  <p>Allow players to redeem their points for rewards here.</p>
+</div>
 
 <script>
+// JavaScript to handle section switching
+function showSection(sectionId) {
+  // Hide all sections
+  const sections = document.querySelectorAll('.section');
+  sections.forEach(section => section.style.display = 'none');
+  
+  // Show the selected section
+  const activeSection = document.getElementById(sectionId);
+  if (activeSection) {
+    activeSection.style.display = 'block';
+  }
+}
 
+// Fetch and display leaderboard data
 function tierToIcon(tier) {
   if (tier.startsWith("Godly")) return "icons/godly.png";
   if (tier.startsWith("Master")) return "icons/master.png";
@@ -91,27 +135,29 @@ fetch("leaderboard.json")
   .then(data => {
     const tbody = document.getElementById("board");
     data.forEach(p => {
-	let winPct = p.games > 0 ? ((p.wins / p.games) * 100).toFixed(1) + "%" : "0.0%";
+      let winPct = p.games > 0 ? ((p.wins / p.games) * 100).toFixed(1) + "%" : "0.0%";
       const row = document.createElement("tr");
-     row.innerHTML = `
- 	 <td class="rank-cell">
-   	 <span>${p.rank}</span>
-   	 <img class="rank-icon" src="${tierToIcon(p.tier)}">
- 	 </td>
- 	 <td>${p.name}</td>
- 	 <td>${p.tier}</td>
- 	 <td>${p.elo}</td>
- 	 <td>${p.games}</td>
- 	 <td>${p.wins}</td>
- 	 <td>${p.losses}</td>
- 	 <td>${winPct}</td>
- 	 <td>${p.team || ""}</td>
- 	 <td>${p.clan || ""}</td>
-	`;
-
+      row.innerHTML = `
+        <td class="rank-cell">
+          <span>${p.rank}</span>
+          <img class="rank-icon" src="${tierToIcon(p.tier)}">
+        </td>
+        <td>${p.name}</td>
+        <td>${p.tier}</td>
+        <td>${p.elo}</td>
+        <td>${p.games}</td>
+        <td>${p.wins}</td>
+        <td>${p.losses}</td>
+        <td>${winPct}</td>
+        <td>${p.team || ""}</td>
+        <td>${p.clan || ""}</td>
+      `;
       tbody.appendChild(row);
     });
   });
+
+// Show leaderboard by default
+showSection('leaderboard');
 </script>
 
 </body>
