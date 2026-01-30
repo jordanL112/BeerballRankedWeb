@@ -13,6 +13,18 @@ body {
   margin:20px;
 }
 
+.rank-cell {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  justify-content: center;
+}
+
+.rank-icon {
+  width: 34px;
+  height: 34px;
+}
+
 h1 {
   text-align:center;
 }
@@ -54,6 +66,7 @@ tr:hover {
   <th>Games</th>
   <th>W</th>
   <th>L</th>
+  <th>Win %</th>
   <th>Team</th>
   <th>Clan</th>
 </tr>
@@ -62,23 +75,40 @@ tr:hover {
 </table>
 
 <script>
+
+function tierToIcon(tier) {
+  if (tier.startsWith("Godly")) return "icons/godly.png";
+  if (tier.startsWith("Master")) return "icons/master.png";
+  if (tier.startsWith("Diamond")) return "icons/diamond.png";
+  if (tier.startsWith("Platinum")) return "icons/platinum.png";
+  if (tier.startsWith("Gold")) return "icons/gold.png";
+  if (tier.startsWith("Silver")) return "icons/silver.png";
+  return "icons/bronze.png";
+}
+
 fetch("leaderboard.json")
   .then(r => r.json())
   .then(data => {
     const tbody = document.getElementById("board");
     data.forEach(p => {
+	let winPct = p.games > 0 ? ((p.wins / p.games) * 100).toFixed(1) + "%" : "0.0%";
       const row = document.createElement("tr");
-      row.innerHTML = `
-        <td>${p.rank}</td>
-        <td>${p.name}</td>
-        <td>${p.tier}</td>
-        <td>${p.elo}</td>
-        <td>${p.games}</td>
-        <td>${p.wins}</td>
-        <td>${p.losses}</td>
-        <td>${p.team || ""}</td>
-        <td>${p.clan || ""}</td>
-      `;
+     row.innerHTML = `
+ 	 <td class="rank-cell">
+   	 <span>${p.rank}</span>
+   	 <img class="rank-icon" src="${tierToIcon(p.tier)}">
+ 	 </td>
+ 	 <td>${p.name}</td>
+ 	 <td>${p.tier}</td>
+ 	 <td>${p.elo}</td>
+ 	 <td>${p.games}</td>
+ 	 <td>${p.wins}</td>
+ 	 <td>${p.losses}</td>
+ 	 <td>${winPct}</td>
+ 	 <td>${p.team || ""}</td>
+ 	 <td>${p.clan || ""}</td>
+	`;
+
       tbody.appendChild(row);
     });
   });
