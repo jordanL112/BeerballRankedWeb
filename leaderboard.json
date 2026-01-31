@@ -45,28 +45,39 @@
   },
   {
     "rank": 5,
-    "name": "Gurp Singh",
-    "tier": "Godly",
-    "elo": 2129,
-    "games": 62,
-    "wins": 34,
-    "losses": 28,
-    "team": "Pluto",
-    "clan": "Six Eyes"
-  },
-  {
-    "rank": 6,
     "name": "Jordan Lusk",
-    "tier": "Master",
-    "elo": 2124,
-    "games": 65,
-    "wins": 35,
+    "tier": "Godly",
+    "elo": 2166,
+    "games": 68,
+    "wins": 38,
     "losses": 30,
     "team": "Where Are We?",
     "clan": "Great Personality"
   },
   {
+    "rank": 6,
+    "name": "Gurp Singh",
+    "tier": "Master",
+    "elo": 2120,
+    "games": 64,
+    "wins": 35,
+    "losses": 29,
+    "team": "Pluto",
+    "clan": "Six Eyes"
+  },
+  {
     "rank": 7,
+    "name": "Jackson Martin",
+    "tier": "Master",
+    "elo": 2024,
+    "games": 37,
+    "wins": 21,
+    "losses": 16,
+    "team": "Where Are We?",
+    "clan": "Great Personality"
+  },
+  {
+    "rank": 8,
     "name": "Preston Hart",
     "tier": "Master",
     "elo": 2007,
@@ -77,7 +88,7 @@
     "clan": "Six Eyes"
   },
   {
-    "rank": 8,
+    "rank": 9,
     "name": "Dillan Pope",
     "tier": "Diamond I",
     "elo": 1990,
@@ -86,17 +97,6 @@
     "losses": 12,
     "team": "",
     "clan": "Six Eyes"
-  },
-  {
-    "rank": 9,
-    "name": "Jackson Martin",
-    "tier": "Diamond I",
-    "elo": 1982,
-    "games": 34,
-    "wins": 18,
-    "losses": 16,
-    "team": "Where Are We?",
-    "clan": "Great Personality"
   },
   {
     "rank": 10,
@@ -236,10 +236,10 @@
     "rank": 22,
     "name": "Brandon Beatty",
     "tier": "Gold I",
-    "elo": 1342,
-    "games": 14,
+    "elo": 1333,
+    "games": 15,
     "wins": 8,
-    "losses": 6,
+    "losses": 7,
     "team": [],
     "clan": "Great Personality"
   },
@@ -332,10 +332,10 @@
       "Bradley Blankenship"
     ],
     "tier": "Gold III",
-    "elo": 1162,
-    "games": 11,
+    "elo": 1153,
+    "games": 12,
     "wins": 6,
-    "losses": 5,
+    "losses": 6,
     "team": [],
     "clan": "Great Personality"
   },
@@ -424,10 +424,10 @@
     "rank": 38,
     "name": "Lance Roberts",
     "tier": "Silver I",
-    "elo": 1068,
-    "games": 12,
+    "elo": 1063,
+    "games": 13,
     "wins": 2,
-    "losses": 10,
+    "losses": 11,
     "team": [],
     "clan": "Six Eyes"
   },
@@ -435,10 +435,10 @@
     "rank": 39,
     "name": "Michael Hill",
     "tier": "Silver I",
-    "elo": 1067,
-    "games": 15,
-    "wins": 4,
-    "losses": 11,
+    "elo": 1058,
+    "games": 17,
+    "wins": 5,
+    "losses": 12,
     "team": [],
     "clan": "Six Eyes"
   },
@@ -567,18 +567,31 @@
   {
     "rank": 50,
     "name": [
+      "Jelly Fart"
+    ],
+    "tier": "Silver II",
+    "elo": 976,
+    "games": 2,
+    "wins": 0,
+    "losses": 2,
+    "team": "",
+    "clan": "Great Personality"
+  },
+  {
+    "rank": 51,
+    "name": [
       "Landen Simpson"
     ],
     "tier": "Silver II",
-    "elo": 965,
-    "games": 1,
+    "elo": 946,
+    "games": 2,
     "wins": 0,
-    "losses": 1,
+    "losses": 2,
     "team": "",
     "clan": ""
   },
   {
-    "rank": 51,
+    "rank": 52,
     "name": [
       "Doster C"
     ],
@@ -591,7 +604,7 @@
     "clan": "Beer Pressure"
   },
   {
-    "rank": 52,
+    "rank": 53,
     "name": [
       "Cole Baldwin"
     ],
@@ -604,7 +617,7 @@
     "clan": "Beer Pressure"
   },
   {
-    "rank": 53,
+    "rank": 54,
     "name": [
       "Aiden Brooks"
     ],
