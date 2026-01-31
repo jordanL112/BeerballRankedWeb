@@ -3,10 +3,10 @@
     "rank": 1,
     "name": "Matt Latour",
     "tier": "Godly",
-    "elo": 2558,
-    "games": 71,
-    "wins": 50,
-    "losses": 21,
+    "elo": 2512,
+    "games": 73,
+    "wins": 51,
+    "losses": 22,
     "team": "",
     "clan": "Great Personality"
   },
@@ -48,9 +48,9 @@
     "name": "Jordan Lusk",
     "tier": "Godly",
     "elo": 2166,
-    "games": 68,
-    "wins": 38,
-    "losses": 30,
+    "games": 70,
+    "wins": 39,
+    "losses": 31,
     "team": "Where Are We?",
     "clan": "Great Personality"
   },
@@ -58,10 +58,10 @@
     "rank": 6,
     "name": "Gurp Singh",
     "tier": "Master",
-    "elo": 2120,
-    "games": 64,
-    "wins": 35,
-    "losses": 29,
+    "elo": 2097,
+    "games": 67,
+    "wins": 37,
+    "losses": 30,
     "team": "Pluto",
     "clan": "Six Eyes"
   },
@@ -70,9 +70,9 @@
     "name": "Jackson Martin",
     "tier": "Master",
     "elo": 2024,
-    "games": 37,
-    "wins": 21,
-    "losses": 16,
+    "games": 39,
+    "wins": 22,
+    "losses": 17,
     "team": "Where Are We?",
     "clan": "Great Personality"
   },
@@ -102,15 +102,26 @@
     "rank": 10,
     "name": "Sam Purintun",
     "tier": "Diamond I",
-    "elo": 1904,
-    "games": 20,
-    "wins": 11,
+    "elo": 1917,
+    "games": 21,
+    "wins": 12,
     "losses": 9,
     "team": "",
     "clan": "WANGHAF"
   },
   {
     "rank": 11,
+    "name": "Brant J",
+    "tier": "Diamond II",
+    "elo": 1854,
+    "games": 17,
+    "wins": 9,
+    "losses": 8,
+    "team": "",
+    "clan": "WANGHAF"
+  },
+  {
+    "rank": 12,
     "name": "Jackson Banks",
     "tier": "Diamond II",
     "elo": 1818,
@@ -118,17 +129,6 @@
     "wins": 5,
     "losses": 8,
     "team": [],
-    "clan": "WANGHAF"
-  },
-  {
-    "rank": 12,
-    "name": "Brant J",
-    "tier": "Diamond II",
-    "elo": 1808,
-    "games": 15,
-    "wins": 8,
-    "losses": 7,
-    "team": "",
     "clan": "WANGHAF"
   },
   {
@@ -168,6 +168,17 @@
   },
   {
     "rank": 16,
+    "name": "Aaron Lane",
+    "tier": "Platinum I",
+    "elo": 1661,
+    "games": 19,
+    "wins": 8,
+    "losses": 11,
+    "team": "",
+    "clan": "WANGHAF"
+  },
+  {
+    "rank": 17,
     "name": "Drake Jackson",
     "tier": "Platinum I",
     "elo": 1660,
@@ -178,7 +189,7 @@
     "clan": "Six Eyes"
   },
   {
-    "rank": 17,
+    "rank": 18,
     "name": "Trey R",
     "tier": "Platinum I",
     "elo": 1640,
@@ -189,7 +200,7 @@
     "clan": "Beer Pressure"
   },
   {
-    "rank": 18,
+    "rank": 19,
     "name": "Zeke Shipman",
     "tier": "Platinum I",
     "elo": 1625,
@@ -200,23 +211,12 @@
     "clan": "Great Personality"
   },
   {
-    "rank": 19,
-    "name": "Aaron Lane",
-    "tier": "Platinum I",
-    "elo": 1615,
-    "games": 17,
-    "wins": 7,
-    "losses": 10,
-    "team": "",
-    "clan": "WANGHAF"
-  },
-  {
     "rank": 20,
     "name": "Davis Bjornstad",
-    "tier": "Platinum II",
-    "elo": 1599,
-    "games": 18,
-    "wins": 6,
+    "tier": "Platinum I",
+    "elo": 1612,
+    "games": 19,
+    "wins": 7,
     "losses": 12,
     "team": "",
     "clan": "WANGHAF"
@@ -341,17 +341,6 @@
   },
   {
     "rank": 31,
-    "name": "Brody Sheppard",
-    "tier": "Gold III",
-    "elo": 1109,
-    "games": 24,
-    "wins": 6,
-    "losses": 18,
-    "team": "",
-    "clan": "Six Eyes"
-  },
-  {
-    "rank": 32,
     "name": [
       "Phoebe"
     ],
@@ -364,7 +353,7 @@
     "clan": "WANGHAF"
   },
   {
-    "rank": 33,
+    "rank": 32,
     "name": "Ava Gus",
     "tier": "Silver I",
     "elo": 1094,
@@ -375,7 +364,7 @@
     "clan": "WANGHAF"
   },
   {
-    "rank": 34,
+    "rank": 33,
     "name": "Dalen Wagga",
     "tier": "Silver I",
     "elo": 1093,
@@ -386,7 +375,29 @@
     "clan": "Great Personality"
   },
   {
+    "rank": 34,
+    "name": "Brody Sheppard",
+    "tier": "Silver I",
+    "elo": 1086,
+    "games": 25,
+    "wins": 6,
+    "losses": 19,
+    "team": "",
+    "clan": "Six Eyes"
+  },
+  {
     "rank": 35,
+    "name": "Michael Hill",
+    "tier": "Silver I",
+    "elo": 1081,
+    "games": 18,
+    "wins": 6,
+    "losses": 12,
+    "team": [],
+    "clan": "Six Eyes"
+  },
+  {
+    "rank": 36,
     "name": [
       "Nick Perkins"
     ],
@@ -399,7 +410,7 @@
     "clan": "Six Eyes"
   },
   {
-    "rank": 36,
+    "rank": 37,
     "name": "Hunter Maness",
     "tier": "Silver I",
     "elo": 1074,
@@ -410,7 +421,7 @@
     "clan": "WANGHAF"
   },
   {
-    "rank": 37,
+    "rank": 38,
     "name": "Jacob Green",
     "tier": "Silver I",
     "elo": 1069,
@@ -421,24 +432,13 @@
     "clan": "WANGHAF"
   },
   {
-    "rank": 38,
+    "rank": 39,
     "name": "Lance Roberts",
     "tier": "Silver I",
     "elo": 1063,
     "games": 13,
     "wins": 2,
     "losses": 11,
-    "team": [],
-    "clan": "Six Eyes"
-  },
-  {
-    "rank": 39,
-    "name": "Michael Hill",
-    "tier": "Silver I",
-    "elo": 1058,
-    "games": 17,
-    "wins": 5,
-    "losses": 12,
     "team": [],
     "clan": "Six Eyes"
   },
@@ -541,6 +541,32 @@
   {
     "rank": 48,
     "name": [
+      "Hannen Hileman"
+    ],
+    "tier": "Silver II",
+    "elo": 987,
+    "games": 1,
+    "wins": 0,
+    "losses": 1,
+    "team": "",
+    "clan": ""
+  },
+  {
+    "rank": 49,
+    "name": [
+      "Sophie Chapman"
+    ],
+    "tier": "Silver II",
+    "elo": 987,
+    "games": 1,
+    "wins": 0,
+    "losses": 1,
+    "team": "",
+    "clan": ""
+  },
+  {
+    "rank": 50,
+    "name": [
       "Labubu"
     ],
     "tier": "Silver II",
@@ -552,7 +578,7 @@
     "clan": "Great Personality"
   },
   {
-    "rank": 49,
+    "rank": 51,
     "name": [
       "Nolan Lynch"
     ],
@@ -565,20 +591,20 @@
     "clan": ""
   },
   {
-    "rank": 50,
+    "rank": 52,
     "name": [
       "Jelly Fart"
     ],
     "tier": "Silver II",
-    "elo": 976,
-    "games": 2,
+    "elo": 953,
+    "games": 3,
     "wins": 0,
-    "losses": 2,
+    "losses": 3,
     "team": "",
     "clan": "Great Personality"
   },
   {
-    "rank": 51,
+    "rank": 53,
     "name": [
       "Landen Simpson"
     ],
@@ -591,7 +617,7 @@
     "clan": ""
   },
   {
-    "rank": 52,
+    "rank": 54,
     "name": [
       "Doster C"
     ],
@@ -604,7 +630,7 @@
     "clan": "Beer Pressure"
   },
   {
-    "rank": 53,
+    "rank": 55,
     "name": [
       "Cole Baldwin"
     ],
@@ -617,7 +643,7 @@
     "clan": "Beer Pressure"
   },
   {
-    "rank": 54,
+    "rank": 56,
     "name": [
       "Aiden Brooks"
     ],
