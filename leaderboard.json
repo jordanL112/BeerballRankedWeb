@@ -23,17 +23,6 @@
   },
   {
     "rank": 3,
-    "name": "Deshaun W",
-    "tier": "Godly",
-    "elo": 2251,
-    "games": 29,
-    "wins": 22,
-    "losses": 7,
-    "team": "",
-    "clan": "Great Personality"
-  },
-  {
-    "rank": 4,
     "name": "Dylan Benefield",
     "tier": "Godly",
     "elo": 2224,
@@ -44,18 +33,40 @@
     "clan": "Beer Pressure"
   },
   {
+    "rank": 4,
+    "name": "Deshaun W",
+    "tier": "Godly",
+    "elo": 2215,
+    "games": 30,
+    "wins": 22,
+    "losses": 8,
+    "team": "",
+    "clan": "Great Personality"
+  },
+  {
     "rank": 5,
     "name": "Jordan Lusk",
     "tier": "Godly",
-    "elo": 2166,
-    "games": 70,
-    "wins": 39,
+    "elo": 2197,
+    "games": 71,
+    "wins": 40,
     "losses": 31,
     "team": "Where Are We?",
     "clan": "Great Personality"
   },
   {
     "rank": 6,
+    "name": "Jackson Martin",
+    "tier": "Master",
+    "elo": 2183,
+    "games": 44,
+    "wins": 27,
+    "losses": 17,
+    "team": "Where Are We?",
+    "clan": "Great Personality"
+  },
+  {
+    "rank": 7,
     "name": "Gurp Singh",
     "tier": "Master",
     "elo": 2097,
@@ -64,17 +75,6 @@
     "losses": 30,
     "team": "Pluto",
     "clan": "Six Eyes"
-  },
-  {
-    "rank": 7,
-    "name": "Jackson Martin",
-    "tier": "Master",
-    "elo": 2024,
-    "games": 39,
-    "wins": 22,
-    "losses": 17,
-    "team": "Where Are We?",
-    "clan": "Great Personality"
   },
   {
     "rank": 8,
@@ -90,22 +90,22 @@
   {
     "rank": 9,
     "name": "Dillan Pope",
-    "tier": "Diamond I",
-    "elo": 1990,
-    "games": 34,
+    "tier": "Diamond II",
+    "elo": 1898,
+    "games": 37,
     "wins": 22,
-    "losses": 12,
+    "losses": 15,
     "team": "",
     "clan": "Six Eyes"
   },
   {
     "rank": 10,
     "name": "Sam Purintun",
-    "tier": "Diamond I",
-    "elo": 1917,
-    "games": 21,
+    "tier": "Diamond II",
+    "elo": 1886,
+    "games": 22,
     "wins": 12,
-    "losses": 9,
+    "losses": 10,
     "team": "",
     "clan": "WANGHAF"
   },
@@ -133,6 +133,17 @@
   },
   {
     "rank": 13,
+    "name": "Trey R",
+    "tier": "Diamond III",
+    "elo": 1768,
+    "games": 6,
+    "wins": 4,
+    "losses": 2,
+    "team": [],
+    "clan": "Beer Pressure"
+  },
+  {
+    "rank": 14,
     "name": "Matt Wolf",
     "tier": "Diamond III",
     "elo": 1752,
@@ -143,7 +154,7 @@
     "clan": "WANGHAF"
   },
   {
-    "rank": 14,
+    "rank": 15,
     "name": "Ed",
     "tier": "Platinum I",
     "elo": 1679,
@@ -154,7 +165,7 @@
     "clan": "Beer Pressure"
   },
   {
-    "rank": 15,
+    "rank": 16,
     "name": [
       "TA"
     ],
@@ -167,7 +178,7 @@
     "clan": "Beer Pressure"
   },
   {
-    "rank": 16,
+    "rank": 17,
     "name": "Aaron Lane",
     "tier": "Platinum I",
     "elo": 1661,
@@ -178,7 +189,7 @@
     "clan": "WANGHAF"
   },
   {
-    "rank": 17,
+    "rank": 18,
     "name": "Drake Jackson",
     "tier": "Platinum I",
     "elo": 1660,
@@ -187,17 +198,6 @@
     "losses": 2,
     "team": [],
     "clan": "Six Eyes"
-  },
-  {
-    "rank": 18,
-    "name": "Trey R",
-    "tier": "Platinum I",
-    "elo": 1640,
-    "games": 2,
-    "wins": 0,
-    "losses": 2,
-    "team": [],
-    "clan": "Beer Pressure"
   },
   {
     "rank": 19,
@@ -213,11 +213,11 @@
   {
     "rank": 20,
     "name": "Davis Bjornstad",
-    "tier": "Platinum I",
-    "elo": 1612,
-    "games": 19,
+    "tier": "Platinum II",
+    "elo": 1581,
+    "games": 20,
     "wins": 7,
-    "losses": 12,
+    "losses": 13,
     "team": "",
     "clan": "WANGHAF"
   },
@@ -387,17 +387,6 @@
   },
   {
     "rank": 35,
-    "name": "Michael Hill",
-    "tier": "Silver I",
-    "elo": 1081,
-    "games": 18,
-    "wins": 6,
-    "losses": 12,
-    "team": [],
-    "clan": "Six Eyes"
-  },
-  {
-    "rank": 36,
     "name": [
       "Nick Perkins"
     ],
@@ -410,7 +399,7 @@
     "clan": "Six Eyes"
   },
   {
-    "rank": 37,
+    "rank": 36,
     "name": "Hunter Maness",
     "tier": "Silver I",
     "elo": 1074,
@@ -421,7 +410,7 @@
     "clan": "WANGHAF"
   },
   {
-    "rank": 38,
+    "rank": 37,
     "name": "Jacob Green",
     "tier": "Silver I",
     "elo": 1069,
@@ -432,7 +421,7 @@
     "clan": "WANGHAF"
   },
   {
-    "rank": 39,
+    "rank": 38,
     "name": "Lance Roberts",
     "tier": "Silver I",
     "elo": 1063,
@@ -443,7 +432,7 @@
     "clan": "Six Eyes"
   },
   {
-    "rank": 40,
+    "rank": 39,
     "name": [
       "Raina D"
     ],
@@ -456,7 +445,7 @@
     "clan": "Six Eyes"
   },
   {
-    "rank": 41,
+    "rank": 40,
     "name": "Drew A",
     "tier": "Silver I",
     "elo": 1031,
@@ -467,7 +456,7 @@
     "clan": "Great Personality"
   },
   {
-    "rank": 42,
+    "rank": 41,
     "name": [
       "Ian Henderson"
     ],
@@ -480,7 +469,7 @@
     "clan": "Six Eyes"
   },
   {
-    "rank": 43,
+    "rank": 42,
     "name": "Brady Lawson",
     "tier": "Silver I",
     "elo": 1020,
@@ -491,7 +480,7 @@
     "clan": "Beer Pressure"
   },
   {
-    "rank": 44,
+    "rank": 43,
     "name": "Jake Neiber",
     "tier": "Silver I",
     "elo": 1019,
@@ -502,7 +491,7 @@
     "clan": "Six Eyes"
   },
   {
-    "rank": 45,
+    "rank": 44,
     "name": [
       "Will Sowell"
     ],
@@ -515,7 +504,7 @@
     "clan": "Beer Pressure"
   },
   {
-    "rank": 46,
+    "rank": 45,
     "name": [
       "Declan Anderson"
     ],
@@ -528,7 +517,7 @@
     "clan": ""
   },
   {
-    "rank": 47,
+    "rank": 46,
     "name": "EJ",
     "tier": "Silver II",
     "elo": 990,
@@ -539,7 +528,7 @@
     "clan": "Great Personality"
   },
   {
-    "rank": 48,
+    "rank": 47,
     "name": [
       "Hannen Hileman"
     ],
@@ -552,7 +541,7 @@
     "clan": ""
   },
   {
-    "rank": 49,
+    "rank": 48,
     "name": [
       "Sophie Chapman"
     ],
@@ -565,7 +554,7 @@
     "clan": ""
   },
   {
-    "rank": 50,
+    "rank": 49,
     "name": [
       "Labubu"
     ],
@@ -578,7 +567,7 @@
     "clan": "Great Personality"
   },
   {
-    "rank": 51,
+    "rank": 50,
     "name": [
       "Nolan Lynch"
     ],
@@ -589,6 +578,17 @@
     "losses": 1,
     "team": "",
     "clan": ""
+  },
+  {
+    "rank": 51,
+    "name": "Michael Hill",
+    "tier": "Silver II",
+    "elo": 953,
+    "games": 22,
+    "wins": 6,
+    "losses": 16,
+    "team": [],
+    "clan": "Six Eyes"
   },
   {
     "rank": 52,
