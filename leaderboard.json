@@ -3,9 +3,9 @@
     "rank": 1,
     "name": "Matt Latour",
     "tier": "Godly",
-    "elo": 2512,
-    "games": 73,
-    "wins": 51,
+    "elo": 2550,
+    "games": 74,
+    "wins": 52,
     "losses": 22,
     "team": "",
     "clan": "Great Personality"
@@ -68,46 +68,46 @@
   {
     "rank": 7,
     "name": "Gurp Singh",
-    "tier": "Master",
-    "elo": 2097,
-    "games": 67,
-    "wins": 37,
-    "losses": 30,
+    "tier": "Diamond I",
+    "elo": 1981,
+    "games": 71,
+    "wins": 38,
+    "losses": 33,
     "team": "Pluto",
     "clan": "Six Eyes"
   },
   {
     "rank": 8,
-    "name": "Preston Hart",
-    "tier": "Master",
-    "elo": 2007,
-    "games": 27,
+    "name": "Sam Purintun",
+    "tier": "Diamond I",
+    "elo": 1964,
+    "games": 25,
     "wins": 14,
-    "losses": 13,
-    "team": "Pluto",
-    "clan": "Six Eyes"
+    "losses": 11,
+    "team": "Twin Towers",
+    "clan": "WANGHAF"
   },
   {
     "rank": 9,
     "name": "Dillan Pope",
-    "tier": "Diamond II",
-    "elo": 1898,
-    "games": 37,
-    "wins": 22,
+    "tier": "Diamond I",
+    "elo": 1936,
+    "games": 38,
+    "wins": 23,
     "losses": 15,
     "team": "",
     "clan": "Six Eyes"
   },
   {
     "rank": 10,
-    "name": "Sam Purintun",
+    "name": "Preston Hart",
     "tier": "Diamond II",
-    "elo": 1886,
-    "games": 22,
-    "wins": 12,
-    "losses": 10,
-    "team": "",
-    "clan": "WANGHAF"
+    "elo": 1891,
+    "games": 31,
+    "wins": 15,
+    "losses": 16,
+    "team": "Pluto",
+    "clan": "Six Eyes"
   },
   {
     "rank": 11,
@@ -155,17 +155,6 @@
   },
   {
     "rank": 15,
-    "name": "Ed",
-    "tier": "Platinum I",
-    "elo": 1679,
-    "games": 1,
-    "wins": 0,
-    "losses": 1,
-    "team": [],
-    "clan": "Beer Pressure"
-  },
-  {
-    "rank": 16,
     "name": [
       "TA"
     ],
@@ -178,7 +167,7 @@
     "clan": "Beer Pressure"
   },
   {
-    "rank": 17,
+    "rank": 16,
     "name": "Aaron Lane",
     "tier": "Platinum I",
     "elo": 1661,
@@ -189,40 +178,40 @@
     "clan": "WANGHAF"
   },
   {
-    "rank": 18,
-    "name": "Drake Jackson",
-    "tier": "Platinum I",
-    "elo": 1660,
-    "games": 2,
-    "wins": 0,
-    "losses": 2,
-    "team": [],
-    "clan": "Six Eyes"
-  },
-  {
-    "rank": 19,
-    "name": "Zeke Shipman",
-    "tier": "Platinum I",
-    "elo": 1625,
-    "games": 0,
-    "wins": 0,
-    "losses": 0,
-    "team": "",
-    "clan": "Great Personality"
-  },
-  {
-    "rank": 20,
+    "rank": 17,
     "name": "Davis Bjornstad",
-    "tier": "Platinum II",
-    "elo": 1581,
-    "games": 20,
-    "wins": 7,
-    "losses": 13,
-    "team": "",
+    "tier": "Platinum I",
+    "elo": 1659,
+    "games": 23,
+    "wins": 9,
+    "losses": 14,
+    "team": "Twin Towers",
     "clan": "WANGHAF"
   },
   {
-    "rank": 21,
+    "rank": 18,
+    "name": "Ed",
+    "tier": "Platinum II",
+    "elo": 1579,
+    "games": 1,
+    "wins": 0,
+    "losses": 1,
+    "team": "",
+    "clan": "Beer Pressure"
+  },
+  {
+    "rank": 19,
+    "name": "Drake Jackson",
+    "tier": "Platinum II",
+    "elo": 1560,
+    "games": 2,
+    "wins": 0,
+    "losses": 2,
+    "team": "",
+    "clan": "Six Eyes"
+  },
+  {
+    "rank": 20,
     "name": "Ryan Shurtz",
     "tier": "Platinum II",
     "elo": 1547,
@@ -231,6 +220,17 @@
     "losses": 4,
     "team": [],
     "clan": "WANGHAF"
+  },
+  {
+    "rank": 21,
+    "name": "Zeke Shipman",
+    "tier": "Platinum II",
+    "elo": 1525,
+    "games": 0,
+    "wins": 0,
+    "losses": 0,
+    "team": "",
+    "clan": "Great Personality"
   },
   {
     "rank": 22,
