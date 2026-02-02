@@ -5,85 +5,73 @@
 <title>Beerball Leaderboard</title>
 
 <style>
-  body {
-    background:#0f0f0f;
-    color:white;
-    font-family:Arial, sans-serif;
-    margin:20px;
-  }
+body {
+  background:#0f0f0f;
+  color:white;
+  font-family:Arial, sans-serif;
+  margin:20px;
+}
 
-  h1, h2 {
-    text-align:center;
-  }
+/* ---------- NAV ---------- */
+nav {
+  display:flex;
+  justify-content:center;
+  gap:15px;
+  margin-bottom:20px;
+}
+.nav-button {
+  padding:10px 20px;
+  background:#444;
+  border:none;
+  color:white;
+  cursor:pointer;
+}
+.nav-button:hover { background:#666; }
 
-  /* ---------- NAV ---------- */
-  nav {
-    display: flex;
-    justify-content: center;
-    gap: 15px;
-    margin-bottom: 20px;
-  }
+.section { display:none; }
 
-  .nav-button {
-    padding: 10px 20px;
-    background-color: #444;
-    border: none;
-    color: white;
-    cursor: pointer;
-    border-radius: 6px;
-  }
+/* ---------- TABLE ---------- */
+table {
+  width:100%;
+  border-collapse:collapse;
+}
+th, td {
+  padding:10px;
+  border-bottom:1px solid #333;
+  text-align:center;
+}
+th {
+  position:sticky;
+  top:0;
+  background:#000;
+}
+tr:hover { background:#222; }
 
-  .nav-button:hover {
-    background-color: #666;
-  }
+.rank-icon {
+  width:40px;
+  height:40px;
+}
 
-  .section {
-    display: none;
-  }
+/* ---------- FLASHING ---------- */
+.flash-name {
+  animation: namePulse 0.6s infinite;
+}
 
-  /* ---------- TABLE ---------- */
-  table {
-    width:100%;
-    border-collapse:collapse;
-  }
+.flash-group {
+  animation: groupPulse 0.7s infinite;
+}
 
-  th, td {
-    padding:10px;
-    border-bottom:1px solid #333;
-    text-align:center;
-  }
+@keyframes namePulse {
+  0%   { font-weight:normal; }
+  50%  { font-weight:bold; }
+  100% { font-weight:normal; }
+}
 
-  th {
-    position:sticky;
-    top:0;
-    background:#000;
-  }
-
-  tr:hover {
-    background:#222;
-  }
-
-  .rank-icon {
-    width: 45px;
-    height: 45px;
-  }
-
-  /* ---------- ANIMATIONS ---------- */
-  @keyframes fadePulse {
-    0%   { opacity: 1; }
-    50%  { opacity: 0.35; }
-    100% { opacity: 1; }
-  }
-
-  .flash {
-    animation: fadePulse 1.4s ease-in-out infinite;
-    font-weight: bold;
-  }
-
-  .group-flash {
-    animation: fadePulse 1.6s ease-in-out infinite;
-    font-weight: bold;
-  }
+@keyframes groupPulse {
+  0%   { font-weight:normal; }
+  50%  { font-weight:bold; }
+  100% { font-weight:normal; }
+}
 </style>
 </head>
 
@@ -93,77 +81,38 @@
 
 <nav>
   <button class="nav-button" onclick="showSection('leaderboard')">Leaderboard</button>
-  <button class="nav-button" onclick="showSection('clans')">Clans</button>
-  <button class="nav-button" onclick="showSection('shop')">Points Shop</button>
 </nav>
 
-<!-- ================= LEADERBOARD ================= -->
 <div id="leaderboard" class="section">
-  <h2>Leaderboard</h2>
-  <table>
-    <thead>
-      <tr>
-        <th>Rank</th>
-        <th>Name</th>
-        <th>Tier</th>
-        <th>ELO</th>
-        <th>Games</th>
-        <th>W</th>
-        <th>L</th>
-        <th>Win %</th>
-        <th>Team</th>
-        <th>Clan</th>
-      </tr>
-    </thead>
-    <tbody id="board"></tbody>
-  </table>
-</div>
-
-<!-- ================= CLANS ================= -->
-<div id="clans" class="section">
-  <h2>🔥 Clans</h2>
-  <table>
-    <thead>
-      <tr>
-        <th>Clan</th>
-        <th>Members</th>
-        <th>Avg ELO</th>
-        <th>Win %</th>
-      </tr>
-    </thead>
-    <tbody id="clanTable"></tbody>
-  </table>
-</div>
-
-<!-- ================= SHOP ================= -->
-<div id="shop" class="section">
-  <h2>🛒 Points Shop Effects</h2>
-
-  <table>
-    <tr>
-      <td class="flash">✨ Flashing Player Name</td>
-      <td>Purchased players pulse smoothly</td>
-    </tr>
-    <tr>
-      <td class="group-flash" style="color:#cfa400;">🎨 Team Name Color</td>
-      <td>Team names pulse using team color</td>
-    </tr>
-    <tr>
-      <td class="group-flash" style="color:#4dd;">🔥 Clan Name Color</td>
-      <td>Clan names pulse using clan color</td>
-    </tr>
-  </table>
+<table>
+<thead>
+<tr>
+  <th>Rank</th>
+  <th></th>
+  <th>Name</th>
+  <th>Tier</th>
+  <th>ELO</th>
+  <th>Games</th>
+  <th>W</th>
+  <th>L</th>
+  <th>Win %</th>
+  <th>Team</th>
+  <th>Clan</th>
+</tr>
+</thead>
+<tbody id="board"></tbody>
+</table>
 </div>
 
 <script>
-/* ---------- NAV ---------- */
+/* ---------- SECTION SWITCH ---------- */
 function showSection(id) {
-  document.querySelectorAll(".section").forEach(s => s.style.display = "none");
-  document.getElementById(id).style.display = "block";
+  document.querySelectorAll('.section').forEach(s => s.style.display='none');
+  document.getElementById(id).style.display='block';
 }
 
-/* ---------- HELPERS ---------- */
-function tierToIcon(tier) {
+/* ---------- TIER ICON ---------- */
+function tierIcon(tier) {
   if (tier.startsWith("Godly")) return "icons/godly.png";
   if (tier.startsWith("Master")) return "icons/master.png";
   if (tier.startsWith("Diamond")) return "icons/diamond.png";
@@ -173,94 +122,116 @@ function tierToIcon(tier) {
   return "icons/bronze.png";
 }
 
-function matlabColorToCSS(c) {
-  if (!c || c.length !== 3) return "white";
-  return `rgb(${c.map(v => Math.round(v * 255)).join(",")})`;
+/* ---------- TIER COLOR (MATCH MATLAB) ---------- */
+function tierColor(tier, flip=false) {
+  switch(tier) {
+    case "Godly":
+      return flip ? "#00b3ff" : "#9c8a19";  // blue / dark gold
+    case "Master":
+      return "#660099";
+    case "Diamond I":
+    case "Diamond II":
+    case "Diamond III":
+      return "#003399";
+    case "Silver I":
+    case "Silver II":
+    case "Silver III":
+      return "#c0c0c0";
+    case "Bronze I":
+    case "Bronze II":
+    case "Bronze III":
+      return "#663300";
+    default:
+      return "#ffffff";
+  }
 }
 
-/* ---------- LOAD DATA ---------- */
+/* ---------- APPLY NAME FLASH ---------- */
+function applyNameFlash(el, tier) {
+  let flip = false;
+  el.classList.add("flash-name");
+
+  setInterval(() => {
+    el.style.color = tierColor(tier, flip);
+    flip = !flip;
+  }, 600);
+
+  el.style.color = "#ffffff";
+}
+
+/* ---------- APPLY TEAM / CLAN FLASH ---------- */
+function applyGroupFlash(el, color) {
+  el.classList.add("flash-group");
+  el.style.setProperty("--group-color", color);
+
+  let on = false;
+  setInterval(() => {
+    el.style.color = on ? color : "#ffffff";
+    on = !on;
+  }, 700);
+}
+
+/* ---------- LOAD LEADERBOARD ---------- */
 fetch("leaderboard.json")
-  .then(r => r.json())
-  .then(data => {
+.then(r => r.json())
+.then(data => {
+  const tbody = document.getElementById("board");
 
-    const players = data.players;
-    const teams   = data.teams;
-    const clans   = data.clans;
+  data.forEach(p => {
+    const winPct = p.games > 0 ? ((p.wins/p.games)*100).toFixed(1)+"%" : "0.0%";
 
-    const teamColors = {};
-    const clanColors = {};
+    const tr = document.createElement("tr");
 
-    teams.forEach(t => teamColors[t.name] = matlabColorToCSS(t.color));
-    clans.forEach(c => clanColors[c.name] = matlabColorToCSS(c.color));
+    /* ---------- NAME ---------- */
+    const nameSpan = document.createElement("span");
+    nameSpan.textContent = p.name;
+    nameSpan.style.color = "#ffffff";
 
-    /* ---------- LEADERBOARD ---------- */
-    const tbody = document.getElementById("board");
+    if (p.hasFlash === true) {
+      applyNameFlash(nameSpan, p.tier);
+    }
 
-    players.forEach(p => {
-      const winPct = p.games > 0 ? ((p.wins / p.games) * 100).toFixed(1) + "%" : "0.0%";
+    /* ---------- TEAM ---------- */
+    const teamSpan = document.createElement("span");
+    teamSpan.textContent = p.team || "";
+    teamSpan.style.color = "#ffffff";
 
-      const row = document.createElement("tr");
-      row.innerHTML = `
-        <td>
-          ${p.rank}
-          <br>
-          <img class="rank-icon" src="${tierToIcon(p.tier)}">
-        </td>
+    if (p.teamColor && p.teamColor !== "#000000") {
+      applyGroupFlash(teamSpan, p.teamColor);
+    }
 
-        <td class="${p.hasFlash ? 'flash' : ''}">
-          ${p.name}
-        </td>
+    /* ---------- CLAN ---------- */
+    const clanSpan = document.createElement("span");
+    clanSpan.textContent = p.clan || "";
+    clanSpan.style.color = "#ffffff";
 
-        <td>${p.tier}</td>
-        <td>${p.elo}</td>
-        <td>${p.games}</td>
-        <td>${p.wins}</td>
-        <td>${p.losses}</td>
-        <td>${winPct}</td>
+    if (p.clanColor && p.clanColor !== "#000000") {
+      applyGroupFlash(clanSpan, p.clanColor);
+    }
 
-        <td class="${teamColors[p.team] ? 'group-flash' : ''}"
-            style="color:${teamColors[p.team] || 'white'}">
-          ${p.team || ""}
-        </td>
+    tr.innerHTML = `
+      <td>${p.rank}</td>
+      <td><img class="rank-icon" src="${tierIcon(p.tier)}"></td>
+      <td></td>
+      <td>${p.tier}</td>
+      <td>${p.elo}</td>
+      <td>${p.games}</td>
+      <td>${p.wins}</td>
+      <td>${p.losses}</td>
+      <td>${winPct}</td>
+      <td></td>
+      <td></td>
+    `;
 
-        <td class="${clanColors[p.clan] ? 'group-flash' : ''}"
-            style="color:${clanColors[p.clan] || 'white'}">
-          ${p.clan || ""}
-        </td>
-      `;
-      tbody.appendChild(row);
-    });
+    tr.children[2].appendChild(nameSpan);
+    tr.children[9].appendChild(teamSpan);
+    tr.children[10].appendChild(clanSpan);
 
-    /* ---------- CLANS ---------- */
-    const clanStats = {};
-    players.forEach(p => {
-      if (!p.clan) return;
-      if (!clanStats[p.clan])
-        clanStats[p.clan] = { elo:0, games:0, wins:0, count:0 };
-
-      clanStats[p.clan].elo   += p.elo;
-      clanStats[p.clan].games += p.games;
-      clanStats[p.clan].wins  += p.wins;
-      clanStats[p.clan].count++;
-    });
-
-    const clanTable = document.getElementById("clanTable");
-
-    Object.entries(clanStats).forEach(([name,s]) => {
-      const winPct = s.games ? (100 * s.wins / s.games).toFixed(1) : "0.0";
-
-      clanTable.innerHTML += `
-        <tr>
-          <td class="group-flash" style="color:${clanColors[name] || 'white'}">${name}</td>
-          <td>${s.count}</td>
-          <td>${(s.elo / s.count).toFixed(1)}</td>
-          <td>${winPct}%</td>
-        </tr>
-      `;
-    });
+    tbody.appendChild(tr);
   });
+});
 
-showSection("leaderboard");
+showSection('leaderboard');
 </script>
 
 </body>
