@@ -3,6 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <title>Beerball Leaderboard</title>
+
 <style>
   body {
     background:#0f0f0f;
@@ -10,20 +11,28 @@
     font-family:Arial, sans-serif;
     margin:20px;
   }
-  /* Style for the navigation buttons */
+
+  h1, h2 {
+    text-align:center;
+  }
+
+  /* ---------- NAV ---------- */
   nav {
     display: flex;
     justify-content: center;
     gap: 15px;
     margin-bottom: 20px;
   }
+
   .nav-button {
     padding: 10px 20px;
     background-color: #444;
     border: none;
     color: white;
     cursor: pointer;
+    border-radius: 6px;
   }
+
   .nav-button:hover {
     background-color: #666;
   }
@@ -31,30 +40,49 @@
   .section {
     display: none;
   }
-  
-  /* Table styles */
+
+  /* ---------- TABLE ---------- */
   table {
     width:100%;
     border-collapse:collapse;
   }
+
   th, td {
     padding:10px;
     border-bottom:1px solid #333;
     text-align:center;
   }
+
   th {
     position:sticky;
     top:0;
     background:#000;
   }
+
   tr:hover {
     background:#222;
   }
 
-  /* Reduced size for icons */
   .rank-icon {
-    width: 45px;  /* Reduced size */
-    height: 45px; /* Reduced size */
+    width: 45px;
+    height: 45px;
+  }
+
+  /* ---------- ANIMATIONS ---------- */
+  @keyframes fadePulse {
+    0%   { opacity: 1; }
+    50%  { opacity: 0.35; }
+    100% { opacity: 1; }
+  }
+
+  .flash {
+    animation: fadePulse 1.4s ease-in-out infinite;
+    font-weight: bold;
+  }
+
+  .group-flash {
+    animation: fadePulse 1.6s ease-in-out infinite;
+    font-weight: bold;
   }
 </style>
 </head>
@@ -63,15 +91,13 @@
 
 <h1>🍺 Beerball Leaderboard</h1>
 
-<!-- Navigation Bar -->
 <nav>
   <button class="nav-button" onclick="showSection('leaderboard')">Leaderboard</button>
   <button class="nav-button" onclick="showSection('clans')">Clans</button>
-  <button class="nav-button" onclick="showSection('playerCards')">Player Cards</button>
   <button class="nav-button" onclick="showSection('shop')">Points Shop</button>
 </nav>
 
-<!-- Leaderboard Section -->
+<!-- ================= LEADERBOARD ================= -->
 <div id="leaderboard" class="section">
   <h2>Leaderboard</h2>
   <table>
@@ -93,39 +119,50 @@
   </table>
 </div>
 
-<!-- Clans Section -->
+<!-- ================= CLANS ================= -->
 <div id="clans" class="section">
-  <h2>Clans</h2>
-  <p>Here, you can display clan statistics and details.</p>
+  <h2>🔥 Clans</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>Clan</th>
+        <th>Members</th>
+        <th>Avg ELO</th>
+        <th>Win %</th>
+      </tr>
+    </thead>
+    <tbody id="clanTable"></tbody>
+  </table>
 </div>
 
-<!-- Player Cards Section -->
-<div id="playerCards" class="section">
-  <h2>Player Cards</h2>
-  <p>Here, you can show each player's detailed stats in a card style.</p>
-</div>
-
-<!-- Points Shop Section -->
+<!-- ================= SHOP ================= -->
 <div id="shop" class="section">
-  <h2>Points Shop</h2>
-  <p>Allow players to redeem their points for rewards here.</p>
+  <h2>🛒 Points Shop Effects</h2>
+
+  <table>
+    <tr>
+      <td class="flash">✨ Flashing Player Name</td>
+      <td>Purchased players pulse smoothly</td>
+    </tr>
+    <tr>
+      <td class="group-flash" style="color:#cfa400;">🎨 Team Name Color</td>
+      <td>Team names pulse using team color</td>
+    </tr>
+    <tr>
+      <td class="group-flash" style="color:#4dd;">🔥 Clan Name Color</td>
+      <td>Clan names pulse using clan color</td>
+    </tr>
+  </table>
 </div>
 
 <script>
-// JavaScript to handle section switching
-function showSection(sectionId) {
-  // Hide all sections
-  const sections = document.querySelectorAll('.section');
-  sections.forEach(section => section.style.display = 'none');
-  
-  // Show the selected section
-  const activeSection = document.getElementById(sectionId);
-  if (activeSection) {
-    activeSection.style.display = 'block';
-  }
+/* ---------- NAV ---------- */
+function showSection(id) {
+  document.querySelectorAll(".section").forEach(s => s.style.display = "none");
+  document.getElementById(id).style.display = "block";
 }
 
-// Fetch and display leaderboard data
+/* ---------- HELPERS ---------- */
 function tierToIcon(tier) {
   if (tier.startsWith("Godly")) return "icons/godly.png";
   if (tier.startsWith("Master")) return "icons/master.png";
@@ -136,34 +173,94 @@ function tierToIcon(tier) {
   return "icons/bronze.png";
 }
 
+function matlabColorToCSS(c) {
+  if (!c || c.length !== 3) return "white";
+  return `rgb(${c.map(v => Math.round(v * 255)).join(",")})`;
+}
+
+/* ---------- LOAD DATA ---------- */
 fetch("leaderboard.json")
   .then(r => r.json())
   .then(data => {
+
+    const players = data.players;
+    const teams   = data.teams;
+    const clans   = data.clans;
+
+    const teamColors = {};
+    const clanColors = {};
+
+    teams.forEach(t => teamColors[t.name] = matlabColorToCSS(t.color));
+    clans.forEach(c => clanColors[c.name] = matlabColorToCSS(c.color));
+
+    /* ---------- LEADERBOARD ---------- */
     const tbody = document.getElementById("board");
-    data.forEach(p => {
-      let winPct = p.games > 0 ? ((p.wins / p.games) * 100).toFixed(1) + "%" : "0.0%";
+
+    players.forEach(p => {
+      const winPct = p.games > 0 ? ((p.wins / p.games) * 100).toFixed(1) + "%" : "0.0%";
+
       const row = document.createElement("tr");
       row.innerHTML = `
-        <td class="rank-cell">
-          <span>${p.rank}</span>
+        <td>
+          ${p.rank}
+          <br>
           <img class="rank-icon" src="${tierToIcon(p.tier)}">
         </td>
-        <td>${p.name}</td>
+
+        <td class="${p.hasFlash ? 'flash' : ''}">
+          ${p.name}
+        </td>
+
         <td>${p.tier}</td>
         <td>${p.elo}</td>
         <td>${p.games}</td>
         <td>${p.wins}</td>
         <td>${p.losses}</td>
         <td>${winPct}</td>
-        <td>${p.team || ""}</td>
-        <td>${p.clan || ""}</td>
+
+        <td class="${teamColors[p.team] ? 'group-flash' : ''}"
+            style="color:${teamColors[p.team] || 'white'}">
+          ${p.team || ""}
+        </td>
+
+        <td class="${clanColors[p.clan] ? 'group-flash' : ''}"
+            style="color:${clanColors[p.clan] || 'white'}">
+          ${p.clan || ""}
+        </td>
       `;
       tbody.appendChild(row);
     });
+
+    /* ---------- CLANS ---------- */
+    const clanStats = {};
+    players.forEach(p => {
+      if (!p.clan) return;
+      if (!clanStats[p.clan])
+        clanStats[p.clan] = { elo:0, games:0, wins:0, count:0 };
+
+      clanStats[p.clan].elo   += p.elo;
+      clanStats[p.clan].games += p.games;
+      clanStats[p.clan].wins  += p.wins;
+      clanStats[p.clan].count++;
+    });
+
+    const clanTable = document.getElementById("clanTable");
+
+    Object.entries(clanStats).forEach(([name,s]) => {
+      const winPct = s.games ? (100 * s.wins / s.games).toFixed(1) : "0.0";
+
+      clanTable.innerHTML += `
+        <tr>
+          <td class="group-flash" style="color:${clanColors[name] || 'white'}">${name}</td>
+          <td>${s.count}</td>
+          <td>${(s.elo / s.count).toFixed(1)}</td>
+          <td>${winPct}%</td>
+        </tr>
+      `;
+    });
   });
 
-// Show leaderboard by default
-showSection('leaderboard');
+showSection("leaderboard");
 </script>
 
 </body>
