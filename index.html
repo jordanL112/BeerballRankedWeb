@@ -261,10 +261,13 @@ function startGroupFlash(el, cssColor) {
 fetch("leaderboard.json")
   .then(r => r.json())
   .then(data => {
+    const players = data.players || [];
+    const teams = data.teams || [];
+    const clans = data.clans || [];
     const tbody = document.getElementById("board");
     if (!tbody) return;
 
-    data.forEach(p => {
+    players.forEach(p => {
       const name = normText(p.name);
       const team = normText(p.team);
       const clan = normText(p.clan);
@@ -322,14 +325,16 @@ fetch("leaderboard.json")
 
       // Team flashes ONLY if a non-black teamColor exists
       // (supports p.teamColor: [0,0,0] or "#rrggbb" or "rgb(...)")
-      if (team && p.teamColor && !isBlackColor(p.teamColor)) {
-        startGroupFlash(teamSpan, colorToCss(p.teamColor));
-      }
+        const teamColor = findTeamColor(team, teams);
+	if (team && teamColor && !isBlackColor(teamColor)) {
+  		startGroupFlash(teamSpan, colorToCss(teamColor));
+	}
 
-      // Clan flashes ONLY if a non-black clanColor exists
-      if (clan && p.clanColor && !isBlackColor(p.clanColor)) {
-        startGroupFlash(clanSpan, colorToCss(p.clanColor));
-      }
+	const clanColor = findClanColor(clan, clans);
+	if (clan && clanColor && !isBlackColor(clanColor)) {
+  		startGroupFlash(clanSpan, colorToCss(clanColor));
+	}
+
     });
   })
   .catch(err => {
