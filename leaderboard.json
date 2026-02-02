@@ -676,69 +676,37 @@
   "teams": [
     {
       "name": "Where Are We?",
-      "color": [
-        0,
-        0,
-        0
-      ]
+      "color": "rgb(0, 0, 0)"
     },
     {
       "name": "Pluto",
-      "color": [
-        0,
-        0,
-        0
-      ]
+      "color": "rgb(0, 0, 0)"
     },
     {
       "name": "Twin Towers",
-      "color": [
-        0,
-        0,
-        0
-      ]
+      "color": "rgb(0, 0, 0)"
     },
     {
       "name": "Yin & Yang",
-      "color": [
-        0,
-        0,
-        0
-      ]
+      "color": "rgb(0, 0, 0)"
     }
   ],
   "clans": [
     {
       "name": "Great Personality",
-      "color": [
-        0.55,
-        0.15,
-        0.65
-      ]
+      "color": "rgb(140, 38, 166)"
     },
     {
       "name": "Beer Pressure",
-      "color": [
-        0.1,
-        0.6,
-        0.2
-      ]
+      "color": "rgb(26, 153, 51)"
     },
     {
       "name": "WANGHAF",
-      "color": [
-        0.85,
-        0.1,
-        0.1
-      ]
+      "color": "rgb(217, 26, 26)"
     },
     {
       "name": "Six Eyes",
-      "color": [
-        0.1,
-        0.55,
-        0.55
-      ]
+      "color": "rgb(26, 140, 140)"
     }
   ]
 }
