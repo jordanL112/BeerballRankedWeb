@@ -228,17 +228,17 @@ function startGroupFlash(el, cssColor) {
   let state = true;
   setInterval(() => {
     if (state) {
-      el.style.color = "white";  // Base color (white)
-      el.style.fontWeight = "normal"; // Normal weight in base state
+      el.style.color = "white";
+      el.style.fontWeight = "normal";
     } else {
-      el.style.color = cssColor;  // Flash to clan or team color
-      el.style.fontWeight = "bold";  // Bold when flashing
+      el.style.color = cssColor;
+      el.style.fontWeight = "bold";
     }
     state = !state;
-  }, 700);  // Flash every 700ms
+  }, 700);
 }
 
-/* ------------- RENDERING WITH FLASHING ------------- */
+/* ------------------ RENDER ------------------ */
 fetch("leaderboard.json")
   .then(r => r.json())
   .then(data => {
@@ -269,12 +269,21 @@ fetch("leaderboard.json")
       const teamSpan = document.createElement("span");
       teamSpan.textContent = team;
       teamSpan.style.color = "white";
+	
+      // Check if the team has a purchased color (non-black)
+	if (team && p.teamColor && !isBlackColor(p.teamColor)) {
+  		startGroupFlash(teamSpan, colorToCss(p.teamColor));  // Apply flashing effect if color exists
+	}
 
       // CLAN span
       const clanSpan = document.createElement("span");
       clanSpan.textContent = clan;
       clanSpan.style.color = "white";
 
+	// Check if the clan has a purchased color (non-black)
+	if (clan && p.clanColor && !isBlackColor(p.clanColor)) {
+ 	 startGroupFlash(clanSpan, colorToCss(p.clanColor));  // Apply flashing effect if color exists
+	}
       row.innerHTML = `
         <td class="rank-cell">
           <span>${p.rank}</span>
@@ -297,15 +306,25 @@ fetch("leaderboard.json")
 
       tbody.appendChild(row);
 
-      // Apply flashing for TEAM color
-      if (team && p.teamColor && !isBlackColor(p.teamColor)) {
-        startGroupFlash(teamSpan, p.teamColor);  // Ensure team flashing
+      // ---- Apply flashing rules ----
+
+      // Player name flashes ONLY if purchased (p.hasFlash === true)
+      if (p.hasFlash === true) {
+        startTierFlash(nameSpan, normText(p.tier));
       }
 
-      // Apply flashing for CLAN color
-      if (clan && p.clanColor && !isBlackColor(p.clanColor)) {
-        startGroupFlash(clanSpan, p.clanColor);  // Ensure clan flashing
-      }
+// ---- Apply flashing rules ----
+
+// Team flashes ONLY if a non-black teamColor exists
+if (team && p.teamColor && p.teamColor !== "rgb(0, 0, 0)") {
+  startGroupFlash(teamSpan, p.teamColor);  // Apply flashing effect if color exists
+}
+
+// Clan flashes ONLY if a non-black clanColor exists
+if (clan && p.clanColor && p.clanColor !== "rgb(0, 0, 0)") {
+  startGroupFlash(clanSpan, p.clanColor);  // Apply flashing effect if color exists
+}
+
     });
   })
   .catch(err => {
