@@ -124,6 +124,17 @@
 </div>
 
 <script>
+// Add these helper functions for team and clan color
+function findTeamColor(teamName, teams) {
+  const team = teams.find(t => t.name === teamName);
+  return team ? team.color : null;
+}
+
+function findClanColor(clanName, clans) {
+  const clan = clans.find(c => c.name === clanName);
+  return clan ? clan.color : null;
+}
+
 /* ------------------ SECTION SWITCH ------------------ */
 function showSection(sectionId) {
   document.querySelectorAll('.section').forEach(s => s.style.display = 'none');
