@@ -113,6 +113,12 @@ function showSection(sectionId) {
   if (active) active.style.display = 'block';
 }
 
+function safeText(x) {
+  if (Array.isArray(x)) return x.join(" ");
+  if (x === null || x === undefined) return "";
+  return String(x);
+}
+
 /* ------------------ SAFE NORMALIZERS ------------------ */
 function normText(x) {
   // Handles: "Name", ["Name"], [], null
@@ -156,6 +162,8 @@ function isBlackColor(c) {
 
 /* ------------------ ICONS ------------------ */
 function tierToIcon(tier) {
+  tier = normText(tier);   // <-- THIS LINE FIXES IT
+
   if (tier.startsWith("Godly")) return "icons/godly.png";
   if (tier.startsWith("Master")) return "icons/master.png";
   if (tier.startsWith("Diamond")) return "icons/diamond.png";
@@ -164,6 +172,7 @@ function tierToIcon(tier) {
   if (tier.startsWith("Silver")) return "icons/silver.png";
   return "icons/bronze.png";
 }
+
 
 /* ------------------ MATLAB FLASH PORT ------------------
 MATLAB name flash:
