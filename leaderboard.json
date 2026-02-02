@@ -234,17 +234,6 @@
   },
   {
     "rank": 22,
-    "name": "Brandon Beatty",
-    "tier": "Gold I",
-    "elo": 1333,
-    "games": 15,
-    "wins": 8,
-    "losses": 7,
-    "team": [],
-    "clan": "Great Personality"
-  },
-  {
-    "rank": 23,
     "name": "Andrew Hickman",
     "tier": "Gold II",
     "elo": 1292,
@@ -255,7 +244,7 @@
     "clan": "WANGHAF"
   },
   {
-    "rank": 24,
+    "rank": 23,
     "name": "Jackson Reiber",
     "tier": "Gold II",
     "elo": 1279,
@@ -264,6 +253,17 @@
     "losses": 1,
     "team": [],
     "clan": "Beer Pressure"
+  },
+  {
+    "rank": 24,
+    "name": "Brandon Beatty",
+    "tier": "Gold II",
+    "elo": 1272,
+    "games": 16,
+    "wins": 8,
+    "losses": 8,
+    "team": [],
+    "clan": "Great Personality"
   },
   {
     "rank": 25,
@@ -302,6 +302,17 @@
   },
   {
     "rank": 28,
+    "name": "Lance Roberts",
+    "tier": "Gold III",
+    "elo": 1169,
+    "games": 15,
+    "wins": 4,
+    "losses": 11,
+    "team": [],
+    "clan": "Six Eyes"
+  },
+  {
+    "rank": 29,
     "name": [
       "Jackson Reece"
     ],
@@ -314,7 +325,7 @@
     "clan": "Beer Pressure"
   },
   {
-    "rank": 29,
+    "rank": 30,
     "name": [
       "Alex Lang"
     ],
@@ -327,20 +338,18 @@
     "clan": "Beer Pressure"
   },
   {
-    "rank": 30,
-    "name": [
-      "Bradley Blankenship"
-    ],
+    "rank": 31,
+    "name": "Brody Sheppard",
     "tier": "Gold III",
-    "elo": 1153,
-    "games": 12,
-    "wins": 6,
-    "losses": 6,
-    "team": [],
-    "clan": "Great Personality"
+    "elo": 1131,
+    "games": 26,
+    "wins": 7,
+    "losses": 19,
+    "team": "",
+    "clan": "Six Eyes"
   },
   {
-    "rank": 31,
+    "rank": 32,
     "name": [
       "Phoebe"
     ],
@@ -353,7 +362,7 @@
     "clan": "WANGHAF"
   },
   {
-    "rank": 32,
+    "rank": 33,
     "name": "Ava Gus",
     "tier": "Silver I",
     "elo": 1094,
@@ -364,7 +373,7 @@
     "clan": "WANGHAF"
   },
   {
-    "rank": 33,
+    "rank": 34,
     "name": "Dalen Wagga",
     "tier": "Silver I",
     "elo": 1093,
@@ -375,18 +384,20 @@
     "clan": "Great Personality"
   },
   {
-    "rank": 34,
-    "name": "Brody Sheppard",
+    "rank": 35,
+    "name": [
+      "Bradley Blankenship"
+    ],
     "tier": "Silver I",
-    "elo": 1086,
-    "games": 25,
+    "elo": 1092,
+    "games": 13,
     "wins": 6,
-    "losses": 19,
-    "team": "",
-    "clan": "Six Eyes"
+    "losses": 7,
+    "team": [],
+    "clan": "Great Personality"
   },
   {
-    "rank": 35,
+    "rank": 36,
     "name": [
       "Nick Perkins"
     ],
@@ -399,7 +410,7 @@
     "clan": "Six Eyes"
   },
   {
-    "rank": 36,
+    "rank": 37,
     "name": "Hunter Maness",
     "tier": "Silver I",
     "elo": 1074,
@@ -410,7 +421,7 @@
     "clan": "WANGHAF"
   },
   {
-    "rank": 37,
+    "rank": 38,
     "name": "Jacob Green",
     "tier": "Silver I",
     "elo": 1069,
@@ -419,17 +430,6 @@
     "losses": 2,
     "team": [],
     "clan": "WANGHAF"
-  },
-  {
-    "rank": 38,
-    "name": "Lance Roberts",
-    "tier": "Silver I",
-    "elo": 1063,
-    "games": 13,
-    "wins": 2,
-    "losses": 11,
-    "team": [],
-    "clan": "Six Eyes"
   },
   {
     "rank": 39,
@@ -446,17 +446,6 @@
   },
   {
     "rank": 40,
-    "name": "Drew A",
-    "tier": "Silver I",
-    "elo": 1031,
-    "games": 4,
-    "wins": 0,
-    "losses": 4,
-    "team": [],
-    "clan": "Great Personality"
-  },
-  {
-    "rank": 41,
     "name": [
       "Ian Henderson"
     ],
@@ -469,7 +458,7 @@
     "clan": "Six Eyes"
   },
   {
-    "rank": 42,
+    "rank": 41,
     "name": "Brady Lawson",
     "tier": "Silver I",
     "elo": 1020,
@@ -480,7 +469,7 @@
     "clan": "Beer Pressure"
   },
   {
-    "rank": 43,
+    "rank": 42,
     "name": "Jake Neiber",
     "tier": "Silver I",
     "elo": 1019,
@@ -489,6 +478,19 @@
     "losses": 3,
     "team": [],
     "clan": "Six Eyes"
+  },
+  {
+    "rank": 43,
+    "name": [
+      "Landen Simpson"
+    ],
+    "tier": "Silver I",
+    "elo": 1007,
+    "games": 3,
+    "wins": 1,
+    "losses": 2,
+    "team": "",
+    "clan": ""
   },
   {
     "rank": 44,
@@ -542,16 +544,14 @@
   },
   {
     "rank": 48,
-    "name": [
-      "Sophie Chapman"
-    ],
+    "name": "Drew A",
     "tier": "Silver II",
-    "elo": 987,
-    "games": 1,
+    "elo": 986,
+    "games": 5,
     "wins": 0,
-    "losses": 1,
-    "team": "",
-    "clan": ""
+    "losses": 5,
+    "team": [],
+    "clan": "Great Personality"
   },
   {
     "rank": 49,
@@ -606,10 +606,10 @@
   {
     "rank": 53,
     "name": [
-      "Landen Simpson"
+      "Sophie Chapman"
     ],
     "tier": "Silver II",
-    "elo": 946,
+    "elo": 942,
     "games": 2,
     "wins": 0,
     "losses": 2,
