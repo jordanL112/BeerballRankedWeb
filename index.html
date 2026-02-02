@@ -1,77 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
+<meta charset="UTF-8" />
 <title>Beerball Leaderboard</title>
 
 <style>
-body {
-  background:#0f0f0f;
-  color:white;
-  font-family:Arial, sans-serif;
-  margin:20px;
-}
+  body{
+    background:#0f0f0f;
+    color:white;
+    font-family:Arial, sans-serif;
+    margin:20px;
+  }
 
-/* ---------- NAV ---------- */
-nav {
-  display:flex;
-  justify-content:center;
-  gap:15px;
-  margin-bottom:20px;
-}
-.nav-button {
-  padding:10px 20px;
-  background:#444;
-  border:none;
-  color:white;
-  cursor:pointer;
-}
-.nav-button:hover { background:#666; }
+  nav{
+    display:flex;
+    justify-content:center;
+    gap:15px;
+    margin-bottom:20px;
+  }
+  .nav-button{
+    padding:10px 20px;
+    background-color:#444;
+    border:none;
+    color:white;
+    cursor:pointer;
+  }
+  .nav-button:hover{ background-color:#666; }
 
-.section { display:none; }
+  .section{ display:none; }
 
-/* ---------- TABLE ---------- */
-table {
-  width:100%;
-  border-collapse:collapse;
-}
-th, td {
-  padding:10px;
-  border-bottom:1px solid #333;
-  text-align:center;
-}
-th {
-  position:sticky;
-  top:0;
-  background:#000;
-}
-tr:hover { background:#222; }
+  table{
+    width:100%;
+    border-collapse:collapse;
+  }
+  th, td{
+    padding:10px;
+    border-bottom:1px solid #333;
+    text-align:center;
+  }
+  th{
+    position:sticky;
+    top:0;
+    background:#000;
+  }
+  tr:hover{ background:#222; }
 
-.rank-icon {
-  width:40px;
-  height:40px;
-}
+  .rank-icon{
+    width:45px;
+    height:45px;
+  }
 
-/* ---------- FLASHING ---------- */
-.flash-name {
-  animation: namePulse 0.6s infinite;
-}
-
-.flash-group {
-  animation: groupPulse 0.7s infinite;
-}
-
-@keyframes namePulse {
-  0%   { font-weight:normal; }
-  50%  { font-weight:bold; }
-  100% { font-weight:normal; }
-}
-
-@keyframes groupPulse {
-  0%   { font-weight:normal; }
-  50%  { font-weight:bold; }
-  100% { font-weight:normal; }
-}
+  /* Optional: make flashing look smoother than MATLAB */
+  .flash-smooth{
+    transition: color 180ms linear, font-weight 180ms linear;
+    will-change: color;
+  }
 </style>
 </head>
 
@@ -81,38 +64,98 @@ tr:hover { background:#222; }
 
 <nav>
   <button class="nav-button" onclick="showSection('leaderboard')">Leaderboard</button>
+  <button class="nav-button" onclick="showSection('clans')">Clans</button>
+  <button class="nav-button" onclick="showSection('playerCards')">Player Cards</button>
+  <button class="nav-button" onclick="showSection('shop')">Points Shop</button>
 </nav>
 
 <div id="leaderboard" class="section">
-<table>
-<thead>
-<tr>
-  <th>Rank</th>
-  <th></th>
-  <th>Name</th>
-  <th>Tier</th>
-  <th>ELO</th>
-  <th>Games</th>
-  <th>W</th>
-  <th>L</th>
-  <th>Win %</th>
-  <th>Team</th>
-  <th>Clan</th>
-</tr>
-</thead>
-<tbody id="board"></tbody>
-</table>
+  <h2>Leaderboard</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>Rank</th>
+        <th>Name</th>
+        <th>Tier</th>
+        <th>ELO</th>
+        <th>Games</th>
+        <th>W</th>
+        <th>L</th>
+        <th>Win %</th>
+        <th>Team</th>
+        <th>Clan</th>
+      </tr>
+    </thead>
+    <tbody id="board"></tbody>
+  </table>
+</div>
+
+<div id="clans" class="section">
+  <h2>Clans</h2>
+  <p>(Coming soon)</p>
+</div>
+
+<div id="playerCards" class="section">
+  <h2>Player Cards</h2>
+  <p>(Coming soon)</p>
+</div>
+
+<div id="shop" class="section">
+  <h2>Points Shop</h2>
+  <p>(Coming soon)</p>
 </div>
 
 <script>
-/* ---------- SECTION SWITCH ---------- */
-function showSection(id) {
-  document.querySelectorAll('.section').forEach(s => s.style.display='none');
-  document.getElementById(id).style.display='block';
+/* ------------------ SECTION SWITCH ------------------ */
+function showSection(sectionId) {
+  document.querySelectorAll('.section').forEach(s => s.style.display = 'none');
+  const active = document.getElementById(sectionId);
+  if (active) active.style.display = 'block';
 }
 
-/* ---------- TIER ICON ---------- */
-function tierIcon(tier) {
+/* ------------------ SAFE NORMALIZERS ------------------ */
+function normText(x) {
+  // Handles: "Name", ["Name"], [], null
+  if (Array.isArray(x)) return x.join(" ").trim();
+  if (x === null || x === undefined) return "";
+  return String(x).trim();
+}
+
+/* Accepts:
+   - MATLAB-style [0.85,0.1,0.1]
+   - "rgb(255,0,0)"
+   - "#ff0000"
+   - null/undefined
+*/
+function colorToCss(c) {
+  if (!c) return null;
+
+  // Array like [0,0,0] or [r,g,b]
+  if (Array.isArray(c) && c.length >= 3) {
+    const r = Math.round(Number(c[0]) * 255);
+    const g = Math.round(Number(c[1]) * 255);
+    const b = Math.round(Number(c[2]) * 255);
+    return `rgb(${r},${g},${b})`;
+  }
+
+  // String like "#ff00aa" or "rgb(...)"
+  return String(c);
+}
+
+function isBlackColor(c) {
+  // Treat null/undefined as black/disabled
+  if (!c) return true;
+
+  if (Array.isArray(c) && c.length >= 3) {
+    return Number(c[0]) === 0 && Number(c[1]) === 0 && Number(c[2]) === 0;
+  }
+
+  const s = String(c).toLowerCase().replace(/\s+/g,'');
+  return s === "#000" || s === "#000000" || s === "rgb(0,0,0)" || s === "black";
+}
+
+/* ------------------ ICONS ------------------ */
+function tierToIcon(tier) {
   if (tier.startsWith("Godly")) return "icons/godly.png";
   if (tier.startsWith("Master")) return "icons/master.png";
   if (tier.startsWith("Diamond")) return "icons/diamond.png";
@@ -122,116 +165,171 @@ function tierIcon(tier) {
   return "icons/bronze.png";
 }
 
-/* ---------- TIER COLOR (MATCH MATLAB) ---------- */
-function tierColor(tier, flip=false) {
-  switch(tier) {
+/* ------------------ MATLAB FLASH PORT ------------------
+MATLAB name flash:
+- Period ~0.6s
+- Alternates base state and pulse state
+- Base: BLACK -> WEB: WHITE
+- Pulse: tier color + bold
+- Godly alternates between dark gold and bright blue each pulse
+
+MATLAB group flash:
+- Period ~0.7s
+- Alternates base and pulse
+- Base: BLACK -> WEB: WHITE
+- Pulse: purchased group color + bold
+-------------------------------------------------------- */
+
+/* Tier -> color mapping from MATLAB */
+function tierPulseColor(tier, godlyFlip) {
+  switch (tier) {
     case "Godly":
-      return flip ? "#00b3ff" : "#9c8a19";  // blue / dark gold
+      // flip between bright blue and dark gold (same as MATLAB)
+      return godlyFlip ? "rgb(0,179,255)" : "rgb(153,128,26)";
     case "Master":
-      return "#660099";
+      return "rgb(102,0,153)";
     case "Diamond I":
     case "Diamond II":
     case "Diamond III":
-      return "#003399";
+      return "rgb(0,51,153)";
     case "Silver I":
     case "Silver II":
     case "Silver III":
-      return "#c0c0c0";
+      return "rgb(191,191,191)";
     case "Bronze I":
     case "Bronze II":
     case "Bronze III":
-      return "#663300";
+      return "rgb(102,51,0)";
     default:
-      return "#ffffff";
+      return "white";
   }
 }
 
-/* ---------- APPLY NAME FLASH ---------- */
-function applyNameFlash(el, tier) {
-  let flip = false;
-  el.classList.add("flash-name");
+function startTierFlash(el, tier) {
+  el.classList.add("flash-smooth");
+
+  let state = true;      // true -> base, false -> pulse (matching MATLAB toggle)
+  let godlyFlip = false; // for Godly alternating pulse color
 
   setInterval(() => {
-    el.style.color = tierColor(tier, flip);
-    flip = !flip;
+    if (state) {
+      // BASE STATE (WEB = WHITE)
+      el.style.color = "white";
+      el.style.fontWeight = "normal";
+    } else {
+      // PULSE STATE
+      el.style.fontWeight = "bold";
+      if (tier === "Godly") {
+        el.style.color = tierPulseColor(tier, godlyFlip);
+        godlyFlip = !godlyFlip;
+      } else {
+        el.style.color = tierPulseColor(tier, false);
+      }
+    }
+    state = !state;
   }, 600);
-
-  el.style.color = "#ffffff";
 }
 
-/* ---------- APPLY TEAM / CLAN FLASH ---------- */
-function applyGroupFlash(el, color) {
-  el.classList.add("flash-group");
-  el.style.setProperty("--group-color", color);
+function startGroupFlash(el, cssColor) {
+  el.classList.add("flash-smooth");
 
-  let on = false;
+  let state = true;
   setInterval(() => {
-    el.style.color = on ? color : "#ffffff";
-    on = !on;
+    if (state) {
+      // BASE (WHITE)
+      el.style.color = "white";
+      el.style.fontWeight = "normal";
+    } else {
+      // PULSE
+      el.style.color = cssColor;
+      el.style.fontWeight = "bold";
+    }
+    state = !state;
   }, 700);
 }
 
-/* ---------- LOAD LEADERBOARD ---------- */
+/* ------------------ RENDER ------------------ */
 fetch("leaderboard.json")
-.then(r => r.json())
-.then(data => {
-  const tbody = document.getElementById("board");
+  .then(r => r.json())
+  .then(data => {
+    const tbody = document.getElementById("board");
+    if (!tbody) return;
 
-  data.forEach(p => {
-    const winPct = p.games > 0 ? ((p.wins/p.games)*100).toFixed(1)+"%" : "0.0%";
+    data.forEach(p => {
+      const name = normText(p.name);
+      const team = normText(p.team);
+      const clan = normText(p.clan);
 
-    const tr = document.createElement("tr");
+      const winPct = (p.games && p.games > 0)
+        ? ((p.wins / p.games) * 100).toFixed(1) + "%"
+        : "0.0%";
 
-    /* ---------- NAME ---------- */
-    const nameSpan = document.createElement("span");
-    nameSpan.textContent = p.name;
-    nameSpan.style.color = "#ffffff";
+      // Build row
+      const row = document.createElement("tr");
 
-    if (p.hasFlash === true) {
-      applyNameFlash(nameSpan, p.tier);
-    }
+      // NAME span (so we can flash it)
+      const nameSpan = document.createElement("span");
+      nameSpan.textContent = name;
+      nameSpan.style.color = "white";
 
-    /* ---------- TEAM ---------- */
-    const teamSpan = document.createElement("span");
-    teamSpan.textContent = p.team || "";
-    teamSpan.style.color = "#ffffff";
+      // TEAM span
+      const teamSpan = document.createElement("span");
+      teamSpan.textContent = team;
+      teamSpan.style.color = "white";
 
-    if (p.teamColor && p.teamColor !== "#000000") {
-      applyGroupFlash(teamSpan, p.teamColor);
-    }
+      // CLAN span
+      const clanSpan = document.createElement("span");
+      clanSpan.textContent = clan;
+      clanSpan.style.color = "white";
 
-    /* ---------- CLAN ---------- */
-    const clanSpan = document.createElement("span");
-    clanSpan.textContent = p.clan || "";
-    clanSpan.style.color = "#ffffff";
+      row.innerHTML = `
+        <td class="rank-cell">
+          <span>${p.rank}</span>
+          <img class="rank-icon" src="${tierToIcon(normText(p.tier))}" alt="">
+        </td>
+        <td class="name-cell"></td>
+        <td>${normText(p.tier)}</td>
+        <td>${p.elo}</td>
+        <td>${p.games}</td>
+        <td>${p.wins}</td>
+        <td>${p.losses}</td>
+        <td>${winPct}</td>
+        <td class="team-cell"></td>
+        <td class="clan-cell"></td>
+      `;
 
-    if (p.clanColor && p.clanColor !== "#000000") {
-      applyGroupFlash(clanSpan, p.clanColor);
-    }
+      row.querySelector(".name-cell").appendChild(nameSpan);
+      row.querySelector(".team-cell").appendChild(teamSpan);
+      row.querySelector(".clan-cell").appendChild(clanSpan);
 
-    tr.innerHTML = `
-      <td>${p.rank}</td>
-      <td><img class="rank-icon" src="${tierIcon(p.tier)}"></td>
-      <td></td>
-      <td>${p.tier}</td>
-      <td>${p.elo}</td>
-      <td>${p.games}</td>
-      <td>${p.wins}</td>
-      <td>${p.losses}</td>
-      <td>${winPct}</td>
-      <td></td>
-      <td></td>
-    `;
+      tbody.appendChild(row);
 
-    tr.children[2].appendChild(nameSpan);
-    tr.children[9].appendChild(teamSpan);
-    tr.children[10].appendChild(clanSpan);
+      // ---- Apply flashing rules ----
 
-    tbody.appendChild(tr);
+      // Player name flashes ONLY if purchased (p.hasFlash === true)
+      if (p.hasFlash === true) {
+        startTierFlash(nameSpan, normText(p.tier));
+      }
+
+      // Team flashes ONLY if a non-black teamColor exists
+      // (supports p.teamColor: [0,0,0] or "#rrggbb" or "rgb(...)")
+      if (team && p.teamColor && !isBlackColor(p.teamColor)) {
+        startGroupFlash(teamSpan, colorToCss(p.teamColor));
+      }
+
+      // Clan flashes ONLY if a non-black clanColor exists
+      if (clan && p.clanColor && !isBlackColor(p.clanColor)) {
+        startGroupFlash(clanSpan, colorToCss(p.clanColor));
+      }
+    });
+  })
+  .catch(err => {
+    // If it ever blanks again, this will at least show in DevTools console
+    console.error("Error loading leaderboard.json:", err);
   });
-});
 
-showSection('leaderboard');
+// Default view
+showSection("leaderboard");
 </script>
 
 </body>
