@@ -5,55 +5,73 @@
 <title>Beerball Leaderboard</title>
 
 <style>
-  body{
+  body {
     background:#0f0f0f;
     color:white;
     font-family:Arial, sans-serif;
     margin:20px;
   }
 
-  nav{
+  nav {
     display:flex;
     justify-content:center;
     gap:15px;
     margin-bottom:20px;
   }
-  .nav-button{
+
+  .nav-button {
     padding:10px 20px;
     background-color:#444;
     border:none;
     color:white;
     cursor:pointer;
   }
-  .nav-button:hover{ background-color:#666; }
 
-  .section{ display:none; }
+  .nav-button:hover { background-color:#666; }
 
-  table{
+  .section { display:none; }
+
+  table {
     width:100%;
     border-collapse:collapse;
   }
-  th, td{
+
+  th, td {
     padding:10px;
     border-bottom:1px solid #333;
     text-align:center;
   }
-  th{
+
+  th {
     position:sticky;
     top:0;
     background:#000;
   }
-  tr:hover{ background:#222; }
 
-  .rank-icon{
+  tr:hover { background:#222; }
+
+  .rank-icon {
     width:45px;
     height:45px;
   }
 
   /* Optional: make flashing look smoother than MATLAB */
-  .flash-smooth{
+  .flash-smooth {
     transition: color 180ms linear, font-weight 180ms linear;
     will-change: color;
+  }
+
+  /* Animation for fading the color */
+  @keyframes fadeInOut {
+    0% {
+      color: white;
+    }
+    50% {
+      color: rgb(0, 179, 255); /* Godly Bright Blue */
+    }
+    100% {
+      color: rgb(153, 128, 26); /* Godly Dark Gold */
+    }
   }
 </style>
 </head>
@@ -121,43 +139,9 @@ function safeText(x) {
 
 /* ------------------ SAFE NORMALIZERS ------------------ */
 function normText(x) {
-  // Handles: "Name", ["Name"], [], null
   if (Array.isArray(x)) return x.join(" ").trim();
   if (x === null || x === undefined) return "";
   return String(x).trim();
-}
-
-/* Accepts:
-   - MATLAB-style [0.85,0.1,0.1]
-   - "rgb(255,0,0)"
-   - "#ff0000"
-   - null/undefined
-*/
-function colorToCss(c) {
-  if (!c) return null;
-
-  // Array like [0,0,0] or [r,g,b]
-  if (Array.isArray(c) && c.length >= 3) {
-    const r = Math.round(Number(c[0]) * 255);
-    const g = Math.round(Number(c[1]) * 255);
-    const b = Math.round(Number(c[2]) * 255);
-    return `rgb(${r},${g},${b})`;
-  }
-
-  // String like "#ff00aa" or "rgb(...)"
-  return String(c);
-}
-
-function isBlackColor(c) {
-  // Treat null/undefined as black/disabled
-  if (!c) return true;
-
-  if (Array.isArray(c) && c.length >= 3) {
-    return Number(c[0]) === 0 && Number(c[1]) === 0 && Number(c[2]) === 0;
-  }
-
-  const s = String(c).toLowerCase().replace(/\s+/g,'');
-  return s === "#000" || s === "#000000" || s === "rgb(0,0,0)" || s === "black";
 }
 
 /* ------------------ ICONS ------------------ */
@@ -173,27 +157,10 @@ function tierToIcon(tier) {
   return "icons/bronze.png";
 }
 
-
-/* ------------------ MATLAB FLASH PORT ------------------
-MATLAB name flash:
-- Period ~0.6s
-- Alternates base state and pulse state
-- Base: BLACK -> WEB: WHITE
-- Pulse: tier color + bold
-- Godly alternates between dark gold and bright blue each pulse
-
-MATLAB group flash:
-- Period ~0.7s
-- Alternates base and pulse
-- Base: BLACK -> WEB: WHITE
-- Pulse: purchased group color + bold
--------------------------------------------------------- */
-
-/* Tier -> color mapping from MATLAB */
+/* ------------------ TIER AND GROUP FLASHING ------------------ */
 function tierPulseColor(tier, godlyFlip) {
   switch (tier) {
     case "Godly":
-      // flip between bright blue and dark gold (same as MATLAB)
       return godlyFlip ? "rgb(0,179,255)" : "rgb(153,128,26)";
     case "Master":
       return "rgb(102,0,153)";
@@ -217,16 +184,14 @@ function tierPulseColor(tier, godlyFlip) {
 function startTierFlash(el, tier) {
   el.classList.add("flash-smooth");
 
-  let state = true;      // true -> base, false -> pulse (matching MATLAB toggle)
-  let godlyFlip = false; // for Godly alternating pulse color
+  let state = true;
+  let godlyFlip = false;
 
   setInterval(() => {
     if (state) {
-      // BASE STATE (WEB = WHITE)
       el.style.color = "white";
       el.style.fontWeight = "normal";
     } else {
-      // PULSE STATE
       el.style.fontWeight = "bold";
       if (tier === "Godly") {
         el.style.color = tierPulseColor(tier, godlyFlip);
@@ -245,11 +210,9 @@ function startGroupFlash(el, cssColor) {
   let state = true;
   setInterval(() => {
     if (state) {
-      // BASE (WHITE)
       el.style.color = "white";
       el.style.fontWeight = "normal";
     } else {
-      // PULSE
       el.style.color = cssColor;
       el.style.fontWeight = "bold";
     }
@@ -324,21 +287,17 @@ fetch("leaderboard.json")
       }
 
       // Team flashes ONLY if a non-black teamColor exists
-      // (supports p.teamColor: [0,0,0] or "#rrggbb" or "rgb(...)")
-        const teamColor = findTeamColor(team, teams);
-	if (team && teamColor && !isBlackColor(teamColor)) {
-  		startGroupFlash(teamSpan, colorToCss(teamColor));
-	}
+      if (team && p.teamColor && !isBlackColor(p.teamColor)) {
+        startGroupFlash(teamSpan, colorToCss(p.teamColor));
+      }
 
-	const clanColor = findClanColor(clan, clans);
-	if (clan && clanColor && !isBlackColor(clanColor)) {
-  		startGroupFlash(clanSpan, colorToCss(clanColor));
-	}
-
+      // Clan flashes ONLY if a non-black clanColor exists
+      if (clan && p.clanColor && !isBlackColor(p.clanColor)) {
+        startGroupFlash(clanSpan, colorToCss(p.clanColor));
+      }
     });
   })
   .catch(err => {
-    // If it ever blanks again, this will at least show in DevTools console
     console.error("Error loading leaderboard.json:", err);
   });
 
