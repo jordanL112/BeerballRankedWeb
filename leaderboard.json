@@ -10,16 +10,8 @@
       "losses": 22,
       "team": "Yin & Yang",
       "clan": "Great Personality",
-      "teamColor": [
-        0,
-        0,
-        0
-      ],
-      "clanColor": [
-        0.55,
-        0.15,
-        0.65
-      ],
+      "teamColor": "rgb(0, 0, 0)",
+      "clanColor": "rgb(140, 38, 166)",
       "hasFlash": true
     },
     {
@@ -33,11 +25,7 @@
       "team": "",
       "clan": "Beer Pressure",
       "teamColor": "",
-      "clanColor": [
-        0.1,
-        0.6,
-        0.2
-      ],
+      "clanColor": "rgb(26, 153, 51)",
       "hasFlash": []
     },
     {
@@ -51,11 +39,7 @@
       "team": "",
       "clan": "Beer Pressure",
       "teamColor": "",
-      "clanColor": [
-        0.1,
-        0.6,
-        0.2
-      ],
+      "clanColor": "rgb(26, 153, 51)",
       "hasFlash": []
     },
     {
@@ -68,16 +52,8 @@
       "losses": 8,
       "team": "Yin & Yang",
       "clan": "Great Personality",
-      "teamColor": [
-        0,
-        0,
-        0
-      ],
-      "clanColor": [
-        0.55,
-        0.15,
-        0.65
-      ],
+      "teamColor": "rgb(0, 0, 0)",
+      "clanColor": "rgb(140, 38, 166)",
       "hasFlash": []
     },
     {
@@ -90,16 +66,8 @@
       "losses": 31,
       "team": "Where Are We?",
       "clan": "Great Personality",
-      "teamColor": [
-        0,
-        0,
-        0
-      ],
-      "clanColor": [
-        0.55,
-        0.15,
-        0.65
-      ],
+      "teamColor": "rgb(0, 0, 0)",
+      "clanColor": "rgb(140, 38, 166)",
       "hasFlash": true
     },
     {
@@ -112,16 +80,8 @@
       "losses": 17,
       "team": "Where Are We?",
       "clan": "Great Personality",
-      "teamColor": [
-        0,
-        0,
-        0
-      ],
-      "clanColor": [
-        0.55,
-        0.15,
-        0.65
-      ],
+      "teamColor": "rgb(0, 0, 0)",
+      "clanColor": "rgb(140, 38, 166)",
       "hasFlash": true
     },
     {
@@ -134,16 +94,8 @@
       "losses": 33,
       "team": "Pluto",
       "clan": "Six Eyes",
-      "teamColor": [
-        0,
-        0,
-        0
-      ],
-      "clanColor": [
-        0.1,
-        0.55,
-        0.55
-      ],
+      "teamColor": "rgb(0, 0, 0)",
+      "clanColor": "rgb(26, 140, 140)",
       "hasFlash": true
     },
     {
@@ -156,16 +108,8 @@
       "losses": 11,
       "team": "Twin Towers",
       "clan": "WANGHAF",
-      "teamColor": [
-        0,
-        0,
-        0
-      ],
-      "clanColor": [
-        0.85,
-        0.1,
-        0.1
-      ],
+      "teamColor": "rgb(0, 0, 0)",
+      "clanColor": "rgb(217, 26, 26)",
       "hasFlash": []
     },
     {
@@ -179,11 +123,7 @@
       "team": "",
       "clan": "Six Eyes",
       "teamColor": "",
-      "clanColor": [
-        0.1,
-        0.55,
-        0.55
-      ],
+      "clanColor": "rgb(26, 140, 140)",
       "hasFlash": []
     },
     {
@@ -196,16 +136,8 @@
       "losses": 16,
       "team": "Pluto",
       "clan": "Six Eyes",
-      "teamColor": [
-        0,
-        0,
-        0
-      ],
-      "clanColor": [
-        0.1,
-        0.55,
-        0.55
-      ],
+      "teamColor": "rgb(0, 0, 0)",
+      "clanColor": "rgb(26, 140, 140)",
       "hasFlash": []
     },
     {
@@ -219,11 +151,7 @@
       "team": "",
       "clan": "WANGHAF",
       "teamColor": "",
-      "clanColor": [
-        0.85,
-        0.1,
-        0.1
-      ],
+      "clanColor": "rgb(217, 26, 26)",
       "hasFlash": []
     },
     {
@@ -237,11 +165,7 @@
       "team": [],
       "clan": "WANGHAF",
       "teamColor": "",
-      "clanColor": [
-        0.85,
-        0.1,
-        0.1
-      ],
+      "clanColor": "rgb(217, 26, 26)",
       "hasFlash": []
     },
     {
@@ -255,11 +179,7 @@
       "team": [],
       "clan": "Beer Pressure",
       "teamColor": "",
-      "clanColor": [
-        0.1,
-        0.6,
-        0.2
-      ],
+      "clanColor": "rgb(26, 153, 51)",
       "hasFlash": []
     },
     {
@@ -273,11 +193,7 @@
       "team": [],
       "clan": "WANGHAF",
       "teamColor": "",
-      "clanColor": [
-        0.85,
-        0.1,
-        0.1
-      ],
+      "clanColor": "rgb(217, 26, 26)",
       "hasFlash": []
     },
     {
@@ -291,11 +207,7 @@
       "team": "",
       "clan": "Beer Pressure",
       "teamColor": "",
-      "clanColor": [
-        0.1,
-        0.6,
-        0.2
-      ],
+      "clanColor": "rgb(26, 153, 51)",
       "hasFlash": false
     },
     {
@@ -309,11 +221,7 @@
       "team": "",
       "clan": "WANGHAF",
       "teamColor": "",
-      "clanColor": [
-        0.85,
-        0.1,
-        0.1
-      ],
+      "clanColor": "rgb(217, 26, 26)",
       "hasFlash": []
     },
     {
@@ -326,16 +234,8 @@
       "losses": 14,
       "team": "Twin Towers",
       "clan": "WANGHAF",
-      "teamColor": [
-        0,
-        0,
-        0
-      ],
-      "clanColor": [
-        0.85,
-        0.1,
-        0.1
-      ],
+      "teamColor": "rgb(0, 0, 0)",
+      "clanColor": "rgb(217, 26, 26)",
       "hasFlash": []
     },
     {
@@ -349,11 +249,7 @@
       "team": "",
       "clan": "Beer Pressure",
       "teamColor": "",
-      "clanColor": [
-        0.1,
-        0.6,
-        0.2
-      ],
+      "clanColor": "rgb(26, 153, 51)",
       "hasFlash": []
     },
     {
@@ -367,11 +263,7 @@
       "team": "",
       "clan": "Six Eyes",
       "teamColor": "",
-      "clanColor": [
-        0.1,
-        0.55,
-        0.55
-      ],
+      "clanColor": "rgb(26, 140, 140)",
       "hasFlash": []
     },
     {
@@ -385,11 +277,7 @@
       "team": [],
       "clan": "WANGHAF",
       "teamColor": "",
-      "clanColor": [
-        0.85,
-        0.1,
-        0.1
-      ],
+      "clanColor": "rgb(217, 26, 26)",
       "hasFlash": []
     },
     {
@@ -403,11 +291,7 @@
       "team": "",
       "clan": "Great Personality",
       "teamColor": "",
-      "clanColor": [
-        0.55,
-        0.15,
-        0.65
-      ],
+      "clanColor": "rgb(140, 38, 166)",
       "hasFlash": []
     },
     {
@@ -421,11 +305,7 @@
       "team": [],
       "clan": "WANGHAF",
       "teamColor": "",
-      "clanColor": [
-        0.85,
-        0.1,
-        0.1
-      ],
+      "clanColor": "rgb(217, 26, 26)",
       "hasFlash": []
     },
     {
@@ -439,11 +319,7 @@
       "team": [],
       "clan": "Beer Pressure",
       "teamColor": "",
-      "clanColor": [
-        0.1,
-        0.6,
-        0.2
-      ],
+      "clanColor": "rgb(26, 153, 51)",
       "hasFlash": []
     },
     {
@@ -457,11 +333,7 @@
       "team": [],
       "clan": "Great Personality",
       "teamColor": "",
-      "clanColor": [
-        0.55,
-        0.15,
-        0.65
-      ],
+      "clanColor": "rgb(140, 38, 166)",
       "hasFlash": []
     },
     {
@@ -475,11 +347,7 @@
       "team": "",
       "clan": "Beer Pressure",
       "teamColor": "",
-      "clanColor": [
-        0.1,
-        0.6,
-        0.2
-      ],
+      "clanColor": "rgb(26, 153, 51)",
       "hasFlash": []
     },
     {
@@ -493,11 +361,7 @@
       "team": "",
       "clan": "Six Eyes",
       "teamColor": "",
-      "clanColor": [
-        0.1,
-        0.55,
-        0.55
-      ],
+      "clanColor": "rgb(26, 140, 140)",
       "hasFlash": []
     },
     {
@@ -511,11 +375,7 @@
       "team": [],
       "clan": "Beer Pressure",
       "teamColor": "",
-      "clanColor": [
-        0.1,
-        0.6,
-        0.2
-      ],
+      "clanColor": "rgb(26, 153, 51)",
       "hasFlash": []
     },
     {
@@ -529,11 +389,7 @@
       "team": [],
       "clan": "Six Eyes",
       "teamColor": "",
-      "clanColor": [
-        0.1,
-        0.55,
-        0.55
-      ],
+      "clanColor": "rgb(26, 140, 140)",
       "hasFlash": []
     },
     {
@@ -547,11 +403,7 @@
       "team": [],
       "clan": "Beer Pressure",
       "teamColor": "",
-      "clanColor": [
-        0.1,
-        0.6,
-        0.2
-      ],
+      "clanColor": "rgb(26, 153, 51)",
       "hasFlash": []
     },
     {
@@ -565,11 +417,7 @@
       "team": [],
       "clan": "Beer Pressure",
       "teamColor": "",
-      "clanColor": [
-        0.1,
-        0.6,
-        0.2
-      ],
+      "clanColor": "rgb(26, 153, 51)",
       "hasFlash": []
     },
     {
@@ -583,11 +431,7 @@
       "team": "",
       "clan": "Six Eyes",
       "teamColor": "",
-      "clanColor": [
-        0.1,
-        0.55,
-        0.55
-      ],
+      "clanColor": "rgb(26, 140, 140)",
       "hasFlash": []
     },
     {
@@ -601,11 +445,7 @@
       "team": [],
       "clan": "WANGHAF",
       "teamColor": "",
-      "clanColor": [
-        0.85,
-        0.1,
-        0.1
-      ],
+      "clanColor": "rgb(217, 26, 26)",
       "hasFlash": []
     },
     {
@@ -619,11 +459,7 @@
       "team": [],
       "clan": "WANGHAF",
       "teamColor": "",
-      "clanColor": [
-        0.85,
-        0.1,
-        0.1
-      ],
+      "clanColor": "rgb(217, 26, 26)",
       "hasFlash": []
     },
     {
@@ -637,11 +473,7 @@
       "team": [],
       "clan": "Great Personality",
       "teamColor": "",
-      "clanColor": [
-        0.55,
-        0.15,
-        0.65
-      ],
+      "clanColor": "rgb(140, 38, 166)",
       "hasFlash": []
     },
     {
@@ -655,11 +487,7 @@
       "team": [],
       "clan": "Great Personality",
       "teamColor": "",
-      "clanColor": [
-        0.55,
-        0.15,
-        0.65
-      ],
+      "clanColor": "rgb(140, 38, 166)",
       "hasFlash": []
     },
     {
@@ -673,11 +501,7 @@
       "team": [],
       "clan": "Six Eyes",
       "teamColor": "",
-      "clanColor": [
-        0.1,
-        0.55,
-        0.55
-      ],
+      "clanColor": "rgb(26, 140, 140)",
       "hasFlash": []
     },
     {
@@ -691,11 +515,7 @@
       "team": [],
       "clan": "WANGHAF",
       "teamColor": "",
-      "clanColor": [
-        0.85,
-        0.1,
-        0.1
-      ],
+      "clanColor": "rgb(217, 26, 26)",
       "hasFlash": []
     },
     {
@@ -709,11 +529,7 @@
       "team": [],
       "clan": "WANGHAF",
       "teamColor": "",
-      "clanColor": [
-        0.85,
-        0.1,
-        0.1
-      ],
+      "clanColor": "rgb(217, 26, 26)",
       "hasFlash": []
     },
     {
@@ -727,11 +543,7 @@
       "team": [],
       "clan": "Six Eyes",
       "teamColor": "",
-      "clanColor": [
-        0.1,
-        0.55,
-        0.55
-      ],
+      "clanColor": "rgb(26, 140, 140)",
       "hasFlash": []
     },
     {
@@ -745,11 +557,7 @@
       "team": [],
       "clan": "Six Eyes",
       "teamColor": "",
-      "clanColor": [
-        0.1,
-        0.55,
-        0.55
-      ],
+      "clanColor": "rgb(26, 140, 140)",
       "hasFlash": []
     },
     {
@@ -763,11 +571,7 @@
       "team": [],
       "clan": "Beer Pressure",
       "teamColor": "",
-      "clanColor": [
-        0.1,
-        0.6,
-        0.2
-      ],
+      "clanColor": "rgb(26, 153, 51)",
       "hasFlash": []
     },
     {
@@ -781,11 +585,7 @@
       "team": [],
       "clan": "Six Eyes",
       "teamColor": "",
-      "clanColor": [
-        0.1,
-        0.55,
-        0.55
-      ],
+      "clanColor": "rgb(26, 140, 140)",
       "hasFlash": []
     },
     {
@@ -813,11 +613,7 @@
       "team": "",
       "clan": "Beer Pressure",
       "teamColor": "",
-      "clanColor": [
-        0.1,
-        0.6,
-        0.2
-      ],
+      "clanColor": "rgb(26, 153, 51)",
       "hasFlash": false
     },
     {
@@ -845,11 +641,7 @@
       "team": [],
       "clan": "Great Personality",
       "teamColor": "",
-      "clanColor": [
-        0.55,
-        0.15,
-        0.65
-      ],
+      "clanColor": "rgb(140, 38, 166)",
       "hasFlash": []
     },
     {
@@ -877,11 +669,7 @@
       "team": [],
       "clan": "Great Personality",
       "teamColor": "",
-      "clanColor": [
-        0.55,
-        0.15,
-        0.65
-      ],
+      "clanColor": "rgb(140, 38, 166)",
       "hasFlash": []
     },
     {
@@ -895,11 +683,7 @@
       "team": [],
       "clan": "Great Personality",
       "teamColor": "",
-      "clanColor": [
-        0.55,
-        0.15,
-        0.65
-      ],
+      "clanColor": "rgb(140, 38, 166)",
       "hasFlash": []
     },
     {
@@ -927,11 +711,7 @@
       "team": [],
       "clan": "Six Eyes",
       "teamColor": "",
-      "clanColor": [
-        0.1,
-        0.55,
-        0.55
-      ],
+      "clanColor": "rgb(26, 140, 140)",
       "hasFlash": []
     },
     {
@@ -945,11 +725,7 @@
       "team": "",
       "clan": "Great Personality",
       "teamColor": "",
-      "clanColor": [
-        0.55,
-        0.15,
-        0.65
-      ],
+      "clanColor": "rgb(140, 38, 166)",
       "hasFlash": false
     },
     {
@@ -977,11 +753,7 @@
       "team": [],
       "clan": "Beer Pressure",
       "teamColor": "",
-      "clanColor": [
-        0.1,
-        0.6,
-        0.2
-      ],
+      "clanColor": "rgb(26, 153, 51)",
       "hasFlash": []
     },
     {
@@ -995,11 +767,7 @@
       "team": [],
       "clan": "Beer Pressure",
       "teamColor": "",
-      "clanColor": [
-        0.1,
-        0.6,
-        0.2
-      ],
+      "clanColor": "rgb(26, 153, 51)",
       "hasFlash": []
     },
     {
