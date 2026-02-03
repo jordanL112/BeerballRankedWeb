@@ -272,11 +272,11 @@ fetch("leaderboard.json")
       teamSpan.textContent = team;
       teamSpan.style.fontWeight = "bold";  // Keep team names bold
 
-      // Apply flashing effect to team if teamColor exists
-      if (p.teamColor) {
-        startFlash(teamSpan, "white", p.teamColor);  // Apply flashing effect if team color is defined
+      // Apply flashing effect to team if teamColor exists and isn't empty
+      if (p.teamColor && p.teamColor !== "" && p.teamColor !== "rgb(0, 0, 0)") {  // Only flash if teamColor is valid
+        startFlash(teamSpan, "white", p.teamColor);  // Apply flashing effect if color exists
       } else {
-        teamSpan.style.color = "white";  // Default to white if no teamColor
+        teamSpan.style.color = "white";  // Default to white if no valid teamColor
       }
 
       // CLAN span
@@ -286,7 +286,7 @@ fetch("leaderboard.json")
 
       // Apply flashing effect to clan if clanColor exists
       if (p.clanColor) {
-        startFlash(clanSpan, "white", p.clanColor);  // Apply flashing effect if clan color is defined
+        startFlash(clanSpan, "white", p.clanColor);  // Apply flashing effect if color exists
       } else {
         clanSpan.style.color = "white";  // Default to white if no clanColor
       }
@@ -326,6 +326,7 @@ fetch("leaderboard.json")
 
 // Default view
 showSection("leaderboard");
+
 
 </script>
 
