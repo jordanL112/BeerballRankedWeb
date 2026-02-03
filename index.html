@@ -170,29 +170,13 @@ function normText(x) {
 function tierToIcon(tier) {
   tier = normText(tier);   // <-- THIS LINE FIXES IT
 
-  if (tier.startsWith("Crimson")) {
-    return "icons/crimson.png"; // Keep the Crimson icon separate for special treatment
-  }
+  if (tier.startsWith("Crimson")) return "icons/crimson.png";
   if (tier.startsWith("Master")) return "icons/master.png";
   if (tier.startsWith("Diamond")) return "icons/diamond.png";
   if (tier.startsWith("Platinum")) return "icons/platinum.png";
   if (tier.startsWith("Gold")) return "icons/gold.png";
   if (tier.startsWith("Silver")) return "icons/silver.png";
   return "icons/bronze.png";
-}
-
-function renderLeaderboardIcons() {
-  const icons = document.querySelectorAll('.rank-icon');
-  icons.forEach(icon => {
-    // Check if the tier is "Crimson"
-    if (icon.src.includes('crimson.png')) {
-      icon.style.width = '75px'; // Set Crimson icon size to 75px
-      icon.style.height = '75px'; // Set Crimson icon size to 75px
-    } else {
-      icon.style.width = '50px'; // Default icon size
-      icon.style.height = '50px'; // Default icon size
-    }
-  });
 }
 
 /* ------------------ TIER AND GROUP FLASHING ------------------ */
@@ -338,9 +322,6 @@ fetch("leaderboard.json")
         <td class="team-cell"></td>
         <td class="clan-cell"></td>
       `;
-
-      renderPage();
-      renderLeaderboardIcons();  // Add this to render the icons correctly after the page loads
 
       row.querySelector(".name-cell").appendChild(nameSpan);
       row.querySelector(".team-cell").appendChild(teamSpan);
