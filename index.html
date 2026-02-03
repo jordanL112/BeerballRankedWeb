@@ -66,8 +66,8 @@
       height: 50px;
     }
 
-    /* Conditional rule for Crimson tier icon */
-    .rank-icon.crimson {
+    /* Conditional rule for Champion tier icon */
+    .rank-icon.champion {
       width: 60px;
       height: 60px;
     }
@@ -84,10 +84,10 @@
         color: white;
       }
       50% {
-        color: rgb(0, 179, 255); /* Crimson Bright Blue */
+        color: rgb(0, 179, 255); /* Champion Bright Blue */
       }
       100% {
-        color: rgb(153, 128, 26); /* Crimson Dark Gold */
+        color: rgb(153, 128, 26); /* Champion Dark Gold */
       }
     }
   </style>
@@ -176,8 +176,8 @@ function normText(x) {
 function tierToIcon(tier) {
   tier = normText(tier);   // <-- THIS LINE FIXES IT
 
-  // Add a class for the "Crimson" tier to resize it
-  if (tier.startsWith("Crimson")) return "icons/crimson.png";  // Class will be added here
+  // Add a class for the "Champion" tier to resize it
+  if (tier.startsWith("Champion")) return "icons/champion.png";  // Class will be added here
   if (tier.startsWith("Master")) return "icons/master.png";
   if (tier.startsWith("Diamond")) return "icons/diamond.png";
   if (tier.startsWith("Platinum")) return "icons/platinum.png";
@@ -187,9 +187,9 @@ function tierToIcon(tier) {
 }
 
 /* ------------------ TIER AND GROUP FLASHING ------------------ */
-function tierPulseColor(tier, CrimsonFlip) {
+function tierPulseColor(tier, ChampionFlip) {
   switch (tier) {
-    case "Crimson":
+    case "Champion":
       return "rgb(255,22,22)";
     case "Master":
       return "rgb(102,0,153)";
@@ -214,7 +214,7 @@ function startTierFlash(el, tier) {
   el.classList.add("flash-smooth");
 
   let state = true;      // true -> base, false -> pulse (matching MATLAB toggle)
-  let CrimsonFlip = 0;     // 0 -> white, 1 -> blue, 2 -> gold (for Crimson tier)
+  let ChampionFlip = 0;     // 0 -> white, 1 -> blue, 2 -> gold (for Champion tier)
 
   setInterval(() => {
     if (state) {
@@ -223,17 +223,17 @@ function startTierFlash(el, tier) {
     } else {
       el.style.fontWeight = "bold";  // Ensure it stays bold
 
-      if (tier === "Crimson") {
-        // Alternating logic for Crimson tier (white -> blue -> white -> gold)
-        if (CrimsonFlip === 0) {
+      if (tier === "Champion") {
+        // Alternating logic for Champion tier (white -> blue -> white -> gold)
+        if (ChampionFlip === 0) {
           el.style.color = "rgb(0,179,255)";  // Bright Blue
-          CrimsonFlip = 1;
-        } else if (CrimsonFlip === 1) {
+          ChampionFlip = 1;
+        } else if (ChampionFlip === 1) {
           el.style.color = "white";  // Reset to White
-          CrimsonFlip = 2;
+          ChampionFlip = 2;
         } else {
           el.style.color = "rgb(153,128,26)";  // Dark Gold
-          CrimsonFlip = 0;
+          ChampionFlip = 0;
         }
       } else {
         // For other tiers (Master, Diamond, etc.), apply the regular flashing effect
@@ -317,7 +317,7 @@ fetch("leaderboard.json")
       row.innerHTML = `
         <td class="rank-cell">
           <span>${p.rank}</span>
-          <img class="rank-icon ${p.tier === 'Crimson' ? 'crimson' : ''}" src="${tierToIcon(normText(p.tier))}" alt="">
+          <img class="rank-icon ${p.tier === 'Champion' ? 'champion' : ''}" src="${tierToIcon(normText(p.tier))}" alt="">
         </td>
         <td class="name-cell"></td>
         <td>${normText(p.tier)}</td>
