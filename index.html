@@ -317,7 +317,7 @@ fetch("leaderboard.json")
       row.innerHTML = `
         <td class="rank-cell">
           <span>${p.rank}</span>
-          <img class="rank-icon" src="${tierToIcon(normText(p.tier))}" alt="" class="${p.tier === 'Crimson' ? 'crimson' : ''}">
+          <img class="rank-icon ${p.tier === 'Crimson' ? 'crimson' : ''}" src="${tierToIcon(normText(p.tier))}" alt="">
         </td>
         <td class="name-cell"></td>
         <td>${normText(p.tier)}</td>
