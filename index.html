@@ -66,6 +66,12 @@
       height: 50px;
     }
 
+    /* Conditional rule for Crimson tier icon */
+    .rank-icon.crimson {
+      width: 75px;
+      height: 75px;
+    }
+
     /* Optional: make flashing look smoother than MATLAB */
     .flash-smooth {
       transition: color 180ms linear;
@@ -170,7 +176,8 @@ function normText(x) {
 function tierToIcon(tier) {
   tier = normText(tier);   // <-- THIS LINE FIXES IT
 
-  if (tier.startsWith("Crimson")) return "icons/crimson.png";
+  // Add a class for the "Crimson" tier to resize it
+  if (tier.startsWith("Crimson")) return "icons/crimson.png";  // Class will be added here
   if (tier.startsWith("Master")) return "icons/master.png";
   if (tier.startsWith("Diamond")) return "icons/diamond.png";
   if (tier.startsWith("Platinum")) return "icons/platinum.png";
@@ -310,7 +317,7 @@ fetch("leaderboard.json")
       row.innerHTML = `
         <td class="rank-cell">
           <span>${p.rank}</span>
-          <img class="rank-icon" src="${tierToIcon(normText(p.tier))}" alt="">
+          <img class="rank-icon" src="${tierToIcon(normText(p.tier))}" alt="" class="${p.tier === 'Crimson' ? 'crimson' : ''}">
         </td>
         <td class="name-cell"></td>
         <td>${normText(p.tier)}</td>
