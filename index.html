@@ -20,7 +20,7 @@
   }
 
   /* Ensure all player names are bold */
-  .name-cell {
+  .name-cell, .team-cell, .clan-cell {
     font-weight: bold;
   }
 
@@ -62,7 +62,7 @@
 
   /* Optional: make flashing look smoother than MATLAB */
   .flash-smooth {
-    transition: color 180ms linear, font-weight 180ms linear;
+    transition: color 180ms linear;
     will-change: color;
   }
 
@@ -206,8 +206,7 @@ function startTierFlash(el, tier) {
   setInterval(() => {
     if (state) {
       el.style.color = "white";  // Base state: White
-      // Removed the line below that toggled the bold/unbold:
-      // el.style.fontWeight = "normal";  // This was removed
+      // Font-weight stays bold
     } else {
       // PULSE STATE (keep it bold)
       el.style.fontWeight = "bold";  // Ensures it stays bold
@@ -228,11 +227,11 @@ function startGroupFlash(el, cssColor) {
   let state = true;
   setInterval(() => {
     if (state) {
-      el.style.color = "white";
-      el.style.fontWeight = "normal";
+      el.style.color = cssColor;  // Start with the original color
+      el.style.fontWeight = "bold"; // Ensure it stays bold
     } else {
-      el.style.color = cssColor;
-      el.style.fontWeight = "bold";
+      el.style.color = cssColor;  // Flash the color
+      el.style.fontWeight = "bold"; // Keep bold
     }
     state = !state;
   }, 700);
@@ -269,8 +268,9 @@ fetch("leaderboard.json")
       const teamSpan = document.createElement("span");
       teamSpan.textContent = team;
       teamSpan.style.color = "white";
-	
-      // Team flashes if a teamColor is defined, regardless of being black or not
+      teamSpan.style.fontWeight = "bold";  // Keep team names bold
+
+      // Team flashes if a teamColor is defined
       if (team && p.teamColor) {
         startGroupFlash(teamSpan, p.teamColor);  // Apply flashing effect if color exists
       }
@@ -279,8 +279,9 @@ fetch("leaderboard.json")
       const clanSpan = document.createElement("span");
       clanSpan.textContent = clan;
       clanSpan.style.color = "white";
+      clanSpan.style.fontWeight = "bold";  // Keep clan names bold
 
-      // Clan flashes if a clanColor is defined, regardless of being black or not
+      // Clan flashes if a clanColor is defined
       if (clan && p.clanColor) {
         startGroupFlash(clanSpan, p.clanColor);  // Apply flashing effect if color exists
       }
@@ -312,16 +313,6 @@ fetch("leaderboard.json")
       // Player name flashes ONLY if purchased (p.hasFlash === true)
       if (p.hasFlash === true) {
         startTierFlash(nameSpan, normText(p.tier));
-      }
-
-      // Team flashes if a teamColor is defined, regardless of being black or not
-      if (team && p.teamColor) {
-        startGroupFlash(teamSpan, p.teamColor);  // Apply flashing effect if color exists
-      }
-
-      // Clan flashes if a clanColor is defined, regardless of being black or not
-      if (clan && p.clanColor) {
-        startGroupFlash(clanSpan, p.clanColor);  // Apply flashing effect if color exists
       }
 
     });
