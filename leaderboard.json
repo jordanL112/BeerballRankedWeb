@@ -95,7 +95,7 @@
       "team": "Pluto",
       "clan": "Six Eyes",
       "teamColor": "rgb(0, 0, 0)",
-      "clanColor": "rgb(0, 0, 255)",
+      "clanColor": "rgb(0, 128, 255)",
       "hasFlash": true
     },
     {
@@ -123,7 +123,7 @@
       "team": "",
       "clan": "Six Eyes",
       "teamColor": "",
-      "clanColor": "rgb(0, 0, 255)",
+      "clanColor": "rgb(0, 128, 255)",
       "hasFlash": []
     },
     {
@@ -137,7 +137,7 @@
       "team": "Pluto",
       "clan": "Six Eyes",
       "teamColor": "rgb(0, 0, 0)",
-      "clanColor": "rgb(0, 0, 255)",
+      "clanColor": "rgb(0, 128, 255)",
       "hasFlash": []
     },
     {
@@ -263,7 +263,7 @@
       "team": "",
       "clan": "Six Eyes",
       "teamColor": "",
-      "clanColor": "rgb(0, 0, 255)",
+      "clanColor": "rgb(0, 128, 255)",
       "hasFlash": []
     },
     {
@@ -361,7 +361,7 @@
       "team": "",
       "clan": "Six Eyes",
       "teamColor": "",
-      "clanColor": "rgb(0, 0, 255)",
+      "clanColor": "rgb(0, 128, 255)",
       "hasFlash": []
     },
     {
@@ -389,7 +389,7 @@
       "team": [],
       "clan": "Six Eyes",
       "teamColor": "",
-      "clanColor": "rgb(0, 0, 255)",
+      "clanColor": "rgb(0, 128, 255)",
       "hasFlash": []
     },
     {
@@ -431,7 +431,7 @@
       "team": "",
       "clan": "Six Eyes",
       "teamColor": "",
-      "clanColor": "rgb(0, 0, 255)",
+      "clanColor": "rgb(0, 128, 255)",
       "hasFlash": []
     },
     {
@@ -501,7 +501,7 @@
       "team": [],
       "clan": "Six Eyes",
       "teamColor": "",
-      "clanColor": "rgb(0, 0, 255)",
+      "clanColor": "rgb(0, 128, 255)",
       "hasFlash": []
     },
     {
@@ -543,7 +543,7 @@
       "team": [],
       "clan": "Six Eyes",
       "teamColor": "",
-      "clanColor": "rgb(0, 0, 255)",
+      "clanColor": "rgb(0, 128, 255)",
       "hasFlash": []
     },
     {
@@ -557,7 +557,7 @@
       "team": [],
       "clan": "Six Eyes",
       "teamColor": "",
-      "clanColor": "rgb(0, 0, 255)",
+      "clanColor": "rgb(0, 128, 255)",
       "hasFlash": []
     },
     {
@@ -585,7 +585,7 @@
       "team": [],
       "clan": "Six Eyes",
       "teamColor": "",
-      "clanColor": "rgb(0, 0, 255)",
+      "clanColor": "rgb(0, 128, 255)",
       "hasFlash": []
     },
     {
@@ -711,7 +711,7 @@
       "team": [],
       "clan": "Six Eyes",
       "teamColor": "",
-      "clanColor": "rgb(0, 0, 255)",
+      "clanColor": "rgb(0, 128, 255)",
       "hasFlash": []
     },
     {
@@ -818,7 +818,7 @@
     },
     {
       "name": "Six Eyes",
-      "color": "rgb(0, 0, 255)"
+      "color": "rgb(0, 128, 255)"
     }
   ]
 }
