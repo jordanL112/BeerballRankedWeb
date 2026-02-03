@@ -72,10 +72,10 @@
       color: white;
     }
     50% {
-      color: rgb(0, 179, 255); /* Godly Bright Blue */
+      color: rgb(0, 179, 255); /* Crimson Bright Blue */
     }
     100% {
-      color: rgb(153, 128, 26); /* Godly Dark Gold */
+      color: rgb(153, 128, 26); /* Crimson Dark Gold */
     }
   }
 </style>
@@ -164,7 +164,7 @@ function normText(x) {
 function tierToIcon(tier) {
   tier = normText(tier);   // <-- THIS LINE FIXES IT
 
-  if (tier.startsWith("Godly")) return "icons/godly.png";
+  if (tier.startsWith("Crimson")) return "icons/crimson.png";
   if (tier.startsWith("Master")) return "icons/master.png";
   if (tier.startsWith("Diamond")) return "icons/diamond.png";
   if (tier.startsWith("Platinum")) return "icons/platinum.png";
@@ -174,9 +174,9 @@ function tierToIcon(tier) {
 }
 
 /* ------------------ TIER AND GROUP FLASHING ------------------ */
-function tierPulseColor(tier, godlyFlip) {
+function tierPulseColor(tier, CrimsonFlip) {
   switch (tier) {
-    case "Godly":
+    case "Crimson":
       return "rgb(0,179,255)";
     case "Master":
       return "rgb(102,0,153)";
@@ -201,7 +201,7 @@ function startTierFlash(el, tier) {
   el.classList.add("flash-smooth");
 
   let state = true;      // true -> base, false -> pulse (matching MATLAB toggle)
-  let godlyFlip = 0;     // 0 -> white, 1 -> blue, 2 -> gold (for Godly tier)
+  let CrimsonFlip = 0;     // 0 -> white, 1 -> blue, 2 -> gold (for Crimson tier)
 
   setInterval(() => {
     if (state) {
@@ -210,17 +210,17 @@ function startTierFlash(el, tier) {
     } else {
       el.style.fontWeight = "bold";  // Ensure it stays bold
 
-      if (tier === "Godly") {
-        // Alternating logic for Godly tier (white -> blue -> white -> gold)
-        if (godlyFlip === 0) {
+      if (tier === "Crimson") {
+        // Alternating logic for Crimson tier (white -> blue -> white -> gold)
+        if (CrimsonFlip === 0) {
           el.style.color = "rgb(0,179,255)";  // Bright Blue
-          godlyFlip = 1;
-        } else if (godlyFlip === 1) {
+          CrimsonFlip = 1;
+        } else if (CrimsonFlip === 1) {
           el.style.color = "white";  // Reset to White
-          godlyFlip = 2;
+          CrimsonFlip = 2;
         } else {
           el.style.color = "rgb(153,128,26)";  // Dark Gold
-          godlyFlip = 0;
+          CrimsonFlip = 0;
         }
       } else {
         // For other tiers (Master, Diamond, etc.), apply the regular flashing effect
