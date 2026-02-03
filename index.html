@@ -176,8 +176,6 @@ function tierToIcon(tier) {
 /* ------------------ TIER AND GROUP FLASHING ------------------ */
 function tierPulseColor(tier, godlyFlip) {
   switch (tier) {
-    case "Godly":
-      return godlyFlip ? "rgb(0,179,255)" : "rgb(153,128,26)";
     case "Master":
       return "rgb(102,0,153)";
     case "Diamond I":
@@ -206,21 +204,21 @@ function startTierFlash(el, tier) {
   setInterval(() => {
     if (state) {
       el.style.color = "white";  // Base state: White
-      el.style.fontWeight = "bold"; // Keep it bold
+      el.style.fontWeight = "bold"; // Ensure it's bold
     } else {
-      el.style.fontWeight = "bold";  // Keep it bold
+      el.style.fontWeight = "bold";  // Ensure it stays bold
 
       if (tier === "Godly") {
-        // Alternating logic for Godly tier (white -> blue -> white -> gold)
+        // Alternating logic for Godly tier
         if (godlyFlip === 0) {
           el.style.color = "rgb(0,179,255)";  // Bright Blue
           godlyFlip = 1;
         } else if (godlyFlip === 1) {
-          el.style.color = "white";  // Reset to White
-          godlyFlip = 0;
-        } else {
           el.style.color = "rgb(153,128,26)";  // Dark Gold
           godlyFlip = 2;
+        } else {
+          el.style.color = "white";  // Reset to White
+          godlyFlip = 0;
         }
       } else {
         // For other tiers (Master, Diamond, etc.), apply the regular flashing effect
@@ -228,9 +226,8 @@ function startTierFlash(el, tier) {
       }
     }
     state = !state;
-  }, 700); // Flash the color every 700ms
+  }, 600); // Flash the color every 600ms
 }
-
 
 
 /* ------------------ TIER AND GROUP FLASHING ------------------ */
