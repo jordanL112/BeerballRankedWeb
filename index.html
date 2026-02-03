@@ -270,20 +270,21 @@ fetch("leaderboard.json")
       teamSpan.textContent = team;
       teamSpan.style.color = "white";
 	
-      // Check if the team has a purchased color (non-black)
-	if (team && p.teamColor && !isBlackColor(p.teamColor)) {
-  		startGroupFlash(teamSpan, colorToCss(p.teamColor));  // Apply flashing effect if color exists
-	}
+      // Team flashes if a teamColor is defined, regardless of being black or not
+      if (team && p.teamColor) {
+        startGroupFlash(teamSpan, p.teamColor);  // Apply flashing effect if color exists
+      }
 
       // CLAN span
       const clanSpan = document.createElement("span");
       clanSpan.textContent = clan;
       clanSpan.style.color = "white";
 
-	// Check if the clan has a purchased color (non-black)
-	if (clan && p.clanColor && !isBlackColor(p.clanColor)) {
- 	 startGroupFlash(clanSpan, colorToCss(p.clanColor));  // Apply flashing effect if color exists
-	}
+      // Clan flashes if a clanColor is defined, regardless of being black or not
+      if (clan && p.clanColor) {
+        startGroupFlash(clanSpan, p.clanColor);  // Apply flashing effect if color exists
+      }
+
       row.innerHTML = `
         <td class="rank-cell">
           <span>${p.rank}</span>
@@ -313,18 +314,15 @@ fetch("leaderboard.json")
         startTierFlash(nameSpan, normText(p.tier));
       }
 
-	// ---- Apply flashing rules ----
+      // Team flashes if a teamColor is defined, regardless of being black or not
+      if (team && p.teamColor) {
+        startGroupFlash(teamSpan, p.teamColor);  // Apply flashing effect if color exists
+      }
 
-	// Team flashes if a teamColor is defined, regardless of being black or not
-	if (team && p.teamColor) {
-  		startGroupFlash(teamSpan, p.teamColor);  // Apply flashing effect if color exists
-	}
-
-	// Clan flashes if a clanColor is defined, regardless of being black or not
-	if (clan && p.clanColor) {
-  		startGroupFlash(clanSpan, p.clanColor);  // Apply flashing effect if color exists
-	}
-
+      // Clan flashes if a clanColor is defined, regardless of being black or not
+      if (clan && p.clanColor) {
+        startGroupFlash(clanSpan, p.clanColor);  // Apply flashing effect if color exists
+      }
 
     });
   })
