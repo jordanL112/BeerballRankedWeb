@@ -177,8 +177,7 @@ function tierToIcon(tier) {
 function tierPulseColor(tier, godlyFlip) {
   switch (tier) {
     case "Godly":
-      // We'll handle Godly flashing inside startTierFlash, no need for tierPulseColor
-      return null;
+      return "rgb(0,179,255)";
     case "Master":
       return "rgb(102,0,153)";
     case "Diamond I":
