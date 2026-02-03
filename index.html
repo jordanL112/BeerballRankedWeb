@@ -1,84 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8" />
-<title>Beerball Leaderboard</title>
+  <meta charset="UTF-8" />
+  <title>Beerball Leaderboard</title>
 
-<style>
-  body {
-    background:#0f0f0f;
-    color:white;
-    font-family:Arial, sans-serif;
-    margin:20px;
-  }
-
-  nav {
-    display:flex;
-    justify-content:center;
-    gap:15px;
-    margin-bottom:20px;
-  }
-
-  /* Ensure all player names are bold */
-  .name-cell, .team-cell, .clan-cell {
-    font-weight: bold;
-  }
-
-  .nav-button {
-    padding:10px 20px;
-    background-color:#444;
-    border:none;
-    color:white;
-    cursor:pointer;
-  }
-
-  .nav-button:hover { background-color:#666; }
-
-  .section { display:none; }
-
-  table {
-    width:100%;
-    border-collapse:collapse;
-  }
-
-  th, td {
-    padding:10px;
-    border-bottom:1px solid #333;
-    text-align:center;
-  }
-
-  th {
-    position:sticky;
-    top:0;
-    background:#000;
-  }
-
-  tr:hover { background:#222; }
-
-  .rank-icon {
-    width:50px;
-    height:50px;
-  }
-
-  /* Optional: make flashing look smoother than MATLAB */
-  .flash-smooth {
-    transition: color 180ms linear;
-    will-change: color;
-  }
-
-  /* Animation for fading the color */
-  @keyframes fadeInOut {
-    0% {
+  <style>
+    body {
+      background: #0f0f0f;
       color: white;
+      font-family: Arial, sans-serif;
+      margin: 20px;
     }
-    50% {
-      color: rgb(0, 179, 255); /* Crimson Bright Blue */
+
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+      margin-bottom: 20px;
     }
-    100% {
-      color: rgb(153, 128, 26); /* Crimson Dark Gold */
+
+    /* Ensure all player names are bold */
+    .name-cell, .team-cell, .clan-cell {
+      font-weight: bold;
     }
-  }
-</style>
+
+    .nav-button {
+      padding: 10px 20px;
+      background-color: #444;
+      border: none;
+      color: white;
+      cursor: pointer;
+    }
+
+    .nav-button:hover { 
+      background-color: #666; 
+    }
+
+    .section { 
+      display: none; 
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+
+    th, td {
+      padding: 10px;
+      border-bottom: 1px solid #333;
+      text-align: center;
+    }
+
+    th {
+      position: sticky;
+      top: 0;
+      background: #000;
+    }
+
+    tr:hover { 
+      background: #222; 
+    }
+
+    .rank-icon {
+      width: 50px;
+      height: 50px;
+    }
+
+    /* Optional: make flashing look smoother than MATLAB */
+    .flash-smooth {
+      transition: color 180ms linear;
+      will-change: color;
+    }
+
+    /* Animation for fading the color */
+    @keyframes fadeInOut {
+      0% {
+        color: white;
+      }
+      50% {
+        color: rgb(0, 179, 255); /* Crimson Bright Blue */
+      }
+      100% {
+        color: rgb(153, 128, 26); /* Crimson Dark Gold */
+      }
+    }
+  </style>
 </head>
 
 <body>
@@ -139,17 +145,6 @@ function findClanColor(clanName, clans) {
   const clan = clans.find(c => c.name === clanName);
   return clan ? clan.color : null;
 }
-
-    // Function to adjust icon size if it's Crimson
-    function adjustIconSize() {
-      const icons = document.querySelectorAll('.rank-icon');
-      icons.forEach(icon => {
-        if (icon.src.includes('crimson.png')) {
-          icon.style.width = '75px';  // Set size for Crimson icons
-          icon.style.height = '75px';
-        }
-      });
-    }
 
 /* ------------------ SECTION SWITCH ------------------ */
 function showSection(sectionId) {
@@ -241,7 +236,6 @@ function startTierFlash(el, tier) {
     state = !state;
   }, 600); // Flash the color every 600ms
 }
-
 
 /* ------------------ TIER AND GROUP FLASHING ------------------ */
 function startFlash(el, color1, color2) {
@@ -342,9 +336,6 @@ fetch("leaderboard.json")
       }
     });
   })
-
-  adjustIconSize();
-
   .catch(err => {
     console.error("Error loading leaderboard.json:", err);
   });
@@ -352,11 +343,6 @@ fetch("leaderboard.json")
 // Default view
 showSection("leaderboard");
 
-
 </script>
-
-
-
-
 </body>
 </html>
