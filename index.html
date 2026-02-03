@@ -221,17 +221,20 @@ function startTierFlash(el, tier) {
   }, 600); // Keep this interval for flashing
 }
 
-function startGroupFlash(el, cssColor) {
+/* ------------------ TIER AND GROUP FLASHING ------------------ */
+function startFlash(el, color1, color2) {
   el.classList.add("flash-smooth");
 
-  let state = true;
+  let state = true;      // true -> base, false -> pulse
+  let flip = false;      // for alternating pulse colors
+
   setInterval(() => {
     if (state) {
-      el.style.color = cssColor;  // Set the color to the provided color
-      el.style.fontWeight = "bold"; // Ensure it stays bold
+      el.style.color = color1;  // Base color
+      el.style.fontWeight = "bold"; // Keep it bold
     } else {
-      el.style.color = cssColor;  // Flashing the color
-      el.style.fontWeight = "bold"; // Keep bold
+      el.style.color = color2;  // Flashing color
+      el.style.fontWeight = "bold"; // Keep it bold
     }
     state = !state;
   }, 700);  // Flash the color every 700ms
@@ -262,17 +265,16 @@ fetch("leaderboard.json")
       // NAME span (so we can flash it)
       const nameSpan = document.createElement("span");
       nameSpan.textContent = name;
-      nameSpan.style.color = "white";
+      nameSpan.style.color = "white"; // Default to white
 
       // TEAM span
       const teamSpan = document.createElement("span");
       teamSpan.textContent = team;
-      teamSpan.style.color = "white";
       teamSpan.style.fontWeight = "bold";  // Keep team names bold
 
-      // Team flashes if a teamColor is defined
-      if (team && p.teamColor) {
-        startGroupFlash(teamSpan, p.teamColor);  // Apply flashing effect if color exists
+      // Apply flashing effect to team if teamColor exists
+      if (p.teamColor) {
+        startFlash(teamSpan, "white", p.teamColor);  // Apply flashing effect if team color is defined
       } else {
         teamSpan.style.color = "white";  // Default to white if no teamColor
       }
@@ -280,12 +282,11 @@ fetch("leaderboard.json")
       // CLAN span
       const clanSpan = document.createElement("span");
       clanSpan.textContent = clan;
-      clanSpan.style.color = "white";
       clanSpan.style.fontWeight = "bold";  // Keep clan names bold
 
-      // Clan flashes if a clanColor is defined
-      if (clan && p.clanColor) {
-        startGroupFlash(clanSpan, p.clanColor);  // Apply flashing effect if color exists
+      // Apply flashing effect to clan if clanColor exists
+      if (p.clanColor) {
+        startFlash(clanSpan, "white", p.clanColor);  // Apply flashing effect if clan color is defined
       } else {
         clanSpan.style.color = "white";  // Default to white if no clanColor
       }
@@ -313,12 +314,10 @@ fetch("leaderboard.json")
       tbody.appendChild(row);
 
       // ---- Apply flashing rules ----
-
       // Player name flashes ONLY if purchased (p.hasFlash === true)
       if (p.hasFlash === true) {
-        startTierFlash(nameSpan, normText(p.tier));
+        startFlash(nameSpan, "white", tierPulseColor(p.tier, false));
       }
-
     });
   })
   .catch(err => {
@@ -327,6 +326,7 @@ fetch("leaderboard.json")
 
 // Default view
 showSection("leaderboard");
+
 </script>
 
 
