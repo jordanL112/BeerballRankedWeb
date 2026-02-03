@@ -227,14 +227,14 @@ function startGroupFlash(el, cssColor) {
   let state = true;
   setInterval(() => {
     if (state) {
-      el.style.color = cssColor;  // Start with the original color
+      el.style.color = cssColor;  // Set the color to the provided color
       el.style.fontWeight = "bold"; // Ensure it stays bold
     } else {
-      el.style.color = cssColor;  // Flash the color
+      el.style.color = cssColor;  // Flashing the color
       el.style.fontWeight = "bold"; // Keep bold
     }
     state = !state;
-  }, 700);
+  }, 700);  // Flash the color every 700ms
 }
 
 /* ------------------ RENDER ------------------ */
@@ -273,6 +273,8 @@ fetch("leaderboard.json")
       // Team flashes if a teamColor is defined
       if (team && p.teamColor) {
         startGroupFlash(teamSpan, p.teamColor);  // Apply flashing effect if color exists
+      } else {
+        teamSpan.style.color = "white";  // Default to white if no teamColor
       }
 
       // CLAN span
@@ -284,6 +286,8 @@ fetch("leaderboard.json")
       // Clan flashes if a clanColor is defined
       if (clan && p.clanColor) {
         startGroupFlash(clanSpan, p.clanColor);  // Apply flashing effect if color exists
+      } else {
+        clanSpan.style.color = "white";  // Default to white if no clanColor
       }
 
       row.innerHTML = `
