@@ -322,6 +322,7 @@ if (team && p.teamColor && p.teamColor !== "rgb(0, 0, 0)") {
 
 // Clan flashes ONLY if a non-black clanColor exists
 if (clan && p.clanColor && p.clanColor !== "rgb(0, 0, 0)") {
+  console.log('Clan Color: ', p.clanColor);  // Debugging line
   startGroupFlash(clanSpan, p.clanColor);  // Apply flashing effect if color exists
 }
 
