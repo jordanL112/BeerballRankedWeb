@@ -201,25 +201,36 @@ function startTierFlash(el, tier) {
   el.classList.add("flash-smooth");
 
   let state = true;      // true -> base, false -> pulse (matching MATLAB toggle)
-  let godlyFlip = false; // for Godly alternating pulse color
+  let godlyFlip = 0;     // 0 -> white, 1 -> blue, 2 -> gold (for Godly tier)
 
   setInterval(() => {
     if (state) {
       el.style.color = "white";  // Base state: White
-      // Font-weight stays bold
+      el.style.fontWeight = "bold"; // Ensure it's bold
     } else {
-      // PULSE STATE (keep it bold)
-      el.style.fontWeight = "bold";  // Ensures it stays bold
+      el.style.fontWeight = "bold";  // Ensure it stays bold
+
       if (tier === "Godly") {
-        el.style.color = tierPulseColor(tier, godlyFlip);
-        godlyFlip = !godlyFlip;
+        // Alternating logic for Godly tier
+        if (godlyFlip === 0) {
+          el.style.color = "rgb(0,179,255)";  // Bright Blue
+          godlyFlip = 1;
+        } else if (godlyFlip === 1) {
+          el.style.color = "rgb(153,128,26)";  // Dark Gold
+          godlyFlip = 2;
+        } else {
+          el.style.color = "white";  // Reset to White
+          godlyFlip = 0;
+        }
       } else {
+        // For other tiers (Master, Diamond, etc.), apply the regular flashing effect
         el.style.color = tierPulseColor(tier, false);
       }
     }
     state = !state;
-  }, 600); // Keep this interval for flashing
+  }, 600); // Flash the color every 600ms
 }
+
 
 /* ------------------ TIER AND GROUP FLASHING ------------------ */
 function startFlash(el, color1, color2) {
