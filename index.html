@@ -140,6 +140,17 @@ function findClanColor(clanName, clans) {
   return clan ? clan.color : null;
 }
 
+    // Function to adjust icon size if it's Crimson
+    function adjustIconSize() {
+      const icons = document.querySelectorAll('.rank-icon');
+      icons.forEach(icon => {
+        if (icon.src.includes('crimson.png')) {
+          icon.style.width = '75px';  // Set size for Crimson icons
+          icon.style.height = '75px';
+        }
+      });
+    }
+
 /* ------------------ SECTION SWITCH ------------------ */
 function showSection(sectionId) {
   document.querySelectorAll('.section').forEach(s => s.style.display = 'none');
@@ -331,6 +342,9 @@ fetch("leaderboard.json")
       }
     });
   })
+
+  adjustIconSize();
+
   .catch(err => {
     console.error("Error loading leaderboard.json:", err);
   });
