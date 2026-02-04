@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <title>Beerball Player Cards</title>
 
   <style>
     body {
@@ -150,7 +151,7 @@
 
     /* ===================== IDENTITY ===================== */
     .card-id {
-      text-align: center;
+      text-align: left;
       padding: 14px;
     }
 
@@ -174,9 +175,10 @@
       display: flex;
       flex-direction: column;
       justify-content: flex-start;
-      align-items: center;
+      align-items: flex-start;
       gap: 10px;
       margin: 12px 0;
+      padding-left: 14px;
     }
 
     .badge {
@@ -208,7 +210,7 @@
       gap: 5px; /* Space between each stat */
       padding: 5px;
       position: absolute;
-      bottom: 15px;  /* Position the stats at the bottom of the card */
+      bottom: 50px;  /* Position the stats at the bottom of the card */
       left: 15px;    /* Align the stats to the left */
       color: white;
     }
@@ -232,13 +234,14 @@
     /* ===================== WINRATE ===================== */
     .winrate {
       padding: 16px;
-      bottom: 2px;  /* Position the stats at the bottom of the card */
+      position: absolute;
+      bottom: 2px;  /* Position the winrate below the stats */
       right: 4px;
     }
 
     .bar {
       height: 12px;
-      bottom: 2px;  /* Position the stats at the bottom of the card */
+      bottom: 2px;  /* Position the winrate at the bottom of the card */
       background: rgba(255, 255, 255, .1);
       border-radius: 999px;
       overflow: hidden;
