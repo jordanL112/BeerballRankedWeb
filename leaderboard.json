@@ -12,6 +12,13 @@
       "clan": "Great Personality",
       "teamColor": "rgb(255, 218, 0)",
       "clanColor": "rgb(128, 0, 128)",
+      "playerArt": "art/Matt Latour-art.png",
+      "playerPicture": "art/Matt Latour-picture.png",
+      "badges": [
+        "placeholder",
+        "placeholder",
+        "placeholder"
+      ],
       "hasFlash": true
     },
     {
@@ -26,6 +33,13 @@
       "clan": "Beer Pressure",
       "teamColor": "",
       "clanColor": "rgb(0, 128, 0)",
+      "playerArt": "art/Charlie Steel-art.png",
+      "playerPicture": "art/Charlie Steel-picture.png",
+      "badges": [
+        "placeholder",
+        "placeholder",
+        "placeholder"
+      ],
       "hasFlash": []
     },
     {
@@ -40,6 +54,13 @@
       "clan": "Beer Pressure",
       "teamColor": "",
       "clanColor": "rgb(0, 128, 0)",
+      "playerArt": "art/Dylan Benefield-art.png",
+      "playerPicture": "art/Dylan Benefield-picture.png",
+      "badges": [
+        "placeholder",
+        "placeholder",
+        "placeholder"
+      ],
       "hasFlash": []
     },
     {
@@ -54,6 +75,13 @@
       "clan": "Great Personality",
       "teamColor": "rgb(255, 218, 0)",
       "clanColor": "rgb(128, 0, 128)",
+      "playerArt": "art/Deshaun W-art.png",
+      "playerPicture": "art/Deshaun W-picture.png",
+      "badges": [
+        "placeholder",
+        "placeholder",
+        "placeholder"
+      ],
       "hasFlash": []
     },
     {
@@ -68,6 +96,13 @@
       "clan": "Great Personality",
       "teamColor": "rgb(0, 0, 0)",
       "clanColor": "rgb(128, 0, 128)",
+      "playerArt": "art/Jordan Lusk-art.png",
+      "playerPicture": "art/Jordan Lusk-picture.png",
+      "badges": [
+        "placeholder",
+        "placeholder",
+        "placeholder"
+      ],
       "hasFlash": true
     },
     {
@@ -82,6 +117,13 @@
       "clan": "Great Personality",
       "teamColor": "rgb(0, 0, 0)",
       "clanColor": "rgb(128, 0, 128)",
+      "playerArt": "art/Jackson Martin-art.png",
+      "playerPicture": "art/Jackson Martin-picture.png",
+      "badges": [
+        "placeholder",
+        "placeholder",
+        "placeholder"
+      ],
       "hasFlash": true
     },
     {
@@ -96,6 +138,13 @@
       "clan": "Six Eyes",
       "teamColor": "rgb(0, 0, 0)",
       "clanColor": "rgb(0, 128, 255)",
+      "playerArt": "art/Gurp Singh-art.png",
+      "playerPicture": "art/Gurp Singh-picture.png",
+      "badges": [
+        "placeholder",
+        "placeholder",
+        "placeholder"
+      ],
       "hasFlash": true
     },
     {
@@ -110,6 +159,13 @@
       "clan": "WANGHAF",
       "teamColor": "rgb(0, 0, 0)",
       "clanColor": "rgb(255, 0, 0)",
+      "playerArt": "art/Sam Purintun-art.png",
+      "playerPicture": "art/Sam Purintun-picture.png",
+      "badges": [
+        "placeholder",
+        "placeholder",
+        "placeholder"
+      ],
       "hasFlash": []
     },
     {
@@ -124,6 +180,13 @@
       "clan": "Six Eyes",
       "teamColor": "",
       "clanColor": "rgb(0, 128, 255)",
+      "playerArt": "art/Dillan Pope-art.png",
+      "playerPicture": "art/Dillan Pope-picture.png",
+      "badges": [
+        "placeholder",
+        "placeholder",
+        "placeholder"
+      ],
       "hasFlash": []
     },
     {
@@ -138,6 +201,13 @@
       "clan": "Six Eyes",
       "teamColor": "rgb(0, 0, 0)",
       "clanColor": "rgb(0, 128, 255)",
+      "playerArt": "art/Preston Hart-art.png",
+      "playerPicture": "art/Preston Hart-picture.png",
+      "badges": [
+        "placeholder",
+        "placeholder",
+        "placeholder"
+      ],
       "hasFlash": []
     },
     {
@@ -152,6 +222,13 @@
       "clan": "WANGHAF",
       "teamColor": "",
       "clanColor": "rgb(255, 0, 0)",
+      "playerArt": "art/Brant J-art.png",
+      "playerPicture": "art/Brant J-picture.png",
+      "badges": [
+        "placeholder",
+        "placeholder",
+        "placeholder"
+      ],
       "hasFlash": []
     },
     {
@@ -166,6 +243,13 @@
       "clan": "WANGHAF",
       "teamColor": "",
       "clanColor": "rgb(255, 0, 0)",
+      "playerArt": "art/Jackson Banks-art.png",
+      "playerPicture": "art/Jackson Banks-picture.png",
+      "badges": [
+        "placeholder",
+        "placeholder",
+        "placeholder"
+      ],
       "hasFlash": []
     },
     {
@@ -180,6 +264,13 @@
       "clan": "Beer Pressure",
       "teamColor": "",
       "clanColor": "rgb(0, 128, 0)",
+      "playerArt": "art/Trey R-art.png",
+      "playerPicture": "art/Trey R-picture.png",
+      "badges": [
+        "placeholder",
+        "placeholder",
+        "placeholder"
+      ],
       "hasFlash": []
     },
     {
@@ -194,6 +285,13 @@
       "clan": "WANGHAF",
       "teamColor": "",
       "clanColor": "rgb(255, 0, 0)",
+      "playerArt": "art/Matt Wolf-art.png",
+      "playerPicture": "art/Matt Wolf-picture.png",
+      "badges": [
+        "placeholder",
+        "placeholder",
+        "placeholder"
+      ],
       "hasFlash": []
     },
     {
@@ -208,6 +306,17 @@
       "clan": "Beer Pressure",
       "teamColor": "",
       "clanColor": "rgb(0, 128, 0)",
+      "playerArt": [
+        "art/TA-art.png"
+      ],
+      "playerPicture": [
+        "art/TA-picture.png"
+      ],
+      "badges": [
+        "placeholder",
+        "placeholder",
+        "placeholder"
+      ],
       "hasFlash": false
     },
     {
@@ -222,6 +331,13 @@
       "clan": "WANGHAF",
       "teamColor": "",
       "clanColor": "rgb(255, 0, 0)",
+      "playerArt": "art/Aaron Lane-art.png",
+      "playerPicture": "art/Aaron Lane-picture.png",
+      "badges": [
+        "placeholder",
+        "placeholder",
+        "placeholder"
+      ],
       "hasFlash": []
     },
     {
@@ -236,6 +352,13 @@
       "clan": "WANGHAF",
       "teamColor": "rgb(0, 0, 0)",
       "clanColor": "rgb(255, 0, 0)",
+      "playerArt": "art/Davis Bjornstad-art.png",
+      "playerPicture": "art/Davis Bjornstad-picture.png",
+      "badges": [
+        "placeholder",
+        "placeholder",
+        "placeholder"
+      ],
       "hasFlash": []
     },
     {
@@ -250,6 +373,13 @@
       "clan": "Beer Pressure",
       "teamColor": "",
       "clanColor": "rgb(0, 128, 0)",
+      "playerArt": "art/Ed-art.png",
+      "playerPicture": "art/Ed-picture.png",
+      "badges": [
+        "placeholder",
+        "placeholder",
+        "placeholder"
+      ],
       "hasFlash": []
     },
     {
@@ -264,6 +394,13 @@
       "clan": "Six Eyes",
       "teamColor": "",
       "clanColor": "rgb(0, 128, 255)",
+      "playerArt": "art/Drake Jackson-art.png",
+      "playerPicture": "art/Drake Jackson-picture.png",
+      "badges": [
+        "placeholder",
+        "placeholder",
+        "placeholder"
+      ],
       "hasFlash": []
     },
     {
@@ -278,6 +415,13 @@
       "clan": "WANGHAF",
       "teamColor": "",
       "clanColor": "rgb(255, 0, 0)",
+      "playerArt": "art/Ryan Shurtz-art.png",
+      "playerPicture": "art/Ryan Shurtz-picture.png",
+      "badges": [
+        "placeholder",
+        "placeholder",
+        "placeholder"
+      ],
       "hasFlash": []
     },
     {
@@ -292,6 +436,13 @@
       "clan": "Great Personality",
       "teamColor": "",
       "clanColor": "rgb(128, 0, 128)",
+      "playerArt": "art/Zeke Shipman-art.png",
+      "playerPicture": "art/Zeke Shipman-picture.png",
+      "badges": [
+        "placeholder",
+        "placeholder",
+        "placeholder"
+      ],
       "hasFlash": []
     },
     {
@@ -306,6 +457,13 @@
       "clan": "WANGHAF",
       "teamColor": "",
       "clanColor": "rgb(255, 0, 0)",
+      "playerArt": "art/Andrew Hickman-art.png",
+      "playerPicture": "art/Andrew Hickman-picture.png",
+      "badges": [
+        "placeholder",
+        "placeholder",
+        "placeholder"
+      ],
       "hasFlash": []
     },
     {
@@ -320,6 +478,13 @@
       "clan": "Beer Pressure",
       "teamColor": "",
       "clanColor": "rgb(0, 128, 0)",
+      "playerArt": "art/Jackson Reiber-art.png",
+      "playerPicture": "art/Jackson Reiber-picture.png",
+      "badges": [
+        "placeholder",
+        "placeholder",
+        "placeholder"
+      ],
       "hasFlash": []
     },
     {
@@ -334,6 +499,13 @@
       "clan": "Great Personality",
       "teamColor": "",
       "clanColor": "rgb(128, 0, 128)",
+      "playerArt": "art/Brandon Beatty-art.png",
+      "playerPicture": "art/Brandon Beatty-picture.png",
+      "badges": [
+        "placeholder",
+        "placeholder",
+        "placeholder"
+      ],
       "hasFlash": []
     },
     {
@@ -348,6 +520,13 @@
       "clan": "Beer Pressure",
       "teamColor": "",
       "clanColor": "rgb(0, 128, 0)",
+      "playerArt": "art/Lane Elkins-art.png",
+      "playerPicture": "art/Lane Elkins-picture.png",
+      "badges": [
+        "placeholder",
+        "placeholder",
+        "placeholder"
+      ],
       "hasFlash": []
     },
     {
@@ -362,6 +541,13 @@
       "clan": "Six Eyes",
       "teamColor": "",
       "clanColor": "rgb(0, 128, 255)",
+      "playerArt": "art/Bronson Gregg-art.png",
+      "playerPicture": "art/Bronson Gregg-picture.png",
+      "badges": [
+        "placeholder",
+        "placeholder",
+        "placeholder"
+      ],
       "hasFlash": []
     },
     {
@@ -376,6 +562,17 @@
       "clan": "Beer Pressure",
       "teamColor": "",
       "clanColor": "rgb(0, 128, 0)",
+      "playerArt": [
+        "art/Landon Sarrett-art.png"
+      ],
+      "playerPicture": [
+        "art/Landon Sarrett-picture.png"
+      ],
+      "badges": [
+        "placeholder",
+        "placeholder",
+        "placeholder"
+      ],
       "hasFlash": []
     },
     {
@@ -390,6 +587,13 @@
       "clan": "Six Eyes",
       "teamColor": "",
       "clanColor": "rgb(0, 128, 255)",
+      "playerArt": "art/Lance Roberts-art.png",
+      "playerPicture": "art/Lance Roberts-picture.png",
+      "badges": [
+        "placeholder",
+        "placeholder",
+        "placeholder"
+      ],
       "hasFlash": []
     },
     {
@@ -404,6 +608,17 @@
       "clan": "Beer Pressure",
       "teamColor": "",
       "clanColor": "rgb(0, 128, 0)",
+      "playerArt": [
+        "art/Jackson Reece-art.png"
+      ],
+      "playerPicture": [
+        "art/Jackson Reece-picture.png"
+      ],
+      "badges": [
+        "placeholder",
+        "placeholder",
+        "placeholder"
+      ],
       "hasFlash": []
     },
     {
@@ -418,6 +633,17 @@
       "clan": "Beer Pressure",
       "teamColor": "",
       "clanColor": "rgb(0, 128, 0)",
+      "playerArt": [
+        "art/Alex Lang-art.png"
+      ],
+      "playerPicture": [
+        "art/Alex Lang-picture.png"
+      ],
+      "badges": [
+        "placeholder",
+        "placeholder",
+        "placeholder"
+      ],
       "hasFlash": []
     },
     {
@@ -432,6 +658,13 @@
       "clan": "Six Eyes",
       "teamColor": "",
       "clanColor": "rgb(0, 128, 255)",
+      "playerArt": "art/Brody Sheppard-art.png",
+      "playerPicture": "art/Brody Sheppard-picture.png",
+      "badges": [
+        "placeholder",
+        "placeholder",
+        "placeholder"
+      ],
       "hasFlash": []
     },
     {
@@ -446,6 +679,17 @@
       "clan": "WANGHAF",
       "teamColor": "",
       "clanColor": "rgb(255, 0, 0)",
+      "playerArt": [
+        "art/Phoebe-art.png"
+      ],
+      "playerPicture": [
+        "art/Phoebe-picture.png"
+      ],
+      "badges": [
+        "placeholder",
+        "placeholder",
+        "placeholder"
+      ],
       "hasFlash": []
     },
     {
@@ -460,6 +704,13 @@
       "clan": "WANGHAF",
       "teamColor": "",
       "clanColor": "rgb(255, 0, 0)",
+      "playerArt": "art/Ava Gus-art.png",
+      "playerPicture": "art/Ava Gus-picture.png",
+      "badges": [
+        "placeholder",
+        "placeholder",
+        "placeholder"
+      ],
       "hasFlash": []
     },
     {
@@ -474,6 +725,13 @@
       "clan": "Great Personality",
       "teamColor": "",
       "clanColor": "rgb(128, 0, 128)",
+      "playerArt": "art/Dalen Wagga-art.png",
+      "playerPicture": "art/Dalen Wagga-picture.png",
+      "badges": [
+        "placeholder",
+        "placeholder",
+        "placeholder"
+      ],
       "hasFlash": []
     },
     {
@@ -488,6 +746,17 @@
       "clan": "Great Personality",
       "teamColor": "",
       "clanColor": "rgb(128, 0, 128)",
+      "playerArt": [
+        "art/Bradley Blankenship-art.png"
+      ],
+      "playerPicture": [
+        "art/Bradley Blankenship-picture.png"
+      ],
+      "badges": [
+        "placeholder",
+        "placeholder",
+        "placeholder"
+      ],
       "hasFlash": []
     },
     {
@@ -502,6 +771,17 @@
       "clan": "Six Eyes",
       "teamColor": "",
       "clanColor": "rgb(0, 128, 255)",
+      "playerArt": [
+        "art/Nick Perkins-art.png"
+      ],
+      "playerPicture": [
+        "art/Nick Perkins-picture.png"
+      ],
+      "badges": [
+        "placeholder",
+        "placeholder",
+        "placeholder"
+      ],
       "hasFlash": []
     },
     {
@@ -516,6 +796,13 @@
       "clan": "WANGHAF",
       "teamColor": "",
       "clanColor": "rgb(255, 0, 0)",
+      "playerArt": "art/Hunter Maness-art.png",
+      "playerPicture": "art/Hunter Maness-picture.png",
+      "badges": [
+        "placeholder",
+        "placeholder",
+        "placeholder"
+      ],
       "hasFlash": []
     },
     {
@@ -530,6 +817,13 @@
       "clan": "WANGHAF",
       "teamColor": "",
       "clanColor": "rgb(255, 0, 0)",
+      "playerArt": "art/Jacob Green-art.png",
+      "playerPicture": "art/Jacob Green-picture.png",
+      "badges": [
+        "placeholder",
+        "placeholder",
+        "placeholder"
+      ],
       "hasFlash": []
     },
     {
@@ -544,6 +838,17 @@
       "clan": "Six Eyes",
       "teamColor": "",
       "clanColor": "rgb(0, 128, 255)",
+      "playerArt": [
+        "art/Raina D-art.png"
+      ],
+      "playerPicture": [
+        "art/Raina D-picture.png"
+      ],
+      "badges": [
+        "placeholder",
+        "placeholder",
+        "placeholder"
+      ],
       "hasFlash": []
     },
     {
@@ -558,6 +863,17 @@
       "clan": "Six Eyes",
       "teamColor": "",
       "clanColor": "rgb(0, 128, 255)",
+      "playerArt": [
+        "art/Ian Henderson-art.png"
+      ],
+      "playerPicture": [
+        "art/Ian Henderson-picture.png"
+      ],
+      "badges": [
+        "placeholder",
+        "placeholder",
+        "placeholder"
+      ],
       "hasFlash": []
     },
     {
@@ -572,6 +888,13 @@
       "clan": "Beer Pressure",
       "teamColor": "",
       "clanColor": "rgb(0, 128, 0)",
+      "playerArt": "art/Brady Lawson-art.png",
+      "playerPicture": "art/Brady Lawson-picture.png",
+      "badges": [
+        "placeholder",
+        "placeholder",
+        "placeholder"
+      ],
       "hasFlash": []
     },
     {
@@ -586,6 +909,13 @@
       "clan": "Six Eyes",
       "teamColor": "",
       "clanColor": "rgb(0, 128, 255)",
+      "playerArt": "art/Jake Neiber-art.png",
+      "playerPicture": "art/Jake Neiber-picture.png",
+      "badges": [
+        "placeholder",
+        "placeholder",
+        "placeholder"
+      ],
       "hasFlash": []
     },
     {
@@ -600,6 +930,17 @@
       "clan": "",
       "teamColor": "",
       "clanColor": "",
+      "playerArt": [
+        "art/Landen Simpson-art.png"
+      ],
+      "playerPicture": [
+        "art/Landen Simpson-picture.png"
+      ],
+      "badges": [
+        "placeholder",
+        "placeholder",
+        "placeholder"
+      ],
       "hasFlash": false
     },
     {
@@ -614,6 +955,17 @@
       "clan": "Beer Pressure",
       "teamColor": "",
       "clanColor": "rgb(0, 128, 0)",
+      "playerArt": [
+        "art/Will Sowell-art.png"
+      ],
+      "playerPicture": [
+        "art/Will Sowell-picture.png"
+      ],
+      "badges": [
+        "placeholder",
+        "placeholder",
+        "placeholder"
+      ],
       "hasFlash": false
     },
     {
@@ -628,6 +980,17 @@
       "clan": "",
       "teamColor": "",
       "clanColor": "",
+      "playerArt": [
+        "art/Declan Anderson-art.png"
+      ],
+      "playerPicture": [
+        "art/Declan Anderson-picture.png"
+      ],
+      "badges": [
+        "placeholder",
+        "placeholder",
+        "placeholder"
+      ],
       "hasFlash": false
     },
     {
@@ -642,6 +1005,13 @@
       "clan": "Great Personality",
       "teamColor": "",
       "clanColor": "rgb(128, 0, 128)",
+      "playerArt": "art/EJ-art.png",
+      "playerPicture": "art/EJ-picture.png",
+      "badges": [
+        "placeholder",
+        "placeholder",
+        "placeholder"
+      ],
       "hasFlash": []
     },
     {
@@ -656,6 +1026,17 @@
       "clan": "",
       "teamColor": "",
       "clanColor": "",
+      "playerArt": [
+        "art/Hannen Hileman-art.png"
+      ],
+      "playerPicture": [
+        "art/Hannen Hileman-picture.png"
+      ],
+      "badges": [
+        "placeholder",
+        "placeholder",
+        "placeholder"
+      ],
       "hasFlash": false
     },
     {
@@ -670,6 +1051,13 @@
       "clan": "Great Personality",
       "teamColor": "",
       "clanColor": "rgb(128, 0, 128)",
+      "playerArt": "art/Drew A-art.png",
+      "playerPicture": "art/Drew A-picture.png",
+      "badges": [
+        "placeholder",
+        "placeholder",
+        "placeholder"
+      ],
       "hasFlash": []
     },
     {
@@ -684,6 +1072,17 @@
       "clan": "Great Personality",
       "teamColor": "",
       "clanColor": "rgb(128, 0, 128)",
+      "playerArt": [
+        "art/Labubu-art.png"
+      ],
+      "playerPicture": [
+        "art/Labubu-picture.png"
+      ],
+      "badges": [
+        "placeholder",
+        "placeholder",
+        "placeholder"
+      ],
       "hasFlash": []
     },
     {
@@ -698,6 +1097,17 @@
       "clan": "",
       "teamColor": "",
       "clanColor": "",
+      "playerArt": [
+        "art/Nolan Lynch-art.png"
+      ],
+      "playerPicture": [
+        "art/Nolan Lynch-picture.png"
+      ],
+      "badges": [
+        "placeholder",
+        "placeholder",
+        "placeholder"
+      ],
       "hasFlash": false
     },
     {
@@ -712,6 +1122,13 @@
       "clan": "Six Eyes",
       "teamColor": "",
       "clanColor": "rgb(0, 128, 255)",
+      "playerArt": "art/Michael Hill-art.png",
+      "playerPicture": "art/Michael Hill-picture.png",
+      "badges": [
+        "placeholder",
+        "placeholder",
+        "placeholder"
+      ],
       "hasFlash": []
     },
     {
@@ -726,6 +1143,17 @@
       "clan": "Great Personality",
       "teamColor": "",
       "clanColor": "rgb(128, 0, 128)",
+      "playerArt": [
+        "art/Jelly Fart-art.png"
+      ],
+      "playerPicture": [
+        "art/Jelly Fart-picture.png"
+      ],
+      "badges": [
+        "placeholder",
+        "placeholder",
+        "placeholder"
+      ],
       "hasFlash": false
     },
     {
@@ -740,6 +1168,17 @@
       "clan": "",
       "teamColor": "",
       "clanColor": "",
+      "playerArt": [
+        "art/Sophie Chapman-art.png"
+      ],
+      "playerPicture": [
+        "art/Sophie Chapman-picture.png"
+      ],
+      "badges": [
+        "placeholder",
+        "placeholder",
+        "placeholder"
+      ],
       "hasFlash": false
     },
     {
@@ -754,6 +1193,17 @@
       "clan": "Beer Pressure",
       "teamColor": "",
       "clanColor": "rgb(0, 128, 0)",
+      "playerArt": [
+        "art/Doster C-art.png"
+      ],
+      "playerPicture": [
+        "art/Doster C-picture.png"
+      ],
+      "badges": [
+        "placeholder",
+        "placeholder",
+        "placeholder"
+      ],
       "hasFlash": []
     },
     {
@@ -768,6 +1218,17 @@
       "clan": "Beer Pressure",
       "teamColor": "",
       "clanColor": "rgb(0, 128, 0)",
+      "playerArt": [
+        "art/Cole Baldwin-art.png"
+      ],
+      "playerPicture": [
+        "art/Cole Baldwin-picture.png"
+      ],
+      "badges": [
+        "placeholder",
+        "placeholder",
+        "placeholder"
+      ],
       "hasFlash": []
     },
     {
@@ -782,6 +1243,17 @@
       "clan": "",
       "teamColor": "",
       "clanColor": "",
+      "playerArt": [
+        "art/Aiden Brooks-art.png"
+      ],
+      "playerPicture": [
+        "art/Aiden Brooks-picture.png"
+      ],
+      "badges": [
+        "placeholder",
+        "placeholder",
+        "placeholder"
+      ],
       "hasFlash": false
     }
   ],
