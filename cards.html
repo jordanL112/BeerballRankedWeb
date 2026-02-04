@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Player Cards</title>
+  <style>
+    /* Add your CSS styles here for player cards */
+    .player-card {
+      background: #222;
+      color: white;
+      margin: 20px;
+      padding: 10px;
+      border-radius: 10px;
+      width: 250px;
+      text-align: center;
+      display: inline-block;
+    }
+
+    .player-name {
+      font-size: 20px;
+      font-weight: bold;
+    }
+
+    .player-tier {
+      font-size: 16px;
+    }
+
+    .tier-icon {
+      width: 40px;
+      height: 40px;
+    }
+
+    .player-art img {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+    }
+
+    .player-picture img {
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+    }
+
+    .stats div {
+      margin: 5px 0;
+    }
+
+    .badges img {
+      width: 30px;
+      height: 30px;
+      margin: 5px;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>🍺 Player Cards</h1>
+
+  <div id="player-card-container">
+    <!-- Player cards will be dynamically populated here -->
+  </div>
+
+  <script>
+    fetch("leaderboard.json")
+      .then(response => response.json())
+      .then(data => {
+        const players = data.players;
+        const container = document.getElementById('player-card-container');
+
+        players.forEach(player => {
+          const card = document.createElement('div');
+          card.classList.add('player-card');
+          
+          card.innerHTML = `
+            <div class="player-header">
+              <img src="${player.playerPicture}" alt="Player Picture" class="player-picture">
+              <h2 class="player-name">${player.name}</h2>
+              <span class="player-tier">${player.tier}</span>
+            </div>
+
+            <div class="player-stats">
+              <p>Games Played: ${player.games}</p>
+              <p>Wins: ${player.wins}</p>
+              <p>Losses: ${player.losses}</p>
+            </div>
+
+            <div class="player-badges">
+              <div class="badge-slot">
+                <img src="${player.badges[0] || 'placeholder.png'}" alt="Badge 1" class="badge">
+              </div>
+              <div class="badge-slot">
+                <img src="${player.badges[1] || 'placeholder.png'}" alt="Badge 2" class="badge">
+              </div>
+              <div class="badge-slot">
+                <img src="${player.badges[2] || 'placeholder.png'}" alt="Badge 3" class="badge">
+              </div>
+            </div>
+
+            <div class="player-art">
+              <img src="${player.playerArt}" alt="Player Art" class="art-img">
+            </div>
+          `;
+
+          container.appendChild(card);
+        });
+      })
+      .catch(error => console.error('Error loading leaderboard data:', error));
+  </script>
+
+</body>
+</html>

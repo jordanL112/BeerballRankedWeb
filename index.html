@@ -5,53 +5,6 @@
   <title>Beerball Leaderboard</title>
 
   <style>
- .player-card {
-      background: #222;
-      color: white;
-      margin: 20px;
-      padding: 10px;
-      border-radius: 10px;
-      width: 250px;
-      text-align: center;
-      display: inline-block;
-    }
-
-    .player-name {
-      font-size: 20px;
-      font-weight: bold;
-    }
-
-    .player-tier {
-      font-size: 16px;
-    }
-
-    .tier-icon {
-      width: 40px;
-      height: 40px;
-    }
-
-    .player-art img {
-      width: 100px;
-      height: 100px;
-      border-radius: 50%;
-    }
-
-    .player-picture img {
-      width: 60px;
-      height: 60px;
-      border-radius: 50%;
-    }
-
-    .stats div {
-      margin: 5px 0;
-    }
-
-    .badges img {
-      width: 30px;
-      height: 30px;
-      margin: 5px;
-    }
-
     body {
       background: #0f0f0f;
       color: white;
@@ -179,7 +132,7 @@
 
 <div id="playerCards" class="section">
   <h2>Player Cards</h2>
-  <div id="player-card-container"></div>
+  <iframe src="cards.html" width="100%" height="600px"></iframe>
 </div>
 
 <div id="shop" class="section">
@@ -309,48 +262,6 @@ function startFlash(el, color1, color2) {
     state = !state;
   }, 700);  // Flash the color every 700ms
 }
-
-// Fetch player data from leaderboard.json and render player cards
-fetch("leaderboard.json")
-  .then(r => r.json())
-  .then(data => {
-    const players = data.players || [];
-    const container = document.getElementById("player-card-container");
-    
-    players.forEach(player => {
-      const card = document.createElement("div");
-      card.classList.add("player-card");
-      
-      card.innerHTML = `
-        <div class="player-name">${player.name}</div>
-        <div class="player-tier">${player.tier}</div>
-        <img src="${tierToIcon(player.tier)}" alt="Tier Icon" class="tier-icon">
-        
-        <div class="player-art">
-          <img src="${player.playerArt}" alt="${player.name} Art" class="art-image">
-        </div>
-
-        <div class="player-picture">
-          <img src="${player.playerPicture}" alt="${player.name} Picture" class="picture-image">
-        </div>
-
-        <div class="stats">
-          <div>Kills: ${player.kills || 'No Data'}</div>
-          <div>Wins: ${player.wins || 'No Data'}</div>
-          <div>Losses: ${player.losses || 'No Data'}</div>
-        </div>
-        
-        <div class="badges">
-          ${player.badges.map(badge => `<img src="icons/${badge}.png" alt="${badge} Badge" class="badge">`).join('')}
-        </div>
-      `;
-
-      container.appendChild(card);
-    });
-  })
-  .catch(err => {
-    console.error("Error loading player data:", err);
-  });
 
 /* ------------------ RENDER ------------------ */
 fetch("leaderboard.json")
