@@ -356,7 +356,7 @@
        const badgeImage = p.badges && p.badges[i] ? `icons/${p.badges[i]}` : 'icons/placeholder.png'; 
       badges.push(`
         <div class="badge">
-          <img src="${badgeImage}" alt="Badge ${i + 1}" onerror="this.onerror=null; this.src='placeholder.png'">
+          <img src="${badgeImage}" alt="Badge ${i + 1}" onerror="this.onerror=null; this.src='icons/placeholder.png'">
         </div>
       `);
     }
