@@ -29,9 +29,9 @@
       "games": 18,
       "wins": 14,
       "losses": 4,
-      "team": "",
+      "team": "Walk It Like We Talk It",
       "clan": "Beer Pressure",
-      "teamColor": "",
+      "teamColor": "rgb(0, 0, 0)",
       "clanColor": "rgb(0, 128, 0)",
       "playerArt": "art/Charlie Steel-art.png",
       "playerPicture": "art/Charlie Steel-picture.png",
@@ -50,9 +50,9 @@
       "games": 21,
       "wins": 14,
       "losses": 7,
-      "team": "",
+      "team": "Walk It Like We Talk It",
       "clan": "Beer Pressure",
-      "teamColor": "",
+      "teamColor": "rgb(0, 0, 0)",
       "clanColor": "rgb(0, 128, 0)",
       "playerArt": "art/Dylan Benefield-art.png",
       "playerPicture": "art/Dylan Benefield-picture.png",
@@ -1273,6 +1273,10 @@
     {
       "name": "Yin & Yang",
       "color": "rgb(255, 218, 0)"
+    },
+    {
+      "name": "Walk It Like We Talk It",
+      "color": "rgb(0, 0, 0)"
     }
   ],
   "clans": [
