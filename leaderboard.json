@@ -99,9 +99,9 @@
       "playerArt": "art/Jordan Lusk-art.png",
       "playerPicture": "art/Jordan Lusk-picture.png",
       "badges": [
-        "placeholder",
-        "placeholder",
-        "placeholder"
+        "tengame",
+        "rank",
+        "unbreakable"
       ],
       "hasFlash": true
     },
