@@ -175,32 +175,33 @@
       display: flex;
       flex-direction: column;
       justify-content: flex-start;
-      align-items: flex-start;
+      align-items: center;
       gap: 10px;
       margin: 12px 0;
       padding-left: 14px;
     }
 
     .badge {
-      padding: 6px 12px;
-      border-radius: 999px;
-      font-size: 12px;
-      font-weight: 900;
-      letter-spacing: 1px;
-      border: 1px solid rgba(255, 255, 255, .2);
-      background: rgba(0, 0, 0, .35);
+      width: 40px;
+      height: 40px;
+      border-radius: 5px;
+      background-color: #333;
+      display: flex;
+      justify-content: center;
+      align-items: center;
     }
 
-    .badge.flash {
-      box-shadow: 0 0 12px var(--flash);
+    .badge img {
+      width: 100%;
+      height: auto;
+      border-radius: 5px;
     }
 
-    .badge.leader {
-      background: #6a00ff;
-    }
-
-    .badge.bounty {
-      background: #b30000;
+    .badge-placeholder {
+      background-color: #444;
+      color: white;
+      font-size: 14px;
+      font-weight: bold;
     }
 
     /* ===================== STATS ===================== */
@@ -345,9 +346,14 @@
 
   function cardHTML(p) {
     const badges = [];
-    if (p.isClanLeader) badges.push(`<div class="badge leader">CLAN LEADER</div>`);
-    if (p.hasBounty) badges.push(`<div class="badge bounty">BOUNTY</div>`);
-    if (p.hasFlash) badges.push(`<div class="badge flash">⚡ FLASH</div>`);
+    for (let i = 0; i < 3; i++) {
+      const badgeImage = p.badges && p.badges[i] ? p.badges[i] : 'placeholder.png';  // Use 'placeholder.png' if badge is missing
+      badges.push(`
+        <div class="badge">
+          <img src="${badgeImage}" alt="Badge ${i + 1}" onerror="this.onerror=null; this.src='placeholder.png'">
+        </div>
+      `);
+    }
 
     let rankBadge = '';
     if (p.tier === 'Crimson' || p.tier.includes('champ')) {
@@ -385,6 +391,7 @@
           <div class="team" style="color:${p.teamColor || 'white'}">${p.team || ''}</div>
         </div>
 
+        <!-- Display badges vertically -->
         <div class="badges">${badges.join('')}</div>
 
         <div class="stats">
