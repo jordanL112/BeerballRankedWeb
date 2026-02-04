@@ -202,11 +202,15 @@
     }
 
     /* ===================== STATS ===================== */
-    .stats {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 10px;
-      padding: 0 16px;
+     .stats {
+      display: flex;
+      flex-direction: column;  /* Stack the stats vertically */
+      gap: 8px; /* Space between each stat */
+      padding: 10px;
+      position: absolute;
+      bottom: 20px;  /* Position the stats at the bottom of the card */
+      left: 20px;    /* Align the stats to the left */
+      color: white;
     }
 
     .stat {
