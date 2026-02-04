@@ -5,7 +5,7 @@
   <title>Beerball Leaderboard</title>
 
   <style>
- .player-card {
+    .player-card {
       background: #222;
       color: white;
       margin: 20px;
@@ -180,41 +180,41 @@
 <div id="playerCards" class="section">
   <h2>Player Cards</h2>
   <div id="player-card-container">
+    <!-- Example Player Card Template -->
     <div class="player-card">
       <div class="player-header">
         <!-- Player Image -->
-        <img src="{{player.playerImage}}" alt="Player Picture" class="player-img">
-        <h2 class="player-name">{{player.name}}</h2>
-        <span class="player-tier">{{player.tier}}</span>
+        <img src="art/placeholder.png" alt="Player Picture" class="player-img">
+        <h2 class="player-name">Player Name</h2>
+        <span class="player-tier">Tier</span>
       </div>
 
       <div class="player-stats">
-        <p>Games Played: {{player.games}}</p>
-        <p>Wins: {{player.wins}}</p>
-        <p>Losses: {{player.losses}}</p>
+        <p>Games Played: 10</p>
+        <p>Wins: 7</p>
+        <p>Losses: 3</p>
       </div>
 
       <div class="player-badges">
         <!-- Badge Slots -->
         <div class="badge-slot">
-          <img src="{{player.badges[0] || 'placeholder.png'}}" alt="Badge 1" class="badge">
+          <img src="art/placeholder.png" alt="Badge 1" class="badge">
         </div>
         <div class="badge-slot">
-          <img src="{{player.badges[1] || 'placeholder.png'}}" alt="Badge 2" class="badge">
+          <img src="art/placeholder.png" alt="Badge 2" class="badge">
         </div>
         <div class="badge-slot">
-          <img src="{{player.badges[2] || 'placeholder.png'}}" alt="Badge 3" class="badge">
+          <img src="art/placeholder.png" alt="Badge 3" class="badge">
         </div>
       </div>
 
       <!-- Player Art -->
       <div class="player-art">
-        <img src="{{player.playerArt}}" alt="Player Art" class="art-img">
+        <img src="art/placeholder.png" alt="Player Art" class="art-img">
       </div>
     </div>
   </div>
 </div>
-
 
 <div id="shop" class="section">
   <h2>Points Shop</h2>
