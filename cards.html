@@ -353,7 +353,7 @@
   function cardHTML(p) {
     const badges = [];
     for (let i = 0; i < 3; i++) {
-      const badgeImage = p.badges && p.badges[i] ? p.badges[i] : 'placeholder.png';  // Use 'placeholder.png' if badge is missing
+       const badgeImage = p.badges && p.badges[i] ? `icons/${p.badges[i]}` : 'icons/placeholder.png'; 
       badges.push(`
         <div class="badge">
           <img src="${badgeImage}" alt="Badge ${i + 1}" onerror="this.onerror=null; this.src='placeholder.png'">
