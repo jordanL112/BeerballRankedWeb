@@ -179,8 +179,42 @@
 
 <div id="playerCards" class="section">
   <h2>Player Cards</h2>
-  <div id="player-card-container"></div>
+  <div id="player-card-container">
+    <div class="player-card">
+      <div class="player-header">
+        <!-- Player Image -->
+        <img src="{{player.playerImage}}" alt="Player Picture" class="player-img">
+        <h2 class="player-name">{{player.name}}</h2>
+        <span class="player-tier">{{player.tier}}</span>
+      </div>
+
+      <div class="player-stats">
+        <p>Games Played: {{player.games}}</p>
+        <p>Wins: {{player.wins}}</p>
+        <p>Losses: {{player.losses}}</p>
+      </div>
+
+      <div class="player-badges">
+        <!-- Badge Slots -->
+        <div class="badge-slot">
+          <img src="{{player.badges[0] || 'placeholder.png'}}" alt="Badge 1" class="badge">
+        </div>
+        <div class="badge-slot">
+          <img src="{{player.badges[1] || 'placeholder.png'}}" alt="Badge 2" class="badge">
+        </div>
+        <div class="badge-slot">
+          <img src="{{player.badges[2] || 'placeholder.png'}}" alt="Badge 3" class="badge">
+        </div>
+      </div>
+
+      <!-- Player Art -->
+      <div class="player-art">
+        <img src="{{player.playerArt}}" alt="Player Art" class="art-img">
+      </div>
+    </div>
+  </div>
 </div>
+
 
 <div id="shop" class="section">
   <h2>Points Shop</h2>
@@ -310,47 +344,72 @@ function startFlash(el, color1, color2) {
   }, 700);  // Flash the color every 700ms
 }
 
-// Fetch player data from leaderboard.json and render player cards
-fetch("leaderboard.json")
-  .then(r => r.json())
-  .then(data => {
-    const players = data.players || [];
-    const container = document.getElementById("player-card-container");
-    
-    players.forEach(player => {
-      const card = document.createElement("div");
-      card.classList.add("player-card");
-      
-      card.innerHTML = `
-        <div class="player-name">${player.name}</div>
-        <div class="player-tier">${player.tier}</div>
-        <img src="${tierToIcon(player.tier)}" alt="Tier Icon" class="tier-icon">
-        
-        <div class="player-art">
-          <img src="${player.playerArt}" alt="${player.name} Art" class="art-image">
-        </div>
+.player-card {
+  width: 250px;
+  background-color: #1a1a1a;
+  color: white;
+  border-radius: 10px;
+  padding: 15px;
+  margin: 10px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
 
-        <div class="player-picture">
-          <img src="${player.playerPicture}" alt="${player.name} Picture" class="picture-image">
-        </div>
+.player-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
-        <div class="stats">
-          <div>Kills: ${player.kills || 'No Data'}</div>
-          <div>Wins: ${player.wins || 'No Data'}</div>
-          <div>Losses: ${player.losses || 'No Data'}</div>
-        </div>
-        
-        <div class="badges">
-          ${player.badges.map(badge => `<img src="icons/${badge}.png" alt="${badge} Badge" class="badge">`).join('')}
-        </div>
-      `;
+.player-img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+}
 
-      container.appendChild(card);
-    });
-  })
-  .catch(err => {
-    console.error("Error loading player data:", err);
-  });
+.player-name {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.player-tier {
+  font-size: 14px;
+  color: #b3b3b3;
+}
+
+.player-stats {
+  margin-top: 10px;
+}
+
+.player-badges {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.badge-slot {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.badge {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.player-art {
+  margin-top: 15px;
+}
+
+.art-img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
 
 /* ------------------ RENDER ------------------ */
 fetch("leaderboard.json")
