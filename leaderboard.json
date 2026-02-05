@@ -11,7 +11,7 @@
       "team": "Yin & Yang",
       "clan": "Great Personality",
       "teamColor": "rgb(255, 218, 0)",
-      "clanColor": "rgb(128, 0, 128)",
+      "clanColor": "",
       "playerArt": "art/Matt Latour-art.png",
       "playerPicture": "art/Matt Latour-picture.png",
       "badges": [
@@ -74,7 +74,7 @@
       "team": "Yin & Yang",
       "clan": "Great Personality",
       "teamColor": "rgb(255, 218, 0)",
-      "clanColor": "rgb(128, 0, 128)",
+      "clanColor": "",
       "playerArt": "art/Deshaun W-art.png",
       "playerPicture": "art/Deshaun W-picture.png",
       "badges": [
@@ -95,7 +95,7 @@
       "team": "Where Are We?",
       "clan": "Great Personality",
       "teamColor": "rgb(0, 0, 0)",
-      "clanColor": "rgb(128, 0, 128)",
+      "clanColor": "",
       "playerArt": "art/Jordan Lusk-art.png",
       "playerPicture": "art/Jordan Lusk-picture.png",
       "badges": [
@@ -116,7 +116,7 @@
       "team": "Where Are We?",
       "clan": "Great Personality",
       "teamColor": "rgb(0, 0, 0)",
-      "clanColor": "rgb(128, 0, 128)",
+      "clanColor": "",
       "playerArt": "art/Jackson Martin-art.png",
       "playerPicture": "art/Jackson Martin-picture.png",
       "badges": [
@@ -391,9 +391,9 @@
       "wins": 0,
       "losses": 2,
       "team": "",
-      "clan": "Six Eyes",
+      "clan": "Great Personality",
       "teamColor": "",
-      "clanColor": "rgb(0, 128, 255)",
+      "clanColor": "",
       "playerArt": "art/Drake Jackson-art.png",
       "playerPicture": "art/Drake Jackson-picture.png",
       "badges": [
@@ -435,7 +435,7 @@
       "team": "",
       "clan": "Great Personality",
       "teamColor": "",
-      "clanColor": "rgb(128, 0, 128)",
+      "clanColor": "",
       "playerArt": "art/Zeke Shipman-art.png",
       "playerPicture": "art/Zeke Shipman-picture.png",
       "badges": [
@@ -498,7 +498,7 @@
       "team": [],
       "clan": "Great Personality",
       "teamColor": "",
-      "clanColor": "rgb(128, 0, 128)",
+      "clanColor": "",
       "playerArt": "art/Brandon Beatty-art.png",
       "playerPicture": "art/Brandon Beatty-picture.png",
       "badges": [
@@ -724,7 +724,7 @@
       "team": [],
       "clan": "Great Personality",
       "teamColor": "",
-      "clanColor": "rgb(128, 0, 128)",
+      "clanColor": "",
       "playerArt": "art/Dalen Wagga-art.png",
       "playerPicture": "art/Dalen Wagga-picture.png",
       "badges": [
@@ -745,7 +745,7 @@
       "team": [],
       "clan": "Great Personality",
       "teamColor": "",
-      "clanColor": "rgb(128, 0, 128)",
+      "clanColor": "",
       "playerArt": [
         "art/Bradley Blankenship-art.png"
       ],
@@ -1004,7 +1004,7 @@
       "team": [],
       "clan": "Great Personality",
       "teamColor": "",
-      "clanColor": "rgb(128, 0, 128)",
+      "clanColor": "",
       "playerArt": "art/EJ-art.png",
       "playerPicture": "art/EJ-picture.png",
       "badges": [
@@ -1050,7 +1050,7 @@
       "team": [],
       "clan": "Great Personality",
       "teamColor": "",
-      "clanColor": "rgb(128, 0, 128)",
+      "clanColor": "",
       "playerArt": "art/Drew A-art.png",
       "playerPicture": "art/Drew A-picture.png",
       "badges": [
@@ -1071,7 +1071,7 @@
       "team": [],
       "clan": "Great Personality",
       "teamColor": "",
-      "clanColor": "rgb(128, 0, 128)",
+      "clanColor": "",
       "playerArt": [
         "art/Labubu-art.png"
       ],
@@ -1140,9 +1140,9 @@
       "wins": 0,
       "losses": 3,
       "team": "",
-      "clan": "Great Personality",
+      "clan": "Six Eyes",
       "teamColor": "",
-      "clanColor": "rgb(128, 0, 128)",
+      "clanColor": "rgb(0, 128, 255)",
       "playerArt": [
         "art/Jelly Fart-art.png"
       ],
@@ -1280,10 +1280,6 @@
     }
   ],
   "clans": [
-    {
-      "name": "Great Personality",
-      "color": "rgb(128, 0, 128)"
-    },
     {
       "name": "WANGHAF",
       "color": "rgb(255, 0, 0)"
