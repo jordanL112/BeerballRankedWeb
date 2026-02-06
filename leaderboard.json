@@ -4,10 +4,10 @@
       "rank": 1,
       "name": "Matt Latour",
       "tier": "Champion",
-      "elo": 2517,
-      "games": 76,
+      "elo": 2460,
+      "games": 77,
       "wins": 53,
-      "losses": 23,
+      "losses": 24,
       "team": "Yin & Yang",
       "clan": "Great Personality",
       "teamColor": "rgb(255, 218, 0)",
@@ -86,8 +86,29 @@
     },
     {
       "rank": 5,
-      "name": "Jordan Lusk",
+      "name": "Sam Purintun",
       "tier": "Champion",
+      "elo": 2158,
+      "games": 30,
+      "wins": 18,
+      "losses": 12,
+      "team": "Twin Towers",
+      "clan": "WANGHAF",
+      "teamColor": "rgb(0, 0, 0)",
+      "clanColor": "rgb(255, 0, 0)",
+      "playerArt": "art/Sam Purintun-art.png",
+      "playerPicture": "art/Sam Purintun-picture.png",
+      "badges": [
+        "placeholder",
+        "placeholder",
+        "placeholder"
+      ],
+      "hasFlash": []
+    },
+    {
+      "rank": 6,
+      "name": "Jordan Lusk",
+      "tier": "Master",
       "elo": 2126,
       "games": 82,
       "wins": 48,
@@ -106,7 +127,7 @@
       "hasFlash": true
     },
     {
-      "rank": 6,
+      "rank": 7,
       "name": "Jackson Martin",
       "tier": "Master",
       "elo": 2112,
@@ -127,19 +148,19 @@
       "hasFlash": true
     },
     {
-      "rank": 7,
-      "name": "Sam Purintun",
-      "tier": "Master",
-      "elo": 2101,
-      "games": 29,
-      "wins": 17,
-      "losses": 12,
-      "team": "Twin Towers",
-      "clan": "WANGHAF",
-      "teamColor": "rgb(0, 0, 0)",
-      "clanColor": "rgb(255, 0, 0)",
-      "playerArt": "art/Sam Purintun-art.png",
-      "playerPicture": "art/Sam Purintun-picture.png",
+      "rank": 8,
+      "name": "Dillan Pope",
+      "tier": "Diamond I",
+      "elo": 1945,
+      "games": 45,
+      "wins": 26,
+      "losses": 19,
+      "team": "",
+      "clan": "Six Eyes",
+      "teamColor": "",
+      "clanColor": "rgb(0, 128, 255)",
+      "playerArt": "art/Dillan Pope-art.png",
+      "playerPicture": "art/Dillan Pope-picture.png",
       "badges": [
         "placeholder",
         "placeholder",
@@ -148,7 +169,7 @@
       "hasFlash": []
     },
     {
-      "rank": 8,
+      "rank": 9,
       "name": "Preston Hart",
       "tier": "Diamond II",
       "elo": 1891,
@@ -161,27 +182,6 @@
       "clanColor": "rgb(0, 128, 255)",
       "playerArt": "art/Preston Hart-art.png",
       "playerPicture": "art/Preston Hart-picture.png",
-      "badges": [
-        "placeholder",
-        "placeholder",
-        "placeholder"
-      ],
-      "hasFlash": []
-    },
-    {
-      "rank": 9,
-      "name": "Dillan Pope",
-      "tier": "Diamond II",
-      "elo": 1888,
-      "games": 44,
-      "wins": 25,
-      "losses": 19,
-      "team": "",
-      "clan": "Six Eyes",
-      "teamColor": "",
-      "clanColor": "rgb(0, 128, 255)",
-      "playerArt": "art/Dillan Pope-art.png",
-      "playerPicture": "art/Dillan Pope-picture.png",
       "badges": [
         "placeholder",
         "placeholder",
@@ -233,27 +233,6 @@
     },
     {
       "rank": 12,
-      "name": "Gurp Singh",
-      "tier": "Diamond III",
-      "elo": 1760,
-      "games": 77,
-      "wins": 39,
-      "losses": 38,
-      "team": "Pluto",
-      "clan": "Six Eyes",
-      "teamColor": "rgb(0, 0, 0)",
-      "clanColor": "rgb(0, 128, 255)",
-      "playerArt": "art/Gurp Singh-art.png",
-      "playerPicture": "art/Gurp Singh-picture.png",
-      "badges": [
-        "placeholder",
-        "placeholder",
-        "placeholder"
-      ],
-      "hasFlash": true
-    },
-    {
-      "rank": 13,
       "name": "Matt Wolf",
       "tier": "Diamond III",
       "elo": 1752,
@@ -274,7 +253,7 @@
       "hasFlash": []
     },
     {
-      "rank": 14,
+      "rank": 13,
       "name": "Jackson Banks",
       "tier": "Diamond III",
       "elo": 1747,
@@ -293,6 +272,27 @@
         "placeholder"
       ],
       "hasFlash": []
+    },
+    {
+      "rank": 14,
+      "name": "Gurp Singh",
+      "tier": "Diamond III",
+      "elo": 1703,
+      "games": 78,
+      "wins": 39,
+      "losses": 39,
+      "team": "Pluto",
+      "clan": "Six Eyes",
+      "teamColor": "rgb(0, 0, 0)",
+      "clanColor": "rgb(0, 128, 255)",
+      "playerArt": "art/Gurp Singh-art.png",
+      "playerPicture": "art/Gurp Singh-picture.png",
+      "badges": [
+        "placeholder",
+        "placeholder",
+        "placeholder"
+      ],
+      "hasFlash": true
     },
     {
       "rank": 15,
