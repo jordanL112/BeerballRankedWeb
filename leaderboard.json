@@ -233,27 +233,6 @@
     },
     {
       "rank": 12,
-      "name": "Jackson Banks",
-      "tier": "Diamond II",
-      "elo": 1818,
-      "games": 13,
-      "wins": 5,
-      "losses": 8,
-      "team": [],
-      "clan": "WANGHAF",
-      "teamColor": "",
-      "clanColor": "rgb(255, 0, 0)",
-      "playerArt": "art/Jackson Banks-art.png",
-      "playerPicture": "art/Jackson Banks-picture.png",
-      "badges": [
-        "placeholder",
-        "placeholder",
-        "placeholder"
-      ],
-      "hasFlash": []
-    },
-    {
-      "rank": 13,
       "name": "Trey R",
       "tier": "Diamond III",
       "elo": 1768,
@@ -274,7 +253,7 @@
       "hasFlash": []
     },
     {
-      "rank": 14,
+      "rank": 13,
       "name": "Matt Wolf",
       "tier": "Diamond III",
       "elo": 1752,
@@ -287,6 +266,27 @@
       "clanColor": "rgb(255, 0, 0)",
       "playerArt": "art/Matt Wolf-art.png",
       "playerPicture": "art/Matt Wolf-picture.png",
+      "badges": [
+        "placeholder",
+        "placeholder",
+        "placeholder"
+      ],
+      "hasFlash": []
+    },
+    {
+      "rank": 14,
+      "name": "Jackson Banks",
+      "tier": "Diamond III",
+      "elo": 1747,
+      "games": 14,
+      "wins": 5,
+      "losses": 9,
+      "team": [],
+      "clan": "WANGHAF",
+      "teamColor": "",
+      "clanColor": "rgb(255, 0, 0)",
+      "playerArt": "art/Jackson Banks-art.png",
+      "playerPicture": "art/Jackson Banks-picture.png",
       "badges": [
         "placeholder",
         "placeholder",
@@ -740,22 +740,43 @@
     },
     {
       "rank": 35,
-      "name": "Nick Perkins",
+      "name": "Jelly Fart",
       "tier": "Silver I",
-      "elo": 1079,
-      "games": 2,
-      "wins": 0,
-      "losses": 2,
-      "team": [],
+      "elo": 1083,
+      "games": 5,
+      "wins": 2,
+      "losses": 3,
+      "team": "",
       "clan": "Six Eyes",
       "teamColor": "",
       "clanColor": "rgb(0, 128, 255)",
       "playerArt": [
-        "art/Nick Perkins-art.png"
+        "art/Jelly Fart-art.png"
       ],
       "playerPicture": [
-        "art/Nick Perkins-picture.png"
+        "art/Jelly Fart-picture.png"
       ],
+      "badges": [
+        "placeholder",
+        "placeholder",
+        "placeholder"
+      ],
+      "hasFlash": false
+    },
+    {
+      "rank": 36,
+      "name": "Michael Hill",
+      "tier": "Silver I",
+      "elo": 1078,
+      "games": 25,
+      "wins": 8,
+      "losses": 17,
+      "team": [],
+      "clan": "Six Eyes",
+      "teamColor": "",
+      "clanColor": "rgb(0, 128, 255)",
+      "playerArt": "art/Michael Hill-art.png",
+      "playerPicture": "art/Michael Hill-picture.png",
       "badges": [
         "placeholder",
         "placeholder",
@@ -764,7 +785,7 @@
       "hasFlash": []
     },
     {
-      "rank": 36,
+      "rank": 37,
       "name": "Hunter Maness",
       "tier": "Silver I",
       "elo": 1069,
@@ -785,7 +806,7 @@
       "hasFlash": []
     },
     {
-      "rank": 37,
+      "rank": 38,
       "name": "Jacob Green",
       "tier": "Silver I",
       "elo": 1069,
@@ -806,7 +827,7 @@
       "hasFlash": []
     },
     {
-      "rank": 38,
+      "rank": 39,
       "name": "Brody Sheppard",
       "tier": "Silver I",
       "elo": 1067,
@@ -827,7 +848,7 @@
       "hasFlash": []
     },
     {
-      "rank": 39,
+      "rank": 40,
       "name": "Raina D",
       "tier": "Silver I",
       "elo": 1052,
@@ -852,7 +873,7 @@
       "hasFlash": []
     },
     {
-      "rank": 40,
+      "rank": 41,
       "name": "Ian Henderson",
       "tier": "Silver I",
       "elo": 1024,
@@ -877,7 +898,7 @@
       "hasFlash": []
     },
     {
-      "rank": 41,
+      "rank": 42,
       "name": "Brady Lawson",
       "tier": "Silver I",
       "elo": 1020,
@@ -898,7 +919,7 @@
       "hasFlash": []
     },
     {
-      "rank": 42,
+      "rank": 43,
       "name": "Jake Neiber",
       "tier": "Silver I",
       "elo": 1019,
@@ -919,44 +940,23 @@
       "hasFlash": []
     },
     {
-      "rank": 43,
-      "name": "Jelly Fart",
-      "tier": "Silver I",
-      "elo": 1012,
-      "games": 4,
-      "wins": 1,
-      "losses": 3,
-      "team": "",
-      "clan": "Six Eyes",
-      "teamColor": "",
-      "clanColor": "rgb(0, 128, 255)",
-      "playerArt": [
-        "art/Jelly Fart-art.png"
-      ],
-      "playerPicture": [
-        "art/Jelly Fart-picture.png"
-      ],
-      "badges": [
-        "placeholder",
-        "placeholder",
-        "placeholder"
-      ],
-      "hasFlash": false
-    },
-    {
       "rank": 44,
-      "name": "Michael Hill",
+      "name": "Nick Perkins",
       "tier": "Silver I",
-      "elo": 1007,
-      "games": 24,
-      "wins": 7,
-      "losses": 17,
+      "elo": 1008,
+      "games": 3,
+      "wins": 0,
+      "losses": 3,
       "team": [],
       "clan": "Six Eyes",
       "teamColor": "",
       "clanColor": "rgb(0, 128, 255)",
-      "playerArt": "art/Michael Hill-art.png",
-      "playerPicture": "art/Michael Hill-picture.png",
+      "playerArt": [
+        "art/Nick Perkins-art.png"
+      ],
+      "playerPicture": [
+        "art/Nick Perkins-picture.png"
+      ],
       "badges": [
         "placeholder",
         "placeholder",
