@@ -2,6 +2,27 @@
   "players": [
     {
       "rank": 1,
+      "name": "Charlie Steel",
+      "tier": "Champion",
+      "elo": 2414,
+      "games": 28,
+      "wins": 21,
+      "losses": 7,
+      "team": "Walk It Like We Talk It",
+      "clan": "Beer Pressure",
+      "teamColor": "rgb(0, 0, 0)",
+      "clanColor": "rgb(0, 128, 0)",
+      "playerArt": "art/Charlie Steel-art.png",
+      "playerPicture": "art/Charlie Steel-picture.png",
+      "badges": [
+        "placeholder",
+        "placeholder",
+        "placeholder"
+      ],
+      "hasFlash": []
+    },
+    {
+      "rank": 2,
       "name": "Matt Latour",
       "tier": "Champion",
       "elo": 2409,
@@ -22,19 +43,19 @@
       "hasFlash": true
     },
     {
-      "rank": 2,
-      "name": "Charlie Steel",
+      "rank": 3,
+      "name": "Dylan Benefield",
       "tier": "Champion",
-      "elo": 2390,
-      "games": 27,
-      "wins": 20,
-      "losses": 7,
+      "elo": 2229,
+      "games": 31,
+      "wins": 21,
+      "losses": 10,
       "team": "Walk It Like We Talk It",
       "clan": "Beer Pressure",
       "teamColor": "rgb(0, 0, 0)",
       "clanColor": "rgb(0, 128, 0)",
-      "playerArt": "art/Charlie Steel-art.png",
-      "playerPicture": "art/Charlie Steel-picture.png",
+      "playerArt": "art/Dylan Benefield-art.png",
+      "playerPicture": "art/Dylan Benefield-picture.png",
       "badges": [
         "placeholder",
         "placeholder",
@@ -43,7 +64,7 @@
       "hasFlash": []
     },
     {
-      "rank": 3,
+      "rank": 4,
       "name": "Jordan Lusk",
       "tier": "Champion",
       "elo": 2220,
@@ -64,7 +85,7 @@
       "hasFlash": true
     },
     {
-      "rank": 4,
+      "rank": 5,
       "name": "Jackson Martin",
       "tier": "Champion",
       "elo": 2206,
@@ -83,27 +104,6 @@
         "placeholder"
       ],
       "hasFlash": true
-    },
-    {
-      "rank": 5,
-      "name": "Dylan Benefield",
-      "tier": "Champion",
-      "elo": 2205,
-      "games": 30,
-      "wins": 20,
-      "losses": 10,
-      "team": "Walk It Like We Talk It",
-      "clan": "Beer Pressure",
-      "teamColor": "rgb(0, 0, 0)",
-      "clanColor": "rgb(0, 128, 0)",
-      "playerArt": "art/Dylan Benefield-art.png",
-      "playerPicture": "art/Dylan Benefield-picture.png",
-      "badges": [
-        "placeholder",
-        "placeholder",
-        "placeholder"
-      ],
-      "hasFlash": []
     },
     {
       "rank": 6,
@@ -172,10 +172,10 @@
       "rank": 9,
       "name": "Preston Hart",
       "tier": "Diamond II",
-      "elo": 1880,
-      "games": 33,
+      "elo": 1856,
+      "games": 34,
       "wins": 16,
-      "losses": 17,
+      "losses": 18,
       "team": "Pluto",
       "clan": "Six Eyes",
       "teamColor": "rgb(0, 0, 0)",
@@ -296,27 +296,6 @@
     },
     {
       "rank": 15,
-      "name": "Gurp Singh",
-      "tier": "Platinum I",
-      "elo": 1692,
-      "games": 80,
-      "wins": 40,
-      "losses": 40,
-      "team": "Pluto",
-      "clan": "Six Eyes",
-      "teamColor": "rgb(0, 0, 0)",
-      "clanColor": "rgb(0, 128, 255)",
-      "playerArt": "art/Gurp Singh-art.png",
-      "playerPicture": "art/Gurp Singh-picture.png",
-      "badges": [
-        "placeholder",
-        "placeholder",
-        "placeholder"
-      ],
-      "hasFlash": true
-    },
-    {
-      "rank": 16,
       "name": "TA",
       "tier": "Platinum I",
       "elo": 1673,
@@ -339,6 +318,27 @@
         "placeholder"
       ],
       "hasFlash": false
+    },
+    {
+      "rank": 16,
+      "name": "Gurp Singh",
+      "tier": "Platinum I",
+      "elo": 1668,
+      "games": 81,
+      "wins": 40,
+      "losses": 41,
+      "team": "Pluto",
+      "clan": "Six Eyes",
+      "teamColor": "rgb(0, 0, 0)",
+      "clanColor": "rgb(0, 128, 255)",
+      "playerArt": "art/Gurp Singh-art.png",
+      "playerPicture": "art/Gurp Singh-picture.png",
+      "badges": [
+        "placeholder",
+        "placeholder",
+        "placeholder"
+      ],
+      "hasFlash": true
     },
     {
       "rank": 17,
