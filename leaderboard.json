@@ -25,10 +25,10 @@
       "rank": 2,
       "name": "Charlie Steel",
       "tier": "Champion",
-      "elo": 2422,
-      "games": 21,
+      "elo": 2333,
+      "games": 22,
       "wins": 16,
-      "losses": 5,
+      "losses": 6,
       "team": "Walk It Like We Talk It",
       "clan": "Beer Pressure",
       "teamColor": "rgb(0, 0, 0)",
@@ -44,27 +44,6 @@
     },
     {
       "rank": 3,
-      "name": "Dylan Benefield",
-      "tier": "Champion",
-      "elo": 2237,
-      "games": 24,
-      "wins": 16,
-      "losses": 8,
-      "team": "Walk It Like We Talk It",
-      "clan": "Beer Pressure",
-      "teamColor": "rgb(0, 0, 0)",
-      "clanColor": "rgb(0, 128, 0)",
-      "playerArt": "art/Dylan Benefield-art.png",
-      "playerPicture": "art/Dylan Benefield-picture.png",
-      "badges": [
-        "placeholder",
-        "placeholder",
-        "placeholder"
-      ],
-      "hasFlash": []
-    },
-    {
-      "rank": 4,
       "name": "Deshaun W",
       "tier": "Champion",
       "elo": 2215,
@@ -85,7 +64,7 @@
       "hasFlash": []
     },
     {
-      "rank": 5,
+      "rank": 4,
       "name": "Sam Purintun",
       "tier": "Champion",
       "elo": 2158,
@@ -98,6 +77,27 @@
       "clanColor": "rgb(255, 0, 0)",
       "playerArt": "art/Sam Purintun-art.png",
       "playerPicture": "art/Sam Purintun-picture.png",
+      "badges": [
+        "placeholder",
+        "placeholder",
+        "placeholder"
+      ],
+      "hasFlash": []
+    },
+    {
+      "rank": 5,
+      "name": "Dylan Benefield",
+      "tier": "Champion",
+      "elo": 2148,
+      "games": 25,
+      "wins": 16,
+      "losses": 9,
+      "team": "Walk It Like We Talk It",
+      "clan": "Beer Pressure",
+      "teamColor": "rgb(0, 0, 0)",
+      "clanColor": "rgb(0, 128, 0)",
+      "playerArt": "art/Dylan Benefield-art.png",
+      "playerPicture": "art/Dylan Benefield-picture.png",
       "badges": [
         "placeholder",
         "placeholder",
@@ -275,6 +275,27 @@
     },
     {
       "rank": 14,
+      "name": "Ryan Shurtz",
+      "tier": "Diamond III",
+      "elo": 1730,
+      "games": 13,
+      "wins": 9,
+      "losses": 4,
+      "team": [],
+      "clan": "WANGHAF",
+      "teamColor": "",
+      "clanColor": "rgb(255, 0, 0)",
+      "playerArt": "art/Ryan Shurtz-art.png",
+      "playerPicture": "art/Ryan Shurtz-picture.png",
+      "badges": [
+        "placeholder",
+        "placeholder",
+        "placeholder"
+      ],
+      "hasFlash": []
+    },
+    {
+      "rank": 15,
       "name": "Gurp Singh",
       "tier": "Diamond III",
       "elo": 1703,
@@ -295,7 +316,7 @@
       "hasFlash": true
     },
     {
-      "rank": 15,
+      "rank": 16,
       "name": "TA",
       "tier": "Platinum I",
       "elo": 1673,
@@ -320,7 +341,7 @@
       "hasFlash": false
     },
     {
-      "rank": 16,
+      "rank": 17,
       "name": "Aaron Lane",
       "tier": "Platinum I",
       "elo": 1661,
@@ -341,7 +362,7 @@
       "hasFlash": []
     },
     {
-      "rank": 17,
+      "rank": 18,
       "name": "Davis Bjornstad",
       "tier": "Platinum I",
       "elo": 1656,
@@ -362,7 +383,7 @@
       "hasFlash": []
     },
     {
-      "rank": 18,
+      "rank": 19,
       "name": "Ed",
       "tier": "Platinum II",
       "elo": 1579,
@@ -383,7 +404,7 @@
       "hasFlash": []
     },
     {
-      "rank": 19,
+      "rank": 20,
       "name": "Drake Jackson",
       "tier": "Platinum II",
       "elo": 1560,
@@ -396,27 +417,6 @@
       "clanColor": "rgb(126, 47, 142)",
       "playerArt": "art/Drake Jackson-art.png",
       "playerPicture": "art/Drake Jackson-picture.png",
-      "badges": [
-        "placeholder",
-        "placeholder",
-        "placeholder"
-      ],
-      "hasFlash": []
-    },
-    {
-      "rank": 20,
-      "name": "Ryan Shurtz",
-      "tier": "Platinum II",
-      "elo": 1547,
-      "games": 9,
-      "wins": 5,
-      "losses": 4,
-      "team": [],
-      "clan": "WANGHAF",
-      "teamColor": "",
-      "clanColor": "rgb(255, 0, 0)",
-      "playerArt": "art/Ryan Shurtz-art.png",
-      "playerPicture": "art/Ryan Shurtz-picture.png",
       "badges": [
         "placeholder",
         "placeholder",
@@ -448,10 +448,10 @@
     {
       "rank": 22,
       "name": "Andrew Hickman",
-      "tier": "Gold II",
-      "elo": 1292,
-      "games": 10,
-      "wins": 6,
+      "tier": "Platinum III",
+      "elo": 1475,
+      "games": 14,
+      "wins": 10,
       "losses": 4,
       "team": [],
       "clan": "WANGHAF",
@@ -619,31 +619,6 @@
     },
     {
       "rank": 30,
-      "name": "Jelly Fart",
-      "tier": "Gold III",
-      "elo": 1172,
-      "games": 9,
-      "wins": 3,
-      "losses": 6,
-      "team": "",
-      "clan": "Six Eyes",
-      "teamColor": "",
-      "clanColor": "rgb(0, 128, 255)",
-      "playerArt": [
-        "art/Jelly Fart-art.png"
-      ],
-      "playerPicture": [
-        "art/Jelly Fart-picture.png"
-      ],
-      "badges": [
-        "placeholder",
-        "placeholder",
-        "placeholder"
-      ],
-      "hasFlash": false
-    },
-    {
-      "rank": 31,
       "name": "Jackson Reece",
       "tier": "Gold III",
       "elo": 1162,
@@ -668,7 +643,7 @@
       "hasFlash": []
     },
     {
-      "rank": 32,
+      "rank": 31,
       "name": "Alex Lang",
       "tier": "Gold III",
       "elo": 1162,
@@ -693,7 +668,7 @@
       "hasFlash": []
     },
     {
-      "rank": 33,
+      "rank": 32,
       "name": "Phoebe",
       "tier": "Silver I",
       "elo": 1096,
@@ -718,7 +693,7 @@
       "hasFlash": []
     },
     {
-      "rank": 34,
+      "rank": 33,
       "name": "Ava Gus",
       "tier": "Silver I",
       "elo": 1094,
@@ -739,7 +714,7 @@
       "hasFlash": []
     },
     {
-      "rank": 35,
+      "rank": 34,
       "name": "Dalen Wagga",
       "tier": "Silver I",
       "elo": 1093,
@@ -760,7 +735,7 @@
       "hasFlash": []
     },
     {
-      "rank": 36,
+      "rank": 35,
       "name": "Bradley Blankenship",
       "tier": "Silver I",
       "elo": 1087,
@@ -783,6 +758,31 @@
         "placeholder"
       ],
       "hasFlash": []
+    },
+    {
+      "rank": 36,
+      "name": "Jelly Fart",
+      "tier": "Silver I",
+      "elo": 1078,
+      "games": 12,
+      "wins": 3,
+      "losses": 9,
+      "team": "",
+      "clan": "Six Eyes",
+      "teamColor": "",
+      "clanColor": "rgb(0, 128, 255)",
+      "playerArt": [
+        "art/Jelly Fart-art.png"
+      ],
+      "playerPicture": [
+        "art/Jelly Fart-picture.png"
+      ],
+      "badges": [
+        "placeholder",
+        "placeholder",
+        "placeholder"
+      ],
+      "hasFlash": false
     },
     {
       "rank": 37,
@@ -828,27 +828,6 @@
     },
     {
       "rank": 39,
-      "name": "Michael Hill",
-      "tier": "Silver I",
-      "elo": 1068,
-      "games": 27,
-      "wins": 8,
-      "losses": 19,
-      "team": [],
-      "clan": "Six Eyes",
-      "teamColor": "",
-      "clanColor": "rgb(0, 128, 255)",
-      "playerArt": "art/Michael Hill-art.png",
-      "playerPicture": "art/Michael Hill-picture.png",
-      "badges": [
-        "placeholder",
-        "placeholder",
-        "placeholder"
-      ],
-      "hasFlash": []
-    },
-    {
-      "rank": 40,
       "name": "Raina D",
       "tier": "Silver I",
       "elo": 1052,
@@ -873,7 +852,7 @@
       "hasFlash": []
     },
     {
-      "rank": 41,
+      "rank": 40,
       "name": "Brady Lawson",
       "tier": "Silver I",
       "elo": 1020,
@@ -894,7 +873,7 @@
       "hasFlash": []
     },
     {
-      "rank": 42,
+      "rank": 41,
       "name": "Jake Neiber",
       "tier": "Silver I",
       "elo": 1019,
@@ -915,7 +894,7 @@
       "hasFlash": []
     },
     {
-      "rank": 43,
+      "rank": 42,
       "name": "Nick Perkins",
       "tier": "Silver I",
       "elo": 1008,
@@ -940,7 +919,7 @@
       "hasFlash": []
     },
     {
-      "rank": 44,
+      "rank": 43,
       "name": "Landen Simpson",
       "tier": "Silver I",
       "elo": 1007,
@@ -965,7 +944,7 @@
       "hasFlash": false
     },
     {
-      "rank": 45,
+      "rank": 44,
       "name": "Will Sowell",
       "tier": "Silver I",
       "elo": 1004,
@@ -990,7 +969,7 @@
       "hasFlash": false
     },
     {
-      "rank": 46,
+      "rank": 45,
       "name": "Declan Anderson",
       "tier": "Silver II",
       "elo": 995,
@@ -1015,7 +994,7 @@
       "hasFlash": false
     },
     {
-      "rank": 47,
+      "rank": 46,
       "name": "EJ",
       "tier": "Silver II",
       "elo": 990,
@@ -1036,7 +1015,7 @@
       "hasFlash": []
     },
     {
-      "rank": 48,
+      "rank": 47,
       "name": "Hannen Hileman",
       "tier": "Silver II",
       "elo": 987,
@@ -1061,7 +1040,7 @@
       "hasFlash": false
     },
     {
-      "rank": 49,
+      "rank": 48,
       "name": "Ian Henderson",
       "tier": "Silver II",
       "elo": 979,
@@ -1086,7 +1065,7 @@
       "hasFlash": []
     },
     {
-      "rank": 50,
+      "rank": 49,
       "name": "Labubu",
       "tier": "Silver II",
       "elo": 979,
@@ -1111,7 +1090,7 @@
       "hasFlash": []
     },
     {
-      "rank": 51,
+      "rank": 50,
       "name": "Nolan Lynch",
       "tier": "Silver II",
       "elo": 976,
@@ -1134,6 +1113,27 @@
         "placeholder"
       ],
       "hasFlash": false
+    },
+    {
+      "rank": 51,
+      "name": "Michael Hill",
+      "tier": "Silver II",
+      "elo": 974,
+      "games": 30,
+      "wins": 8,
+      "losses": 22,
+      "team": [],
+      "clan": "Six Eyes",
+      "teamColor": "",
+      "clanColor": "rgb(0, 128, 255)",
+      "playerArt": "art/Michael Hill-art.png",
+      "playerPicture": "art/Michael Hill-picture.png",
+      "badges": [
+        "placeholder",
+        "placeholder",
+        "placeholder"
+      ],
+      "hasFlash": []
     },
     {
       "rank": 52,
