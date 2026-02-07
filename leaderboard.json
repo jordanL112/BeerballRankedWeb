@@ -212,6 +212,27 @@
     },
     {
       "rank": 11,
+      "name": "Ryan Shurtz",
+      "tier": "Diamond III",
+      "elo": 1769,
+      "games": 15,
+      "wins": 11,
+      "losses": 4,
+      "team": [],
+      "clan": "WANGHAF",
+      "teamColor": "",
+      "clanColor": "rgb(255, 0, 0)",
+      "playerArt": "art/Ryan Shurtz-art.png",
+      "playerPicture": "art/Ryan Shurtz-picture.png",
+      "badges": [
+        "placeholder",
+        "placeholder",
+        "placeholder"
+      ],
+      "hasFlash": []
+    },
+    {
+      "rank": 12,
       "name": "Trey R",
       "tier": "Diamond III",
       "elo": 1768,
@@ -232,7 +253,7 @@
       "hasFlash": []
     },
     {
-      "rank": 12,
+      "rank": 13,
       "name": "Matt Wolf",
       "tier": "Diamond III",
       "elo": 1752,
@@ -245,27 +266,6 @@
       "clanColor": "rgb(255, 0, 0)",
       "playerArt": "art/Matt Wolf-art.png",
       "playerPicture": "art/Matt Wolf-picture.png",
-      "badges": [
-        "placeholder",
-        "placeholder",
-        "placeholder"
-      ],
-      "hasFlash": []
-    },
-    {
-      "rank": 13,
-      "name": "Ryan Shurtz",
-      "tier": "Diamond III",
-      "elo": 1749,
-      "games": 14,
-      "wins": 10,
-      "losses": 4,
-      "team": [],
-      "clan": "WANGHAF",
-      "teamColor": "",
-      "clanColor": "rgb(255, 0, 0)",
-      "playerArt": "art/Ryan Shurtz-art.png",
-      "playerPicture": "art/Ryan Shurtz-picture.png",
       "badges": [
         "placeholder",
         "placeholder",
@@ -448,10 +448,10 @@
     {
       "rank": 22,
       "name": "Andrew Hickman",
-      "tier": "Platinum III",
-      "elo": 1494,
-      "games": 15,
-      "wins": 11,
+      "tier": "Platinum II",
+      "elo": 1514,
+      "games": 16,
+      "wins": 12,
       "losses": 4,
       "team": [],
       "clan": "WANGHAF",
@@ -761,31 +761,6 @@
     },
     {
       "rank": 36,
-      "name": "Jelly Fart",
-      "tier": "Silver I",
-      "elo": 1078,
-      "games": 12,
-      "wins": 3,
-      "losses": 9,
-      "team": "",
-      "clan": "Six Eyes",
-      "teamColor": "",
-      "clanColor": "rgb(0, 128, 255)",
-      "playerArt": [
-        "art/Jelly Fart-art.png"
-      ],
-      "playerPicture": [
-        "art/Jelly Fart-picture.png"
-      ],
-      "badges": [
-        "placeholder",
-        "placeholder",
-        "placeholder"
-      ],
-      "hasFlash": false
-    },
-    {
-      "rank": 37,
       "name": "Hunter Maness",
       "tier": "Silver I",
       "elo": 1069,
@@ -806,7 +781,7 @@
       "hasFlash": []
     },
     {
-      "rank": 38,
+      "rank": 37,
       "name": "Jacob Green",
       "tier": "Silver I",
       "elo": 1069,
@@ -825,6 +800,31 @@
         "placeholder"
       ],
       "hasFlash": []
+    },
+    {
+      "rank": 38,
+      "name": "Jelly Fart",
+      "tier": "Silver I",
+      "elo": 1058,
+      "games": 13,
+      "wins": 3,
+      "losses": 10,
+      "team": "",
+      "clan": "Six Eyes",
+      "teamColor": "",
+      "clanColor": "rgb(0, 128, 255)",
+      "playerArt": [
+        "art/Jelly Fart-art.png"
+      ],
+      "playerPicture": [
+        "art/Jelly Fart-picture.png"
+      ],
+      "badges": [
+        "placeholder",
+        "placeholder",
+        "placeholder"
+      ],
+      "hasFlash": false
     },
     {
       "rank": 39,
@@ -1070,27 +1070,6 @@
     },
     {
       "rank": 49,
-      "name": "Michael Hill",
-      "tier": "Silver II",
-      "elo": 974,
-      "games": 30,
-      "wins": 8,
-      "losses": 22,
-      "team": [],
-      "clan": "Six Eyes",
-      "teamColor": "",
-      "clanColor": "rgb(0, 128, 255)",
-      "playerArt": "art/Michael Hill-art.png",
-      "playerPicture": "art/Michael Hill-picture.png",
-      "badges": [
-        "placeholder",
-        "placeholder",
-        "placeholder"
-      ],
-      "hasFlash": []
-    },
-    {
-      "rank": 50,
       "name": "EJ",
       "tier": "Silver II",
       "elo": 971,
@@ -1111,7 +1090,7 @@
       "hasFlash": []
     },
     {
-      "rank": 51,
+      "rank": 50,
       "name": "Hannen Hileman",
       "tier": "Silver II",
       "elo": 968,
@@ -1134,6 +1113,27 @@
         "placeholder"
       ],
       "hasFlash": false
+    },
+    {
+      "rank": 51,
+      "name": "Michael Hill",
+      "tier": "Silver II",
+      "elo": 954,
+      "games": 31,
+      "wins": 8,
+      "losses": 23,
+      "team": [],
+      "clan": "Six Eyes",
+      "teamColor": "",
+      "clanColor": "rgb(0, 128, 255)",
+      "playerArt": "art/Michael Hill-art.png",
+      "playerPicture": "art/Michael Hill-picture.png",
+      "badges": [
+        "placeholder",
+        "placeholder",
+        "placeholder"
+      ],
+      "hasFlash": []
     },
     {
       "rank": 52,
