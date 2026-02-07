@@ -4,9 +4,9 @@
       "rank": 1,
       "name": "Matt Latour",
       "tier": "Champion",
-      "elo": 2404,
-      "games": 78,
-      "wins": 53,
+      "elo": 2409,
+      "games": 79,
+      "wins": 54,
       "losses": 25,
       "team": "Yin & Yang",
       "clan": "Great Personality",
@@ -109,9 +109,9 @@
       "rank": 6,
       "name": "Deshaun W",
       "tier": "Master",
-      "elo": 2159,
-      "games": 31,
-      "wins": 22,
+      "elo": 2164,
+      "games": 32,
+      "wins": 23,
       "losses": 9,
       "team": "Yin & Yang",
       "clan": "Great Personality",
@@ -172,9 +172,9 @@
       "rank": 9,
       "name": "Preston Hart",
       "tier": "Diamond II",
-      "elo": 1863,
-      "games": 32,
-      "wins": 15,
+      "elo": 1880,
+      "games": 33,
+      "wins": 16,
       "losses": 17,
       "team": "Pluto",
       "clan": "Six Eyes",
@@ -298,9 +298,9 @@
       "rank": 15,
       "name": "Gurp Singh",
       "tier": "Platinum I",
-      "elo": 1675,
-      "games": 79,
-      "wins": 39,
+      "elo": 1692,
+      "games": 80,
+      "wins": 40,
       "losses": 40,
       "team": "Pluto",
       "clan": "Six Eyes",
@@ -512,10 +512,10 @@
       "rank": 25,
       "name": "Brody Sheppard",
       "tier": "Gold II",
-      "elo": 1262,
-      "games": 34,
+      "elo": 1240,
+      "games": 36,
       "wins": 10,
-      "losses": 24,
+      "losses": 26,
       "team": "",
       "clan": "Six Eyes",
       "teamColor": "",
@@ -803,31 +803,6 @@
     },
     {
       "rank": 38,
-      "name": "Jelly Fart",
-      "tier": "Silver I",
-      "elo": 1053,
-      "games": 14,
-      "wins": 3,
-      "losses": 11,
-      "team": "",
-      "clan": "Six Eyes",
-      "teamColor": "",
-      "clanColor": "rgb(0, 128, 255)",
-      "playerArt": [
-        "art/Jelly Fart-art.png"
-      ],
-      "playerPicture": [
-        "art/Jelly Fart-picture.png"
-      ],
-      "badges": [
-        "placeholder",
-        "placeholder",
-        "placeholder"
-      ],
-      "hasFlash": false
-    },
-    {
-      "rank": 39,
       "name": "Raina D",
       "tier": "Silver I",
       "elo": 1052,
@@ -850,6 +825,31 @@
         "placeholder"
       ],
       "hasFlash": []
+    },
+    {
+      "rank": 39,
+      "name": "Jelly Fart",
+      "tier": "Silver I",
+      "elo": 1048,
+      "games": 15,
+      "wins": 3,
+      "losses": 12,
+      "team": "",
+      "clan": "Six Eyes",
+      "teamColor": "",
+      "clanColor": "rgb(0, 128, 255)",
+      "playerArt": [
+        "art/Jelly Fart-art.png"
+      ],
+      "playerPicture": [
+        "art/Jelly Fart-picture.png"
+      ],
+      "badges": [
+        "placeholder",
+        "placeholder",
+        "placeholder"
+      ],
+      "hasFlash": false
     },
     {
       "rank": 40,
@@ -1116,27 +1116,6 @@
     },
     {
       "rank": 51,
-      "name": "Michael Hill",
-      "tier": "Silver II",
-      "elo": 954,
-      "games": 31,
-      "wins": 8,
-      "losses": 23,
-      "team": [],
-      "clan": "Six Eyes",
-      "teamColor": "",
-      "clanColor": "rgb(0, 128, 255)",
-      "playerArt": "art/Michael Hill-art.png",
-      "playerPicture": "art/Michael Hill-picture.png",
-      "badges": [
-        "placeholder",
-        "placeholder",
-        "placeholder"
-      ],
-      "hasFlash": []
-    },
-    {
-      "rank": 52,
       "name": "Sophie Chapman",
       "tier": "Silver II",
       "elo": 942,
@@ -1161,7 +1140,7 @@
       "hasFlash": false
     },
     {
-      "rank": 53,
+      "rank": 52,
       "name": "Drew A",
       "tier": "Silver II",
       "elo": 941,
@@ -1174,6 +1153,27 @@
       "clanColor": "rgb(126, 47, 142)",
       "playerArt": "art/Drew A-art.png",
       "playerPicture": "art/Drew A-picture.png",
+      "badges": [
+        "placeholder",
+        "placeholder",
+        "placeholder"
+      ],
+      "hasFlash": []
+    },
+    {
+      "rank": 53,
+      "name": "Michael Hill",
+      "tier": "Silver II",
+      "elo": 937,
+      "games": 32,
+      "wins": 8,
+      "losses": 24,
+      "team": [],
+      "clan": "Six Eyes",
+      "teamColor": "",
+      "clanColor": "rgb(0, 128, 255)",
+      "playerArt": "art/Michael Hill-art.png",
+      "playerPicture": "art/Michael Hill-picture.png",
       "badges": [
         "placeholder",
         "placeholder",
