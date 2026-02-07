@@ -254,6 +254,27 @@
     },
     {
       "rank": 13,
+      "name": "Ryan Shurtz",
+      "tier": "Diamond III",
+      "elo": 1749,
+      "games": 14,
+      "wins": 10,
+      "losses": 4,
+      "team": [],
+      "clan": "WANGHAF",
+      "teamColor": "",
+      "clanColor": "rgb(255, 0, 0)",
+      "playerArt": "art/Ryan Shurtz-art.png",
+      "playerPicture": "art/Ryan Shurtz-picture.png",
+      "badges": [
+        "placeholder",
+        "placeholder",
+        "placeholder"
+      ],
+      "hasFlash": []
+    },
+    {
+      "rank": 14,
       "name": "Jackson Banks",
       "tier": "Diamond III",
       "elo": 1747,
@@ -266,27 +287,6 @@
       "clanColor": "rgb(255, 0, 0)",
       "playerArt": "art/Jackson Banks-art.png",
       "playerPicture": "art/Jackson Banks-picture.png",
-      "badges": [
-        "placeholder",
-        "placeholder",
-        "placeholder"
-      ],
-      "hasFlash": []
-    },
-    {
-      "rank": 14,
-      "name": "Ryan Shurtz",
-      "tier": "Diamond III",
-      "elo": 1730,
-      "games": 13,
-      "wins": 9,
-      "losses": 4,
-      "team": [],
-      "clan": "WANGHAF",
-      "teamColor": "",
-      "clanColor": "rgb(255, 0, 0)",
-      "playerArt": "art/Ryan Shurtz-art.png",
-      "playerPicture": "art/Ryan Shurtz-picture.png",
       "badges": [
         "placeholder",
         "placeholder",
@@ -449,9 +449,9 @@
       "rank": 22,
       "name": "Andrew Hickman",
       "tier": "Platinum III",
-      "elo": 1475,
-      "games": 14,
-      "wins": 10,
+      "elo": 1494,
+      "games": 15,
+      "wins": 11,
       "losses": 4,
       "team": [],
       "clan": "WANGHAF",
@@ -995,52 +995,6 @@
     },
     {
       "rank": 46,
-      "name": "EJ",
-      "tier": "Silver II",
-      "elo": 990,
-      "games": 9,
-      "wins": 1,
-      "losses": 8,
-      "team": [],
-      "clan": "Great Personality",
-      "teamColor": "",
-      "clanColor": "rgb(126, 47, 142)",
-      "playerArt": "art/EJ-art.png",
-      "playerPicture": "art/EJ-picture.png",
-      "badges": [
-        "placeholder",
-        "placeholder",
-        "placeholder"
-      ],
-      "hasFlash": []
-    },
-    {
-      "rank": 47,
-      "name": "Hannen Hileman",
-      "tier": "Silver II",
-      "elo": 987,
-      "games": 1,
-      "wins": 0,
-      "losses": 1,
-      "team": "",
-      "clan": "",
-      "teamColor": "",
-      "clanColor": "",
-      "playerArt": [
-        "art/Hannen Hileman-art.png"
-      ],
-      "playerPicture": [
-        "art/Hannen Hileman-picture.png"
-      ],
-      "badges": [
-        "placeholder",
-        "placeholder",
-        "placeholder"
-      ],
-      "hasFlash": false
-    },
-    {
-      "rank": 48,
       "name": "Ian Henderson",
       "tier": "Silver II",
       "elo": 979,
@@ -1065,7 +1019,7 @@
       "hasFlash": []
     },
     {
-      "rank": 49,
+      "rank": 47,
       "name": "Labubu",
       "tier": "Silver II",
       "elo": 979,
@@ -1090,7 +1044,7 @@
       "hasFlash": []
     },
     {
-      "rank": 50,
+      "rank": 48,
       "name": "Nolan Lynch",
       "tier": "Silver II",
       "elo": 976,
@@ -1115,7 +1069,7 @@
       "hasFlash": false
     },
     {
-      "rank": 51,
+      "rank": 49,
       "name": "Michael Hill",
       "tier": "Silver II",
       "elo": 974,
@@ -1134,6 +1088,52 @@
         "placeholder"
       ],
       "hasFlash": []
+    },
+    {
+      "rank": 50,
+      "name": "EJ",
+      "tier": "Silver II",
+      "elo": 971,
+      "games": 10,
+      "wins": 1,
+      "losses": 9,
+      "team": [],
+      "clan": "Great Personality",
+      "teamColor": "",
+      "clanColor": "rgb(126, 47, 142)",
+      "playerArt": "art/EJ-art.png",
+      "playerPicture": "art/EJ-picture.png",
+      "badges": [
+        "placeholder",
+        "placeholder",
+        "placeholder"
+      ],
+      "hasFlash": []
+    },
+    {
+      "rank": 51,
+      "name": "Hannen Hileman",
+      "tier": "Silver II",
+      "elo": 968,
+      "games": 2,
+      "wins": 0,
+      "losses": 2,
+      "team": "",
+      "clan": "",
+      "teamColor": "",
+      "clanColor": "",
+      "playerArt": [
+        "art/Hannen Hileman-art.png"
+      ],
+      "playerPicture": [
+        "art/Hannen Hileman-picture.png"
+      ],
+      "badges": [
+        "placeholder",
+        "placeholder",
+        "placeholder"
+      ],
+      "hasFlash": false
     },
     {
       "rank": 52,
