@@ -135,9 +135,9 @@
       "wins": 18,
       "losses": 12,
       "team": "Twin Towers",
-      "clan": "WANGHAF",
+      "clan": "Beer Pressure",
       "teamColor": "rgb(0, 0, 0)",
-      "clanColor": "rgb(255, 0, 0)",
+      "clanColor": "rgb(0, 128, 0)",
       "playerArt": "art/Sam Purintun-art.png",
       "playerPicture": "art/Sam Purintun-picture.png",
       "badges": [
@@ -240,9 +240,9 @@
       "wins": 21,
       "losses": 14,
       "team": [],
-      "clan": "WANGHAF",
+      "clan": "Beer Pressure",
       "teamColor": "",
-      "clanColor": "rgb(255, 0, 0)",
+      "clanColor": "rgb(0, 128, 0)",
       "playerArt": "art/Matt Wolf-art.png",
       "playerPicture": "art/Matt Wolf-picture.png",
       "badges": [
