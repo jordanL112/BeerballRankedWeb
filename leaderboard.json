@@ -4,7 +4,7 @@
       "rank": 1,
       "name": "Matt Latour",
       "tier": "Champion",
-      "elo": 2419,
+      "elo": 2519,
       "games": 80,
       "wins": 55,
       "losses": 25,
@@ -44,6 +44,48 @@
     },
     {
       "rank": 3,
+      "name": "Jordan Lusk",
+      "tier": "Champion",
+      "elo": 2320,
+      "games": 87,
+      "wins": 52,
+      "losses": 35,
+      "team": "Where Are We?",
+      "clan": "Great Personality",
+      "teamColor": "rgb(0, 0, 0)",
+      "clanColor": "rgb(126, 47, 142)",
+      "playerArt": "art/Jordan Lusk-art.png",
+      "playerPicture": "art/Jordan Lusk-picture.png",
+      "badges": [
+        "tengame",
+        "rank",
+        "unbreakable"
+      ],
+      "hasFlash": true
+    },
+    {
+      "rank": 4,
+      "name": "Jackson Martin",
+      "tier": "Champion",
+      "elo": 2306,
+      "games": 60,
+      "wins": 39,
+      "losses": 21,
+      "team": "Where Are We?",
+      "clan": "Great Personality",
+      "teamColor": "rgb(0, 0, 0)",
+      "clanColor": "rgb(126, 47, 142)",
+      "playerArt": "art/Jackson Martin-art.png",
+      "playerPicture": "art/Jackson Martin-picture.png",
+      "badges": [
+        "placeholder",
+        "placeholder",
+        "placeholder"
+      ],
+      "hasFlash": true
+    },
+    {
+      "rank": 5,
       "name": "Dylan Benefield",
       "tier": "Champion",
       "elo": 2229,
@@ -62,48 +104,6 @@
         "placeholder"
       ],
       "hasFlash": []
-    },
-    {
-      "rank": 4,
-      "name": "Jordan Lusk",
-      "tier": "Champion",
-      "elo": 2220,
-      "games": 87,
-      "wins": 52,
-      "losses": 35,
-      "team": "Where Are We?",
-      "clan": "Great Personality",
-      "teamColor": "rgb(0, 0, 0)",
-      "clanColor": "rgb(126, 47, 142)",
-      "playerArt": "art/Jordan Lusk-art.png",
-      "playerPicture": "art/Jordan Lusk-picture.png",
-      "badges": [
-        "tengame",
-        "rank",
-        "unbreakable"
-      ],
-      "hasFlash": true
-    },
-    {
-      "rank": 5,
-      "name": "Jackson Martin",
-      "tier": "Champion",
-      "elo": 2206,
-      "games": 60,
-      "wins": 39,
-      "losses": 21,
-      "team": "Where Are We?",
-      "clan": "Great Personality",
-      "teamColor": "rgb(0, 0, 0)",
-      "clanColor": "rgb(126, 47, 142)",
-      "playerArt": "art/Jackson Martin-art.png",
-      "playerPicture": "art/Jackson Martin-picture.png",
-      "badges": [
-        "placeholder",
-        "placeholder",
-        "placeholder"
-      ],
-      "hasFlash": true
     },
     {
       "rank": 6,
